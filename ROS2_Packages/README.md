@@ -2,8 +2,6 @@
 
 ## camera_pack
 The package activating the camera as a sensor: 
-the node cam_Nano publishes the found person to the topic "Cam_Detections"
-the node cam_sub subscribes to the topic "Cam_Detections" and prints out the data published.
 
 | Node | Function | Topics |
 | ----- | -----  | :------:  |
@@ -11,6 +9,15 @@ the node cam_sub subscribes to the topic "Cam_Detections" and prints out the dat
 | cam_sub | subscribes to the topic "Cam_Detections" and prints out the data published. | Cam_Detections |
 
 ## pubsub
+This is a development Package
+| Node | Function | Topics |
+| ----- | -----  | :------:  |
+| ? | ? | ? |
+| ? | ? | ? |
 
 ## bones
-
+This is a development Package
+| Node | Function | Topics |
+| ----- | -----  | :------:  |
+| ? | ? | ? |
+| ? | ? | ? |
