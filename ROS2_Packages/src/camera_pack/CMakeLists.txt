@@ -14,18 +14,18 @@ find_package(std_msgs REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 add_executable(cam_Nano src/rd_Nano_Ros.cpp)
-target_include_directories(rd_Nano PUBLIC
+target_include_directories(cam_Nano PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
-target_compile_features(rd_Nano PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
-ament_target_dependencies(rd_Nano rclcpp std_msgs)
+target_compile_features(cam_Nano PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+ament_target_dependencies(cam_Nano rclcpp std_msgs)
 
-add_executable(cam_sub src/Sub.cpp)
-target_include_directories(sub PUBLIC
+add_executable(cam_sub src/cam_sub.cpp)
+target_include_directories(cam_sub PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
-target_compile_features(sub PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
-ament_target_dependencies(sub rclcpp std_msgs)
+target_compile_features(cam_sub PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+ament_target_dependencies(cam_sub rclcpp std_msgs)
 
 install(TARGETS cam_sub
   DESTINATION lib/${PROJECT_NAME})
