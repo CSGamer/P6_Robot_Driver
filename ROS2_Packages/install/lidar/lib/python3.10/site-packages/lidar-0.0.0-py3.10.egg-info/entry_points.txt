@@ -1,4 +1,4 @@
 [console_scripts]
 listener = lidar.subscriber:main
-talker = lidar.publisher3:main
+talker = lidar.publisher4:main
 

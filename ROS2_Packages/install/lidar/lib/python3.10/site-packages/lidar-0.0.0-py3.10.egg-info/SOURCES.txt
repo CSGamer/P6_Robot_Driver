@@ -14,6 +14,7 @@ lidar/publisher.py
 lidar/publisher1.py
 lidar/publisher2.py
 lidar/publisher3.py
+lidar/publisher4.py
 lidar/subscriber.py
 resource/lidar
 test/test_copyright.py
