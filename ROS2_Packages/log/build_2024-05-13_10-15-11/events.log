@@ -1,0 +1,91 @@
+[0.000000] (-) TimerEvent: {}
+[0.001673] (-) JobUnselected: {'identifier': 'bones'}
+[0.002305] (-) JobUnselected: {'identifier': 'camera_pack'}
+[0.002409] (-) JobUnselected: {'identifier': 'pubsub'}
+[0.002503] (-) JobUnselected: {'identifier': 'py_Driver'}
+[0.002605] (lidar) JobQueued: {'identifier': 'lidar', 'dependencies': OrderedDict()}
+[0.002707] (lidar) JobStarted: {'identifier': 'lidar'}
+[0.098882] (-) TimerEvent: {}
+[0.199502] (-) TimerEvent: {}
+[0.300287] (-) TimerEvent: {}
+[0.401641] (-) TimerEvent: {}
+[0.502538] (-) TimerEvent: {}
+[0.604827] (-) TimerEvent: {}
+[0.705551] (-) TimerEvent: {}
+[0.806299] (-) TimerEvent: {}
+[0.907144] (-) TimerEvent: {}
+[1.007769] (-) TimerEvent: {}
+[1.108368] (-) TimerEvent: {}
+[1.209017] (-) TimerEvent: {}
+[1.309709] (-) TimerEvent: {}
+[1.410512] (-) TimerEvent: {}
+[1.511299] (-) TimerEvent: {}
+[1.612552] (-) TimerEvent: {}
+[1.717507] (-) TimerEvent: {}
+[1.818231] (-) TimerEvent: {}
+[1.918980] (-) TimerEvent: {}
+[2.019801] (-) TimerEvent: {}
+[2.120687] (-) TimerEvent: {}
+[2.221415] (-) TimerEvent: {}
+[2.323370] (-) TimerEvent: {}
+[2.424558] (-) TimerEvent: {}
+[2.525396] (-) TimerEvent: {}
+[2.626187] (-) TimerEvent: {}
+[2.726949] (-) TimerEvent: {}
+[2.827781] (-) TimerEvent: {}
+[2.928497] (-) TimerEvent: {}
+[3.029177] (-) TimerEvent: {}
+[3.129783] (-) TimerEvent: {}
+[3.230466] (-) TimerEvent: {}
+[3.331150] (-) TimerEvent: {}
+[3.431852] (-) TimerEvent: {}
+[3.532597] (-) TimerEvent: {}
+[3.633491] (-) TimerEvent: {}
+[3.696515] (lidar) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/lidar', 'build', '--build-base', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build', 'install', '--record', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/lidar', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'hvalborg2', 'SSH_CLIENT': '192.168.137.1 55115 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/hvalborg2', 'OLDPWD': '/home/hvalborg2', 'SSH_TTY': '/dev/pts/2', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install:/home/hvalborg2/turtlebot3_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'hvalborg2', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '752', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/hvalborg2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '30', 'AMENT_PREFIX_PATH': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver:/home/hvalborg2/turtlebot3_ws/install/turtlebot3:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_bringup:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_node:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_description:/home/hvalborg2/turtlebot3_ws/install/ld08_driver:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.137.1 55115 192.168.137.14 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'LDS_MODEL': 'LDS-01', 'PYTHONPATH': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/prefix_override:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver:/home/hvalborg2/turtlebot3_ws/install/turtlebot3:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_bringup:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_node:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_description:/home/hvalborg2/turtlebot3_ws/install/ld08_driver'}, 'shell': False}
+[3.733661] (-) TimerEvent: {}
+[3.834485] (-) TimerEvent: {}
+[3.935320] (-) TimerEvent: {}
+[4.036037] (-) TimerEvent: {}
+[4.136756] (-) TimerEvent: {}
+[4.237409] (-) TimerEvent: {}
+[4.338070] (-) TimerEvent: {}
+[4.438942] (-) TimerEvent: {}
+[4.539709] (-) TimerEvent: {}
+[4.640367] (-) TimerEvent: {}
+[4.741206] (-) TimerEvent: {}
+[4.841930] (-) TimerEvent: {}
+[4.942647] (-) TimerEvent: {}
+[5.043374] (-) TimerEvent: {}
+[5.144016] (-) TimerEvent: {}
+[5.244711] (-) TimerEvent: {}
+[5.255071] (lidar) StdoutLine: {'line': b'running egg_info\n'}
+[5.258263] (lidar) StdoutLine: {'line': b'writing ../../build/lidar/lidar.egg-info/PKG-INFO\n'}
+[5.259469] (lidar) StdoutLine: {'line': b'writing dependency_links to ../../build/lidar/lidar.egg-info/dependency_links.txt\n'}
+[5.260749] (lidar) StdoutLine: {'line': b'writing entry points to ../../build/lidar/lidar.egg-info/entry_points.txt\n'}
+[5.261695] (lidar) StdoutLine: {'line': b'writing requirements to ../../build/lidar/lidar.egg-info/requires.txt\n'}
+[5.262434] (lidar) StdoutLine: {'line': b'writing top-level names to ../../build/lidar/lidar.egg-info/top_level.txt\n'}
+[5.271440] (lidar) StdoutLine: {'line': b"reading manifest file '../../build/lidar/lidar.egg-info/SOURCES.txt'\n"}
+[5.273135] (lidar) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[5.276204] (lidar) StdoutLine: {'line': b"writing manifest file '../../build/lidar/lidar.egg-info/SOURCES.txt'\n"}
+[5.277036] (lidar) StdoutLine: {'line': b'running build\n'}
+[5.277753] (lidar) StdoutLine: {'line': b'running build_py\n'}
+[5.279313] (lidar) StdoutLine: {'line': b'copying lidar/publisher3.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build/lib/lidar\n'}
+[5.280958] (lidar) StdoutLine: {'line': b'running install\n'}
+[5.282599] (lidar) StdoutLine: {'line': b'running install_lib\n'}
+[5.288073] (lidar) StdoutLine: {'line': b'copying /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build/lib/lidar/publisher3.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar\n'}
+[5.292181] (lidar) StdoutLine: {'line': b'byte-compiling /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar/publisher3.py to publisher3.cpython-310.pyc\n'}
+[5.296022] (lidar) StdoutLine: {'line': b'running install_data\n'}
+[5.296919] (lidar) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.304020] (lidar) StdoutLine: {'line': b"removing '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[5.305986] (lidar) StdoutLine: {'line': b'Copying ../../build/lidar/lidar.egg-info to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar-0.0.0-py3.10.egg-info\n'}
+[5.312828] (lidar) StdoutLine: {'line': b'running install_scripts\n'}
+[5.344937] (-) TimerEvent: {}
+[5.425120] (lidar) StdoutLine: {'line': b'Installing listener script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/lidar\n'}
+[5.426325] (lidar) StdoutLine: {'line': b'Installing talker script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/lidar\n'}
+[5.429862] (lidar) StdoutLine: {'line': b"writing list of installed files to '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/install.log'\n"}
+[5.445286] (-) TimerEvent: {}
+[5.546461] (-) TimerEvent: {}
+[5.604895] (lidar) CommandEnded: {'returncode': 0}
+[5.647631] (-) TimerEvent: {}
+[5.663118] (lidar) JobEnded: {'identifier': 'lidar', 'rc': 0}
+[5.666740] (-) EventReactorShutdown: {}

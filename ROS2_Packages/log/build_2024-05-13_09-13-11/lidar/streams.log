@@ -1,0 +1,51 @@
+[4.030s] Invoking command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/lidar': PYTHONPATH=/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/prefix_override:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lidar build --build-base /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build install --record /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/install.log --single-version-externally-managed install_data
+[5.514s] running egg_info
+[5.516s] creating ../../build/lidar/lidar.egg-info
+[5.517s] writing ../../build/lidar/lidar.egg-info/PKG-INFO
+[5.519s] writing dependency_links to ../../build/lidar/lidar.egg-info/dependency_links.txt
+[5.519s] writing entry points to ../../build/lidar/lidar.egg-info/entry_points.txt
+[5.520s] writing requirements to ../../build/lidar/lidar.egg-info/requires.txt
+[5.521s] writing top-level names to ../../build/lidar/lidar.egg-info/top_level.txt
+[5.522s] writing manifest file '../../build/lidar/lidar.egg-info/SOURCES.txt'
+[5.531s] reading manifest file '../../build/lidar/lidar.egg-info/SOURCES.txt'
+[5.532s] adding license file 'LICENSE'
+[5.535s] writing manifest file '../../build/lidar/lidar.egg-info/SOURCES.txt'
+[5.536s] running build
+[5.536s] running build_py
+[5.537s] creating /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build
+[5.538s] creating /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build/lib
+[5.539s] creating /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build/lib/lidar
+[5.539s] copying lidar/publisher.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build/lib/lidar
+[5.540s] copying lidar/publisher2.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build/lib/lidar
+[5.540s] copying lidar/publisher1.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build/lib/lidar
+[5.541s] copying lidar/subscriber.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build/lib/lidar
+[5.542s] copying lidar/__init__.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build/lib/lidar
+[5.543s] copying lidar/publisher3.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build/lib/lidar
+[5.547s] running install
+[5.548s] running install_lib
+[5.551s] creating /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar
+[5.552s] copying /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build/lib/lidar/publisher.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar
+[5.553s] copying /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build/lib/lidar/publisher2.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar
+[5.554s] copying /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build/lib/lidar/publisher1.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar
+[5.555s] copying /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build/lib/lidar/subscriber.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar
+[5.556s] copying /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build/lib/lidar/__init__.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar
+[5.557s] copying /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build/lib/lidar/publisher3.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar
+[5.562s] byte-compiling /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar/publisher.py to publisher.cpython-310.pyc
+[5.565s] byte-compiling /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar/publisher2.py to publisher2.cpython-310.pyc
+[5.568s] byte-compiling /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar/publisher1.py to publisher1.cpython-310.pyc
+[5.572s] byte-compiling /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar/subscriber.py to subscriber.cpython-310.pyc
+[5.574s] byte-compiling /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar/__init__.py to __init__.cpython-310.pyc
+[5.576s] byte-compiling /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar/publisher3.py to publisher3.cpython-310.pyc
+[5.581s] running install_data
+[5.582s] creating /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/share/ament_index
+[5.582s] creating /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/share/ament_index/resource_index
+[5.583s] creating /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/share/ament_index/resource_index/packages
+[5.583s] copying resource/lidar -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/share/ament_index/resource_index/packages
+[5.584s] copying package.xml -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/share/lidar
+[5.584s] running install_egg_info
+[5.591s] Copying ../../build/lidar/lidar.egg-info to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar-0.0.0-py3.10.egg-info
+[5.599s] running install_scripts
+[5.704s] Installing listener script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/lidar
+[5.704s] Installing talker script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/lidar
+[5.707s] writing list of installed files to '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/install.log'
+[5.851s] Invoked command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/lidar' returned '0': PYTHONPATH=/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/prefix_override:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lidar build --build-base /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build install --record /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/install.log --single-version-externally-managed install_data

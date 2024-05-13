@@ -20,8 +20,8 @@ class LaserPublisher(Node):
 			self.clear_console()
 		
 		if (0 <= angle < 30) or (329 <= angle < 360):
-			distance_chars = '#' * int(distance / 10)  # Adjust the scale as needed
-			print(f"Angle: {angle}, Distance: {distance} {' ' * (30 - len(distance_chars))}[{distance_chars}]")
+			distance_chars = '#' * int(distance / 25)  # Adjust the scale as needed
+			print(f"Angle: {angle} Distance: {distance} {' ' * (30 - len(distance_chars))}[{distance_chars}]")
 		
 	def publish_distances(self):
 		while True:
@@ -31,7 +31,7 @@ class LaserPublisher(Node):
 				for m in range(6):
 					angle = base_angle + m
 					if (0 <= angle < 30) or (329 <= angle < 360):
-						distance = result[(6 * (m + 1)) + 1] * 256 + result[(6 * (m + 1))]
+						distance = result[(6 * (m + 1)) + 1] * 256 + result[(6 * (m + 1))] - 100
 						self.distance_publisher.publish(Float32(data=float(distance)))
 						#print(f"Angle: {angle}, Distance: {distance}")  # Debug print
 						self.visualize_distance(angle,distance)
