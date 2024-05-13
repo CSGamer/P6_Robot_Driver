@@ -19,14 +19,15 @@ class LaserPublisher(Node):
 	def visualize_distance(self, angle, distance):
 		if (self.iteration_count < 5):
 			self.iteration_count += 1
-			if (329 == angle):
-				self.clear_console()
+			#if (329 == angle):
+				#self.clear_console()
 			
 			if (0 <= angle < 30) or (329 <= angle < 360):
 				distance_chars = '#' * int(distance / 25)  # Adjust the scale as needed
 				print(f"Angle: {angle} Distance: {distance} {' ' * (30 - len(distance_chars))}[{distance_chars}]")
 		
 	def publish_distances(self):
+		self.clear_console()
 		while True:
 			result = self.serial_port.read(42)
 			if result[-1] == result[-2]:
