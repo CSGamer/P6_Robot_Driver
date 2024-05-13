@@ -1,3 +1,4 @@
+import os
 import serial
 import rclpy
 import math
@@ -10,6 +11,17 @@ class LaserPublisher(Node):
 		self.distance_publisher = self.create_publisher(Float32, 'distance', 10)
 		self.serial_port = serial.Serial("/dev/ttyUSB0", baudrate = 230400)
 		self.get_logger().info('Laser publisher node initialized')
+
+	def clear_console():
+		os.system('cls' if os.name == 'nt' else 'clear')
+						
+	def visualize_distance(angle, distance):
+		if (329 == angle):
+			clear_console()
+		
+		if (0 <= angle < 30) or (329 <= angle < 360):
+			distance_chars = '#' * int(distance / 10)  # Adjust the scale as needed
+			print(f"Angle: {angle}, Distance: {distance} {' ' * (30 - len(distance_chars))}[{distance_chars}]")
 		
 	def publish_distances(self):
 		while True:
@@ -21,8 +33,10 @@ class LaserPublisher(Node):
 					if (0 <= angle < 30) or (329 <= angle < 360):
 						distance = result[(6 * (m + 1)) + 1] * 256 + result[(6 * (m + 1))]
 						self.distance_publisher.publish(Float32(data=float(distance)))
-						print(f"Angle: {angle}, Distance: {distance}")  # Debug print
-						
+						#print(f"Angle: {angle}, Distance: {distance}")  # Debug print
+						visualize_distance(angle,distance)
+
+
 	def destroy_node(self):
 		self.serial_port.close()  # Close the serial port
 		super().destroy_node()
