@@ -12,12 +12,12 @@ class LaserPublisher(Node):
 		self.serial_port = serial.Serial("/dev/ttyUSB0", baudrate = 230400)
 		self.get_logger().info('Laser publisher node initialized')
 
-	def clear_console():
+	def clear_console(self):
 		os.system('cls' if os.name == 'nt' else 'clear')
 						
-	def visualize_distance(angle, distance):
+	def visualize_distance(self, angle, distance):
 		if (329 == angle):
-			clear_console()
+			self.clear_console()
 		
 		if (0 <= angle < 30) or (329 <= angle < 360):
 			distance_chars = '#' * int(distance / 10)  # Adjust the scale as needed
@@ -34,7 +34,7 @@ class LaserPublisher(Node):
 						distance = result[(6 * (m + 1)) + 1] * 256 + result[(6 * (m + 1))]
 						self.distance_publisher.publish(Float32(data=float(distance)))
 						#print(f"Angle: {angle}, Distance: {distance}")  # Debug print
-						visualize_distance(angle,distance)
+						self.visualize_distance(angle,distance)
 
 
 	def destroy_node(self):
