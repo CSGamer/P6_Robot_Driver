@@ -1,0 +1,3 @@
+[console_scripts]
+wheely = py_Driver.py_wheely:main
+

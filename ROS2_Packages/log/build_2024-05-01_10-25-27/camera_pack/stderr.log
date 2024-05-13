@@ -1,5 +1,0 @@
-[31mCMake Error at CMakeLists.txt:17 (target_include_directories):
-  Cannot specify include directories for target "rd_Nano" which is not built
-  by this project.
-
-[0m

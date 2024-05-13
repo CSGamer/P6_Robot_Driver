@@ -1,0 +1,8 @@
+source;share/Driver/hook/cmake_prefix_path.ps1
+source;share/Driver/hook/cmake_prefix_path.dsv
+source;share/Driver/hook/cmake_prefix_path.sh
+source;share/Driver/local_setup.bash
+source;share/Driver/local_setup.dsv
+source;share/Driver/local_setup.ps1
+source;share/Driver/local_setup.sh
+source;share/Driver/local_setup.zsh

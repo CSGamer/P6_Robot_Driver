@@ -1,0 +1,4 @@
+source;share/Driver/local_setup.bash
+source;share/Driver/local_setup.dsv
+source;share/Driver/local_setup.sh
+source;share/Driver/local_setup.zsh

@@ -1,0 +1,351 @@
+[0.505s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.505s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff7ec04a60>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff7ed1d630>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff7ed1d630>>)
+[1.451s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.451s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.451s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.452s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.452s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.452s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.452s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages'
+[1.453s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.453s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.453s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.454s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.454s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.454s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.454s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.454s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.454s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.508s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.508s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.509s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.509s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.509s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.509s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.511s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.511s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.511s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/Driver) by extensions ['ignore', 'ignore_ament_install']
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/Driver) by extension 'ignore'
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/Driver) by extension 'ignore_ament_install'
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/Driver) by extensions ['colcon_pkg']
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/Driver) by extension 'colcon_pkg'
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/Driver) by extensions ['colcon_meta']
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/Driver) by extension 'colcon_meta'
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/Driver) by extensions ['ros']
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/Driver) by extension 'ros'
+[1.527s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Driver' with type 'ros.ament_cmake' and name 'Driver'
+[1.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/bones) by extensions ['ignore', 'ignore_ament_install']
+[1.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/bones) by extension 'ignore'
+[1.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/bones) by extension 'ignore_ament_install'
+[1.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/bones) by extensions ['colcon_pkg']
+[1.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/bones) by extension 'colcon_pkg'
+[1.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/bones) by extensions ['colcon_meta']
+[1.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/bones) by extension 'colcon_meta'
+[1.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/bones) by extensions ['ros']
+[1.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/bones) by extension 'ros'
+[1.531s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bones' with type 'ros.ament_cmake' and name 'bones'
+[1.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pack) by extensions ['ignore', 'ignore_ament_install']
+[1.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pack) by extension 'ignore'
+[1.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pack) by extension 'ignore_ament_install'
+[1.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pack) by extensions ['colcon_pkg']
+[1.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pack) by extension 'colcon_pkg'
+[1.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pack) by extensions ['colcon_meta']
+[1.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pack) by extension 'colcon_meta'
+[1.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pack) by extensions ['ros']
+[1.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_pack) by extension 'ros'
+[1.536s] DEBUG:colcon.colcon_core.package_identification:Package 'src/camera_pack' with type 'ros.ament_cmake' and name 'camera_pack'
+[1.537s] Level 1:colcon.colcon_core.package_identification:_identify(src/pubsub) by extensions ['ignore', 'ignore_ament_install']
+[1.537s] Level 1:colcon.colcon_core.package_identification:_identify(src/pubsub) by extension 'ignore'
+[1.537s] Level 1:colcon.colcon_core.package_identification:_identify(src/pubsub) by extension 'ignore_ament_install'
+[1.538s] Level 1:colcon.colcon_core.package_identification:_identify(src/pubsub) by extensions ['colcon_pkg']
+[1.538s] Level 1:colcon.colcon_core.package_identification:_identify(src/pubsub) by extension 'colcon_pkg'
+[1.538s] Level 1:colcon.colcon_core.package_identification:_identify(src/pubsub) by extensions ['colcon_meta']
+[1.538s] Level 1:colcon.colcon_core.package_identification:_identify(src/pubsub) by extension 'colcon_meta'
+[1.538s] Level 1:colcon.colcon_core.package_identification:_identify(src/pubsub) by extensions ['ros']
+[1.539s] Level 1:colcon.colcon_core.package_identification:_identify(src/pubsub) by extension 'ros'
+[1.541s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pubsub' with type 'ros.ament_cmake' and name 'pubsub'
+[1.541s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.541s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.541s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.541s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.541s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.629s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.629s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.634s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.634s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.634s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.634s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.638s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[1.638s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[1.639s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[1.639s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[1.642s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install
+[1.645s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/hvalborg2/Desktop/Home_made_jelly/install
+[1.649s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/hvalborg2/turtlebot3_ws/install
+[1.659s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 273 installed packages in /opt/ros/humble
+[1.710s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.903s] Level 5:colcon.colcon_core.verb:set package 'Driver' build argument 'cmake_args' from command line to 'None'
+[1.904s] Level 5:colcon.colcon_core.verb:set package 'Driver' build argument 'cmake_target' from command line to 'None'
+[1.904s] Level 5:colcon.colcon_core.verb:set package 'Driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.904s] Level 5:colcon.colcon_core.verb:set package 'Driver' build argument 'cmake_clean_cache' from command line to 'False'
+[1.904s] Level 5:colcon.colcon_core.verb:set package 'Driver' build argument 'cmake_clean_first' from command line to 'False'
+[1.904s] Level 5:colcon.colcon_core.verb:set package 'Driver' build argument 'cmake_force_configure' from command line to 'False'
+[1.904s] Level 5:colcon.colcon_core.verb:set package 'Driver' build argument 'ament_cmake_args' from command line to 'None'
+[1.904s] Level 5:colcon.colcon_core.verb:set package 'Driver' build argument 'catkin_cmake_args' from command line to 'None'
+[1.904s] Level 5:colcon.colcon_core.verb:set package 'Driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.905s] DEBUG:colcon.colcon_core.verb:Building package 'Driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/Driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver', 'merge_install': False, 'path': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/Driver', 'symlink_install': False, 'test_result_base': None}
+[1.906s] Level 5:colcon.colcon_core.verb:set package 'bones' build argument 'cmake_args' from command line to 'None'
+[1.906s] Level 5:colcon.colcon_core.verb:set package 'bones' build argument 'cmake_target' from command line to 'None'
+[1.907s] Level 5:colcon.colcon_core.verb:set package 'bones' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.907s] Level 5:colcon.colcon_core.verb:set package 'bones' build argument 'cmake_clean_cache' from command line to 'False'
+[1.907s] Level 5:colcon.colcon_core.verb:set package 'bones' build argument 'cmake_clean_first' from command line to 'False'
+[1.907s] Level 5:colcon.colcon_core.verb:set package 'bones' build argument 'cmake_force_configure' from command line to 'False'
+[1.907s] Level 5:colcon.colcon_core.verb:set package 'bones' build argument 'ament_cmake_args' from command line to 'None'
+[1.907s] Level 5:colcon.colcon_core.verb:set package 'bones' build argument 'catkin_cmake_args' from command line to 'None'
+[1.907s] Level 5:colcon.colcon_core.verb:set package 'bones' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.908s] DEBUG:colcon.colcon_core.verb:Building package 'bones' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones', 'merge_install': False, 'path': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/bones', 'symlink_install': False, 'test_result_base': None}
+[1.909s] Level 5:colcon.colcon_core.verb:set package 'camera_pack' build argument 'cmake_args' from command line to 'None'
+[1.909s] Level 5:colcon.colcon_core.verb:set package 'camera_pack' build argument 'cmake_target' from command line to 'None'
+[1.910s] Level 5:colcon.colcon_core.verb:set package 'camera_pack' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.910s] Level 5:colcon.colcon_core.verb:set package 'camera_pack' build argument 'cmake_clean_cache' from command line to 'False'
+[1.910s] Level 5:colcon.colcon_core.verb:set package 'camera_pack' build argument 'cmake_clean_first' from command line to 'False'
+[1.910s] Level 5:colcon.colcon_core.verb:set package 'camera_pack' build argument 'cmake_force_configure' from command line to 'False'
+[1.910s] Level 5:colcon.colcon_core.verb:set package 'camera_pack' build argument 'ament_cmake_args' from command line to 'None'
+[1.910s] Level 5:colcon.colcon_core.verb:set package 'camera_pack' build argument 'catkin_cmake_args' from command line to 'None'
+[1.910s] Level 5:colcon.colcon_core.verb:set package 'camera_pack' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.910s] DEBUG:colcon.colcon_core.verb:Building package 'camera_pack' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack', 'merge_install': False, 'path': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/camera_pack', 'symlink_install': False, 'test_result_base': None}
+[1.912s] Level 5:colcon.colcon_core.verb:set package 'pubsub' build argument 'cmake_args' from command line to 'None'
+[1.912s] Level 5:colcon.colcon_core.verb:set package 'pubsub' build argument 'cmake_target' from command line to 'None'
+[1.912s] Level 5:colcon.colcon_core.verb:set package 'pubsub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.912s] Level 5:colcon.colcon_core.verb:set package 'pubsub' build argument 'cmake_clean_cache' from command line to 'False'
+[1.913s] Level 5:colcon.colcon_core.verb:set package 'pubsub' build argument 'cmake_clean_first' from command line to 'False'
+[1.913s] Level 5:colcon.colcon_core.verb:set package 'pubsub' build argument 'cmake_force_configure' from command line to 'False'
+[1.913s] Level 5:colcon.colcon_core.verb:set package 'pubsub' build argument 'ament_cmake_args' from command line to 'None'
+[1.913s] Level 5:colcon.colcon_core.verb:set package 'pubsub' build argument 'catkin_cmake_args' from command line to 'None'
+[1.913s] Level 5:colcon.colcon_core.verb:set package 'pubsub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.913s] DEBUG:colcon.colcon_core.verb:Building package 'pubsub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub', 'merge_install': False, 'path': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/pubsub', 'symlink_install': False, 'test_result_base': None}
+[1.914s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.917s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.918s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/Driver' with build type 'ament_cmake'
+[1.919s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/Driver'
+[1.929s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.930s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.930s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.959s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/bones' with build type 'ament_cmake'
+[1.960s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/bones'
+[1.961s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.962s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.991s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/camera_pack' with build type 'ament_cmake'
+[1.991s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/camera_pack'
+[1.993s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.993s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.022s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/pubsub' with build type 'ament_cmake'
+[2.023s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/pubsub'
+[2.024s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.025s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.069s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/Driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/Driver -DCMAKE_INSTALL_PREFIX=/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver
+[2.094s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/bones -DCMAKE_INSTALL_PREFIX=/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones
+[2.106s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/camera_pack -DCMAKE_INSTALL_PREFIX=/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack
+[2.134s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/pubsub -DCMAKE_INSTALL_PREFIX=/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub
+[6.979s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/Driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/Driver -DCMAKE_INSTALL_PREFIX=/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver
+[6.986s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/Driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/Driver -- -j4 -l4
+[7.660s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/Driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/Driver -- -j4 -l4
+[7.869s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/Driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/Driver
+[7.949s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(Driver)
+[7.953s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/Driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/Driver
+[7.964s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver' for CMake module files
+[7.967s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver' for CMake config files
+[7.969s] Level 1:colcon.colcon_core.shell:create_environment_hook('Driver', 'cmake_prefix_path')
+[7.971s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/share/Driver/hook/cmake_prefix_path.ps1'
+[7.973s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/share/Driver/hook/cmake_prefix_path.dsv'
+[7.975s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/share/Driver/hook/cmake_prefix_path.sh'
+[7.981s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/lib'
+[7.982s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/bin'
+[7.982s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/lib/pkgconfig/Driver.pc'
+[7.984s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/lib/python3.10/site-packages'
+[7.985s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/bin'
+[7.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/share/Driver/package.ps1'
+[7.992s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/share/Driver/package.dsv'
+[7.995s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/share/Driver/package.sh'
+[7.999s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/share/Driver/package.bash'
+[8.003s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/share/Driver/package.zsh'
+[8.007s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/share/colcon-core/packages/Driver)
+[8.164s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(Driver)
+[8.166s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver' for CMake module files
+[8.169s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver' for CMake config files
+[8.171s] Level 1:colcon.colcon_core.shell:create_environment_hook('Driver', 'cmake_prefix_path')
+[8.172s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/share/Driver/hook/cmake_prefix_path.ps1'
+[8.174s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/share/Driver/hook/cmake_prefix_path.dsv'
+[8.176s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/share/Driver/hook/cmake_prefix_path.sh'
+[8.179s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/lib'
+[8.180s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/bin'
+[8.180s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/lib/pkgconfig/Driver.pc'
+[8.181s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/lib/python3.10/site-packages'
+[8.182s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/bin'
+[8.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/share/Driver/package.ps1'
+[8.188s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/share/Driver/package.dsv'
+[8.191s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/share/Driver/package.sh'
+[8.193s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/share/Driver/package.bash'
+[8.196s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/share/Driver/package.zsh'
+[8.198s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver/share/colcon-core/packages/Driver)
+[13.005s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/camera_pack -DCMAKE_INSTALL_PREFIX=/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack
+[13.020s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack -- -j4 -l4
+[13.047s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/pubsub -DCMAKE_INSTALL_PREFIX=/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub
+[13.056s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub -- -j4 -l4
+[13.082s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/bones -DCMAKE_INSTALL_PREFIX=/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones
+[13.093s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones -- -j4 -l4
+[68.991s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones -- -j4 -l4
+[69.541s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones
+[69.753s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bones)
+[69.767s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones
+[69.776s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones' for CMake module files
+[69.786s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones' for CMake config files
+[69.791s] Level 1:colcon.colcon_core.shell:create_environment_hook('bones', 'cmake_prefix_path')
+[69.799s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/hook/cmake_prefix_path.ps1'
+[69.828s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/hook/cmake_prefix_path.dsv'
+[69.846s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/hook/cmake_prefix_path.sh'
+[69.866s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/lib'
+[69.868s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/bin'
+[69.870s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/lib/pkgconfig/bones.pc'
+[69.880s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/lib/python3.10/site-packages'
+[69.882s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/bin'
+[69.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/package.ps1'
+[69.892s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/package.dsv'
+[69.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/package.sh'
+[69.903s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/package.bash'
+[69.910s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/package.zsh'
+[69.916s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/colcon-core/packages/bones)
+[70.098s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bones)
+[70.100s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones' for CMake module files
+[70.104s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones' for CMake config files
+[70.106s] Level 1:colcon.colcon_core.shell:create_environment_hook('bones', 'cmake_prefix_path')
+[70.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/hook/cmake_prefix_path.ps1'
+[70.111s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/hook/cmake_prefix_path.dsv'
+[70.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/hook/cmake_prefix_path.sh'
+[70.119s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/lib'
+[70.120s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/bin'
+[70.121s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/lib/pkgconfig/bones.pc'
+[70.122s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/lib/python3.10/site-packages'
+[70.124s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/bin'
+[70.126s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/package.ps1'
+[70.129s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/package.dsv'
+[70.133s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/package.sh'
+[70.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/package.bash'
+[70.142s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/package.zsh'
+[70.145s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/colcon-core/packages/bones)
+[99.418s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack -- -j4 -l4
+[99.618s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack
+[99.749s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_pack)
+[99.750s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack' for CMake module files
+[99.752s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack
+[99.755s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack' for CMake config files
+[99.756s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_pack', 'cmake_prefix_path')
+[99.757s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/hook/cmake_prefix_path.ps1'
+[99.759s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/hook/cmake_prefix_path.dsv'
+[99.761s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/hook/cmake_prefix_path.sh'
+[99.764s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib'
+[99.765s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/bin'
+[99.765s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/pkgconfig/camera_pack.pc'
+[99.766s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/python3.10/site-packages'
+[99.768s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/bin'
+[99.769s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/package.ps1'
+[99.771s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/package.dsv'
+[99.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/package.sh'
+[99.775s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/package.bash'
+[99.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/package.zsh'
+[99.779s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/colcon-core/packages/camera_pack)
+[99.953s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_pack)
+[99.954s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack' for CMake module files
+[99.958s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack' for CMake config files
+[99.960s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_pack', 'cmake_prefix_path')
+[99.961s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/hook/cmake_prefix_path.ps1'
+[99.964s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/hook/cmake_prefix_path.dsv'
+[99.966s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/hook/cmake_prefix_path.sh'
+[99.971s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib'
+[99.972s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/bin'
+[99.972s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/pkgconfig/camera_pack.pc'
+[99.974s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/python3.10/site-packages'
+[99.975s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/bin'
+[99.977s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/package.ps1'
+[99.980s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/package.dsv'
+[99.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/package.sh'
+[99.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/package.bash'
+[99.989s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/package.zsh'
+[99.992s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/colcon-core/packages/camera_pack)
+[100.042s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub -- -j4 -l4
+[100.235s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub
+[100.367s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pubsub)
+[100.369s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub' for CMake module files
+[100.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub
+[100.373s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub' for CMake config files
+[100.375s] Level 1:colcon.colcon_core.shell:create_environment_hook('pubsub', 'cmake_prefix_path')
+[100.377s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/hook/cmake_prefix_path.ps1'
+[100.379s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/hook/cmake_prefix_path.dsv'
+[100.381s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/hook/cmake_prefix_path.sh'
+[100.384s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/lib'
+[100.385s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/bin'
+[100.385s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/lib/pkgconfig/pubsub.pc'
+[100.386s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/lib/python3.10/site-packages'
+[100.387s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/bin'
+[100.389s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/package.ps1'
+[100.391s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/package.dsv'
+[100.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/package.sh'
+[100.396s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/package.bash'
+[100.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/package.zsh'
+[100.399s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/colcon-core/packages/pubsub)
+[100.579s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pubsub)
+[100.580s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub' for CMake module files
+[100.584s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub' for CMake config files
+[100.587s] Level 1:colcon.colcon_core.shell:create_environment_hook('pubsub', 'cmake_prefix_path')
+[100.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/hook/cmake_prefix_path.ps1'
+[100.591s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/hook/cmake_prefix_path.dsv'
+[100.594s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/hook/cmake_prefix_path.sh'
+[100.598s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/lib'
+[100.598s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/bin'
+[100.598s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/lib/pkgconfig/pubsub.pc'
+[100.599s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/lib/python3.10/site-packages'
+[100.600s] Level 1:colcon.colcon_core.environment:checking '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/bin'
+[100.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/package.ps1'
+[100.609s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/package.dsv'
+[100.612s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/package.sh'
+[100.614s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/package.bash'
+[100.616s] INFO:colcon.colcon_core.shell:Creating package script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/package.zsh'
+[100.619s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/colcon-core/packages/pubsub)
+[100.621s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[100.624s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[100.625s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[100.627s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[100.786s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[100.786s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[100.787s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[101.010s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[101.012s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/local_setup.ps1'
+[101.019s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/_local_setup_util_ps1.py'
+[101.029s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/setup.ps1'
+[101.061s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/local_setup.sh'
+[101.066s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/_local_setup_util_sh.py'
+[101.068s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/setup.sh'
+[101.081s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/local_setup.bash'
+[101.084s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/setup.bash'
+[101.096s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/local_setup.zsh'
+[101.099s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/setup.zsh'
