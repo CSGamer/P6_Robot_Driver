@@ -25,7 +25,7 @@ class LaserPublisher(Node):
 		
 	def publish_distances(self):
 		number = 0
-		while number < 5:
+		while True:
 			result = self.serial_port.read(42)
 			if result[-1] == result[-2]:
 				base_angle = (result[1] - 160) * 6
@@ -35,7 +35,8 @@ class LaserPublisher(Node):
 						distance = result[(6 * (m + 1)) + 1] * 256 + result[(6 * (m + 1))] - 100
 						self.distance_publisher.publish(Float32(data=float(distance)))
 						#print(f"Angle: {angle}, Distance: {distance}")  # Debug print
-						self.visualize_distance(angle,distance)
+						if (number < 5):
+							self.visualize_distance(angle,distance)
 			number = number + 1
 
 
