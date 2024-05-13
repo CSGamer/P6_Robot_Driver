@@ -6,6 +6,7 @@ from rclpy.node import Node
 from std_msgs.msg import Float32
 
 class LaserPublisher(Node):
+	number = 0
 	def __init__(self):
 		super().__init__('laser_publisher')
 		self.distance_publisher = self.create_publisher(Float32, 'distance', 10)
@@ -16,15 +17,16 @@ class LaserPublisher(Node):
 		os.system('cls' if os.name == 'nt' else 'clear')
 						
 	def visualize_distance(self, angle, distance):
-		if (329 == angle):
-			print("\n\n\n\n\n")
-		
-		if (0 <= angle < 30) or (329 <= angle < 360):
-			distance_chars = '#' * int(distance / 25)  # Adjust the scale as needed
-			print(f"Angle: {angle} Distance: {distance} {' ' * (30 - len(distance_chars))}[{distance_chars}]")
+		if (number < 5):
+			number = number + 1
+			if (329 == angle):
+				print("\n\n\n\n\n")
+			
+			if (0 <= angle < 30) or (329 <= angle < 360):
+				distance_chars = '#' * int(distance / 25)  # Adjust the scale as needed
+				print(f"Angle: {angle} Distance: {distance} {' ' * (30 - len(distance_chars))}[{distance_chars}]")
 		
 	def publish_distances(self):
-		number = 0
 		while True:
 			result = self.serial_port.read(42)
 			if result[-1] == result[-2]:
@@ -35,9 +37,7 @@ class LaserPublisher(Node):
 						distance = result[(6 * (m + 1)) + 1] * 256 + result[(6 * (m + 1))] - 100
 						self.distance_publisher.publish(Float32(data=float(distance)))
 						#print(f"Angle: {angle}, Distance: {distance}")  # Debug print
-						if (number < 5):
-							self.visualize_distance(angle,distance)
-			number = number + 1
+						self.visualize_distance(angle,distance)
 
 
 	def destroy_node(self):
