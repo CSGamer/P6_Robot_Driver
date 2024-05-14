@@ -32,13 +32,13 @@ class MinimalSubscriber(Node):
 	def __init__(self):
 		super().__init__('minimal_subscriber')
 		self.get_logger().warning('goodmorning')
+		self.init_Controller()
 		self.subscription = self.create_subscription(
 		String,
 			'Cam_Detections',
 			self.ang_sub,
 			10)
 		self.subscription  # prevent unused variable warning
-		self.init_Controller
 		self.get_logger().warning('goodmorning')
 
 	def ang_sub(self, msg):
