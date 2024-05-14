@@ -52,7 +52,7 @@ class MinimalSubscriber(Node):
 		self.subscription  # prevent unused variable warning
 		self.get_logger().warning('goodmorning')
 
-	def drive_test():
+	def drive_test(self):
 		control = make_simple_profile(self.control_linear_velocity, self.target_linear_velocity,(LIN_VEL_STEP_SIZE/2.0))
 		
 
