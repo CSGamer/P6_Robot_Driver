@@ -46,7 +46,12 @@ class MinimalSubscriber(Node):
 		self.ang_reg(msg)
 
 	def ang_reg(self, msg):
-		values = msg[1:-1].split(',')
+		# Extract the string data from the message
+		values_str = msg.data
+		# Remove the square brackets from the string
+		values_str = values_str[1:-1]
+		# Split the string into individual values
+		values = values_str.split(',')
 		# Convert each value to float
 		float_values = [float(value.strip()) for value in values]
 		self.get_logger().warning(float_values)
