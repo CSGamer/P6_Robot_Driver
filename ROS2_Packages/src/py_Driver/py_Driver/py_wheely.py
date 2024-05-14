@@ -77,7 +77,7 @@ class MinimalSubscriber(Node):
 		twist.angular.y = 0.0
 		twist.angular.z = self.control_angular_velocity
 
-		self.publish(twist)
+		self.pub.publish(twist)
 		
 
 	def ang_sub(self, msg):
