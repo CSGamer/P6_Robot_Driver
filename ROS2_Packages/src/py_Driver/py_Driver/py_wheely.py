@@ -69,8 +69,8 @@ class MinimalSubscriber(Node):
 		values = values_str.split(',')
 		values[-1] = values[-1].rstrip(']')
 		# Convert each value to float
-		float_values = [float(value.strip()) for value in values]
-		print(float_values)
+		#float_values = [float(value.strip()) for value in values]
+		#print(float_values)
 		self.drive_test()
 
 	def print_vels(self,target_linear_velocity, target_angular_velocity):
