@@ -38,11 +38,12 @@ class MinimalSubscriber(Node):
 	target_angular_velocity = 0.0
 	control_linear_velocity = 0.0
 	control_angular_velocity = 0.0
-	pub = node.create_publisher(Twist, 'cmd_vel', qos)
+	pub = None
 	
-	def __init__(self):
+	def __init__(self,publisher):
 		super().__init__('minimal_subscriber')
 		self.get_logger().warning('goodmorning')
+		self.pub = publisher
 		self.init_Controller()
 		self.subscription = self.create_subscription(
 		String,
@@ -132,8 +133,11 @@ class MinimalSubscriber(Node):
 
 def main(args=None):
 	rclpy.init(args=args)
+	node = rclpy.create_node('teleop_keyboard')
+	pub = node.create_publisher(Twist, 'cmd_vel', qos)
+
 	#node = rclpy.create_node('teleop_keyboard')
-	minimal_subscriber = MinimalSubscriber(node)
+	minimal_subscriber = MinimalSubscriber(pub)
 	minimal_subscriber.get_logger().info('yellow')
 
 	rclpy.spin(minimal_subscriber)
