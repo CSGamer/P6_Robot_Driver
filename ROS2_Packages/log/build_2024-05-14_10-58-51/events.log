@@ -1,0 +1,105 @@
+[0.000000] (-) TimerEvent: {}
+[0.000684] (-) JobUnselected: {'identifier': 'bones'}
+[0.001413] (-) JobUnselected: {'identifier': 'camera_pack'}
+[0.001627] (-) JobUnselected: {'identifier': 'lidar'}
+[0.001728] (-) JobUnselected: {'identifier': 'pubsub'}
+[0.001831] (py_Driver) JobQueued: {'identifier': 'py_Driver', 'dependencies': OrderedDict()}
+[0.005878] (py_Driver) JobStarted: {'identifier': 'py_Driver'}
+[0.100363] (-) TimerEvent: {}
+[0.201539] (-) TimerEvent: {}
+[0.302967] (-) TimerEvent: {}
+[0.403796] (-) TimerEvent: {}
+[0.504511] (-) TimerEvent: {}
+[0.605225] (-) TimerEvent: {}
+[0.706068] (-) TimerEvent: {}
+[0.809159] (-) TimerEvent: {}
+[0.913693] (-) TimerEvent: {}
+[1.014615] (-) TimerEvent: {}
+[1.115823] (-) TimerEvent: {}
+[1.216669] (-) TimerEvent: {}
+[1.317429] (-) TimerEvent: {}
+[1.418284] (-) TimerEvent: {}
+[1.518981] (-) TimerEvent: {}
+[1.619698] (-) TimerEvent: {}
+[1.720436] (-) TimerEvent: {}
+[1.821114] (-) TimerEvent: {}
+[1.921807] (-) TimerEvent: {}
+[2.022533] (-) TimerEvent: {}
+[2.123339] (-) TimerEvent: {}
+[2.227115] (-) TimerEvent: {}
+[2.328612] (-) TimerEvent: {}
+[2.429412] (-) TimerEvent: {}
+[2.530408] (-) TimerEvent: {}
+[2.631664] (-) TimerEvent: {}
+[2.732940] (-) TimerEvent: {}
+[2.833771] (-) TimerEvent: {}
+[2.940280] (-) TimerEvent: {}
+[3.040945] (-) TimerEvent: {}
+[3.142258] (-) TimerEvent: {}
+[3.242928] (-) TimerEvent: {}
+[3.343570] (-) TimerEvent: {}
+[3.444323] (-) TimerEvent: {}
+[3.545071] (-) TimerEvent: {}
+[3.645920] (-) TimerEvent: {}
+[3.746705] (-) TimerEvent: {}
+[3.847540] (-) TimerEvent: {}
+[3.949337] (-) TimerEvent: {}
+[4.051651] (-) TimerEvent: {}
+[4.153057] (-) TimerEvent: {}
+[4.254769] (-) TimerEvent: {}
+[4.356563] (-) TimerEvent: {}
+[4.457353] (-) TimerEvent: {}
+[4.558374] (-) TimerEvent: {}
+[4.660920] (-) TimerEvent: {}
+[4.762292] (py_Driver) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/py_Driver', 'build', '--build-base', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver/build', 'install', '--record', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/py_Driver', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'hvalborg2', 'SSH_CLIENT': '192.168.137.1 54155 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/hvalborg2', 'OLDPWD': '/home/hvalborg2/Desktop/P6_Robot_Driver', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install:/home/hvalborg2/turtlebot3_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'hvalborg2', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '19', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/hvalborg2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '30', 'AMENT_PREFIX_PATH': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver:/home/hvalborg2/turtlebot3_ws/install/turtlebot3:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_bringup:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_node:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_description:/home/hvalborg2/turtlebot3_ws/install/ld08_driver:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.137.1 54155 192.168.137.14 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'LDS_MODEL': 'LDS-01', 'PYTHONPATH': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver/prefix_override:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages:/home/hvalborg2/turtlebot3_ws/build/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/hvalborg2/turtlebot3_ws/build/turtlebot3_example:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver:/home/hvalborg2/turtlebot3_ws/install/turtlebot3:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_bringup:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_node:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_description:/home/hvalborg2/turtlebot3_ws/install/ld08_driver'}, 'shell': False}
+[4.768795] (-) TimerEvent: {}
+[4.871730] (-) TimerEvent: {}
+[4.972974] (-) TimerEvent: {}
+[5.074366] (-) TimerEvent: {}
+[5.175458] (-) TimerEvent: {}
+[5.276203] (-) TimerEvent: {}
+[5.376930] (-) TimerEvent: {}
+[5.477587] (-) TimerEvent: {}
+[5.578237] (-) TimerEvent: {}
+[5.678947] (-) TimerEvent: {}
+[5.779772] (-) TimerEvent: {}
+[5.880570] (-) TimerEvent: {}
+[5.981252] (-) TimerEvent: {}
+[6.082392] (-) TimerEvent: {}
+[6.184457] (-) TimerEvent: {}
+[6.285277] (-) TimerEvent: {}
+[6.386048] (-) TimerEvent: {}
+[6.499597] (-) TimerEvent: {}
+[6.601588] (-) TimerEvent: {}
+[6.705404] (-) TimerEvent: {}
+[6.807663] (-) TimerEvent: {}
+[6.850688] (py_Driver) StdoutLine: {'line': b'running egg_info\n'}
+[6.856976] (py_Driver) StdoutLine: {'line': b'writing ../../build/py_Driver/py_Driver.egg-info/PKG-INFO\n'}
+[6.861693] (py_Driver) StdoutLine: {'line': b'writing dependency_links to ../../build/py_Driver/py_Driver.egg-info/dependency_links.txt\n'}
+[6.864898] (py_Driver) StdoutLine: {'line': b'writing entry points to ../../build/py_Driver/py_Driver.egg-info/entry_points.txt\n'}
+[6.868324] (py_Driver) StdoutLine: {'line': b'writing requirements to ../../build/py_Driver/py_Driver.egg-info/requires.txt\n'}
+[6.870563] (py_Driver) StdoutLine: {'line': b'writing top-level names to ../../build/py_Driver/py_Driver.egg-info/top_level.txt\n'}
+[6.882637] (py_Driver) StdoutLine: {'line': b"reading manifest file '../../build/py_Driver/py_Driver.egg-info/SOURCES.txt'\n"}
+[6.889403] (py_Driver) StdoutLine: {'line': b"writing manifest file '../../build/py_Driver/py_Driver.egg-info/SOURCES.txt'\n"}
+[6.891660] (py_Driver) StdoutLine: {'line': b'running build\n'}
+[6.893123] (py_Driver) StdoutLine: {'line': b'running build_py\n'}
+[6.895620] (py_Driver) StdoutLine: {'line': b'copying py_Driver/py_wheely.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver/build/lib/py_Driver\n'}
+[6.898776] (py_Driver) StdoutLine: {'line': b'running install\n'}
+[6.901869] (py_Driver) StdoutLine: {'line': b'running install_lib\n'}
+[6.907727] (-) TimerEvent: {}
+[6.909436] (py_Driver) StdoutLine: {'line': b'copying /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver/build/lib/py_Driver/py_wheely.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages/py_Driver\n'}
+[6.917049] (py_Driver) StdoutLine: {'line': b'byte-compiling /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages/py_Driver/py_wheely.py to py_wheely.cpython-310.pyc\n'}
+[6.933739] (py_Driver) StdoutLine: {'line': b'running install_data\n'}
+[6.934716] (py_Driver) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.939017] (py_Driver) StdoutLine: {'line': b"removing '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages/py_Driver-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[6.940911] (py_Driver) StdoutLine: {'line': b'Copying ../../build/py_Driver/py_Driver.egg-info to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages/py_Driver-0.0.0-py3.10.egg-info\n'}
+[6.949324] (py_Driver) StdoutLine: {'line': b'running install_scripts\n'}
+[7.008082] (-) TimerEvent: {}
+[7.093073] (py_Driver) StdoutLine: {'line': b'Installing wheely script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/py_Driver\n'}
+[7.096958] (py_Driver) StdoutLine: {'line': b"writing list of installed files to '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver/install.log'\n"}
+[7.108331] (-) TimerEvent: {}
+[7.209525] (-) TimerEvent: {}
+[7.291912] (py_Driver) CommandEnded: {'returncode': 0}
+[7.309608] (-) TimerEvent: {}
+[7.400636] (py_Driver) JobEnded: {'identifier': 'py_Driver', 'rc': 0}
+[7.409572] (-) EventReactorShutdown: {}

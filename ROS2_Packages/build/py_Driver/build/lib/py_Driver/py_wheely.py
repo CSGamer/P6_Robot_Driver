@@ -16,6 +16,8 @@ else:
 
 TURTLEBOT3_MODEL = os.environ['TURTLEBOT3_MODEL']
 
+LIN_VEL_STEP_SIZE = 0.01
+
 msg = """
 Controller Test TurtleBot
  ---Put some message here
@@ -28,27 +30,55 @@ Communications Failed
 """
 
 class MinimalSubscriber(Node):
+	qos = QoSProfile(depth=10)
+
+	#pub = node.create_publisher(Twist, 'cmd_vel', qos)
+
+	target_linear_velocity = 2.0
+	target_angular_velocity = 0.0
+	control_linear_velocity = 0.0
+	control_angular_velocity = 0.0
+		#while(1):
 
 	def __init__(self):
 		super().__init__('minimal_subscriber')
 		self.get_logger().warning('goodmorning')
+		self.init_Controller()
 		self.subscription = self.create_subscription(
 		String,
 			'Cam_Detections',
-			self.listener_callback,
+			self.ang_sub,
 			10)
 		self.subscription  # prevent unused variable warning
-		self.init_Controller
 		self.get_logger().warning('goodmorning')
 
-	def listener_callback(self, msg):
-		self.get_logger().info('I hea rd: "%s"' % msg.data)
+	def drive_test(self):
+		control = make_simple_profile(self.control_linear_velocity, self.target_linear_velocity,(LIN_VEL_STEP_SIZE/2.0))
+		
 
-	def print_vels(target_linear_velocity, target_angular_velocity):
+	def ang_sub(self, msg):
+		self.get_logger().info('I heard: "%s"' % msg.data)
+		self.ang_reg(msg)
+
+	def ang_reg(self, msg):
+		# Extract the string data from the message
+		values_str = msg.data
+		# Remove the square brackets from the string
+		values_str = values_str[1:-1]
+		# Split the string into individual values
+		values = values_str.split(',')
+		values[-1] = values[-1].rstrip(']')
+		# Convert each value to float
+		#float_values = [float(value.strip()) for value in values]
+		#print(float_values)
+		self.drive_test()
+
+	def print_vels(self,target_linear_velocity, target_angular_velocity):
 		print('currently:\tlinear velocity {0}\t angular velocity {1} '.format(
 			target_linear_velocity,
 			target_angular_velocity))
-	def make_simple_profile(output, input, slop):
+	
+	def make_simple_profile(self, output, input, slop):
 		if input > output:
 			output = min(input, output + slop)
 		elif input < output:
@@ -58,8 +88,7 @@ class MinimalSubscriber(Node):
 		
 		return output
 
-
-	def constrain(input_vel, low_bound, high_bound):
+	def constrain(self, input_vel, low_bound, high_bound):
 		if input_vel < low_bound:
 			input_vel = low_bound
 		elif input_vel > high_bound:
@@ -69,31 +98,18 @@ class MinimalSubscriber(Node):
 
 		return input_vel
 	
-	def init_Controller():
+	def init_Controller(self):
 		settings = None
 		if os.name != 'nt':
 			settings = termios.tcgetattr(sys.stdin)
-
-		rclpy.init()
-
-		qos = QoSProfile(depth=10)
-		node = rclpy.create_node('teleop_keyboard')
-		pub = node.create_publisher(Twist, 'cmd_vel', qos)
-
-		status = 0
-		target_linear_velocity = 0.0
-		target_angular_velocity = 0.0
-		control_linear_velocity = 0.0
-		control_angular_velocity = 0.0
-		while(1):
-			print('im working')
-
+		print('im working')
 
 
 def main(args=None):
 	rclpy.init(args=args)
 	minimal_subscriber = MinimalSubscriber()
 	minimal_subscriber.get_logger().info('yellow')
+
 	rclpy.spin(minimal_subscriber)
 	minimal_subscriber.get_logger().info('yoink')
 	# Destroy the node explicitly
