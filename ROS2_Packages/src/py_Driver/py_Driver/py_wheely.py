@@ -43,12 +43,13 @@ class MinimalSubscriber(Node):
 
 	def ang_sub(self, msg):
 		self.get_logger().info('I heard: "%s"' % msg.data)
+		self.ang_reg(msg)
 
 	def ang_reg(self, msg):
 		values = msg[1:-1].split(',')
 		# Convert each value to float
 		float_values = [float(value.strip()) for value in values]
-		print(float_values)
+		self.get_logger().warning(float_values)
 
 	def print_vels(self,target_linear_velocity, target_angular_velocity):
 		print('currently:\tlinear velocity {0}\t angular velocity {1} '.format(
