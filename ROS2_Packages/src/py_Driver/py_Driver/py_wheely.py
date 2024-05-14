@@ -96,8 +96,8 @@ class MinimalSubscriber(Node):
 		target_angular_velocity = 0.0
 		control_linear_velocity = 0.0
 		control_angular_velocity = 0.0
-		while(1):
-			print('im working')
+		#while(1):
+		print('im working')
 
 
 
