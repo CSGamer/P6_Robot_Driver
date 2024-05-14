@@ -16,6 +16,8 @@ else:
 
 TURTLEBOT3_MODEL = os.environ['TURTLEBOT3_MODEL']
 
+LIN_VEL_STEP_SIZE = 0.01
+
 msg = """
 Controller Test TurtleBot
  ---Put some message here
@@ -28,6 +30,16 @@ Communications Failed
 """
 
 class MinimalSubscriber(Node):
+	qos = QoSProfile(depth=10)
+	node = rclpy.create_node('teleop_keyboard')
+
+	pub = node.create_publisher(Twist, 'cmd_vel', qos)
+
+	target_linear_velocity = 2.0
+	target_angular_velocity = 0.0
+	control_linear_velocity = 0.0
+	control_angular_velocity = 0.0
+		#while(1):
 
 	def __init__(self):
 		super().__init__('minimal_subscriber')
@@ -40,6 +52,10 @@ class MinimalSubscriber(Node):
 			10)
 		self.subscription  # prevent unused variable warning
 		self.get_logger().warning('goodmorning')
+
+	def drive_test():
+		control = make_simple_profile(self.control_linear_velocity, self.target_linear_velocity,(LIN_VEL_STEP_SIZE/2.0))
+		
 
 	def ang_sub(self, msg):
 		self.get_logger().info('I heard: "%s"' % msg.data)
@@ -56,6 +72,7 @@ class MinimalSubscriber(Node):
 		# Convert each value to float
 		float_values = [float(value.strip()) for value in values]
 		print(float_values)
+		self.drive_test()
 
 	def print_vels(self,target_linear_velocity, target_angular_velocity):
 		print('currently:\tlinear velocity {0}\t angular velocity {1} '.format(
@@ -86,25 +103,14 @@ class MinimalSubscriber(Node):
 		settings = None
 		if os.name != 'nt':
 			settings = termios.tcgetattr(sys.stdin)
-
-		qos = QoSProfile(depth=10)
-		node = rclpy.create_node('teleop_keyboard')
-		pub = node.create_publisher(Twist, 'cmd_vel', qos)
-
-		status = 0
-		target_linear_velocity = 0.0
-		target_angular_velocity = 0.0
-		control_linear_velocity = 0.0
-		control_angular_velocity = 0.0
-		#while(1):
 		print('im working')
-
 
 
 def main(args=None):
 	rclpy.init(args=args)
 	minimal_subscriber = MinimalSubscriber()
 	minimal_subscriber.get_logger().info('yellow')
+
 	rclpy.spin(minimal_subscriber)
 	minimal_subscriber.get_logger().info('yoink')
 	# Destroy the node explicitly
