@@ -38,8 +38,8 @@ class MinimalSubscriber(Node):
 	target_angular_velocity = 0.0
 	control_linear_velocity = 0.0
 	control_angular_velocity = 0.0
-		#while(1):
-
+	pub = node.create_publisher(Twist, 'cmd_vel', qos)
+	
 	def __init__(self):
 		super().__init__('minimal_subscriber')
 		self.get_logger().warning('goodmorning')
@@ -63,7 +63,21 @@ class MinimalSubscriber(Node):
 		return output
 
 	def drive_test(self):
-		self.control_linear_velocity = self.make_simple_profile(self.control_linear_velocity, self.target_linear_velocity,(LIN_VEL_STEP_SIZE/2.0))
+		twist = Twist()
+
+		self.control_linear_velocity = self.make_simple_profile(self.control_linear_velocity, self.target_linear_velocity, (LIN_VEL_STEP_SIZE / 2.0))
+        
+		twist.linear.x = self.control_linear_velocity
+		twist.linear.y = 0.0
+		twist.linear.z = 0.0
+
+		self.control_angular_velocity = self.make_simple_profile(self.control_angular_velocity, self.target_angular_velocity, (LIN_VEL_STEP_SIZE / 2.0))
+
+		twist.angular.x = 0.0
+		twist.angular.y = 0.0
+		twist.angular.z = self.control_angular_velocity
+
+		self.publish(twist)
 		
 
 	def ang_sub(self, msg):
@@ -115,9 +129,11 @@ class MinimalSubscriber(Node):
 		print('im working')
 
 
+
 def main(args=None):
 	rclpy.init(args=args)
-	minimal_subscriber = MinimalSubscriber()
+	#node = rclpy.create_node('teleop_keyboard')
+	minimal_subscriber = MinimalSubscriber(node)
 	minimal_subscriber.get_logger().info('yellow')
 
 	rclpy.spin(minimal_subscriber)
