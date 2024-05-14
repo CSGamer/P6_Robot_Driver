@@ -31,9 +31,8 @@ Communications Failed
 
 class MinimalSubscriber(Node):
 	qos = QoSProfile(depth=10)
-	node = rclpy.create_node('teleop_keyboard')
 
-	pub = node.create_publisher(Twist, 'cmd_vel', qos)
+	#pub = node.create_publisher(Twist, 'cmd_vel', qos)
 
 	target_linear_velocity = 2.0
 	target_angular_velocity = 0.0
