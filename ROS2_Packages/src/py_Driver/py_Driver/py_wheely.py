@@ -52,7 +52,7 @@ class MinimalSubscriber(Node):
 		self.subscription  # prevent unused variable warning
 		self.get_logger().warning('goodmorning')
 
-	def make_simple_profile(output, input, slop):
+	def make_simple_profile(self,output, input, slop):
 		if input > output:
 			output = min(input, output + slop)
 		elif input < output:
@@ -63,7 +63,7 @@ class MinimalSubscriber(Node):
 		return output
 
 	def drive_test(self):
-		control = make_simple_profile(self.control_linear_velocity, self.target_linear_velocity,(LIN_VEL_STEP_SIZE/2.0))
+		self.control_linear_velocity = self.make_simple_profile(self.control_linear_velocity, self.target_linear_velocity,(LIN_VEL_STEP_SIZE/2.0))
 		
 
 	def ang_sub(self, msg):
