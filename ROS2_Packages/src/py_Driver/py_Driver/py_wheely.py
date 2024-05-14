@@ -35,20 +35,27 @@ class MinimalSubscriber(Node):
 		self.subscription = self.create_subscription(
 		String,
 			'Cam_Detections',
-			self.listener_callback,
+			self.ang_sub,
 			10)
 		self.subscription  # prevent unused variable warning
 		self.init_Controller
 		self.get_logger().warning('goodmorning')
 
-	def listener_callback(self, msg):
-		self.get_logger().info('I hea rd: "%s"' % msg.data)
+	def ang_sub(self, msg):
+		self.get_logger().info('I heard: "%s"' % msg.data)
 
-	def print_vels(target_linear_velocity, target_angular_velocity):
+	def ang_reg(self, msg):
+		values = msg[1:-1].split(',')
+		# Convert each value to float
+		float_values = [float(value.strip()) for value in values]
+		print(float_values)
+
+	def print_vels(self,target_linear_velocity, target_angular_velocity):
 		print('currently:\tlinear velocity {0}\t angular velocity {1} '.format(
 			target_linear_velocity,
 			target_angular_velocity))
-	def make_simple_profile(output, input, slop):
+	
+	def make_simple_profile(self, output, input, slop):
 		if input > output:
 			output = min(input, output + slop)
 		elif input < output:
@@ -58,8 +65,7 @@ class MinimalSubscriber(Node):
 		
 		return output
 
-
-	def constrain(input_vel, low_bound, high_bound):
+	def constrain(self, input_vel, low_bound, high_bound):
 		if input_vel < low_bound:
 			input_vel = low_bound
 		elif input_vel > high_bound:
@@ -69,7 +75,7 @@ class MinimalSubscriber(Node):
 
 		return input_vel
 	
-	def init_Controller():
+	def init_Controller(self):
 		settings = None
 		if os.name != 'nt':
 			settings = termios.tcgetattr(sys.stdin)
