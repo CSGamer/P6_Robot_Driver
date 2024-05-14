@@ -55,7 +55,7 @@ class MinimalSubscriber(Node):
 		values[-1] = values[-1].rstrip(']')
 		# Convert each value to float
 		float_values = [float(value.strip()) for value in values]
-		self.get_logger().warning(float_values)
+		print(float_values)
 
 	def print_vels(self,target_linear_velocity, target_angular_velocity):
 		print('currently:\tlinear velocity {0}\t angular velocity {1} '.format(
