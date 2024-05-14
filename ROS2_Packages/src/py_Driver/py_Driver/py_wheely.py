@@ -52,6 +52,7 @@ class MinimalSubscriber(Node):
 		values_str = values_str[1:-1]
 		# Split the string into individual values
 		values = values_str.split(',')
+		values[-1] = values[-1].rstrip(']')
 		# Convert each value to float
 		float_values = [float(value.strip()) for value in values]
 		self.get_logger().warning(float_values)
