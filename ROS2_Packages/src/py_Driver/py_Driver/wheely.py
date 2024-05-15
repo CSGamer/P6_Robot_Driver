@@ -19,15 +19,15 @@ class Controller(Node):
     def __init__(self,publisher):
         nano = 2
         self.pub = publisher
-        self.get_logger().warning('controller started')
+        self.get_logger().info('controller started')
 
 
 class Program(Node):
 
     def __init__(self,publisher):
-        self.get_logger().warning('starting controller ')    
+        self.get_logger().info('starting controller ')    
         contr = Controller(publisher)
-        self.get_logger().warning('starting main')
+        self.get_logger().info('starting main')
         self.subscription = self.create_subscription(
 		String,
 			'Cam_Detections',
@@ -40,7 +40,7 @@ class Program(Node):
 			self.dist_sub,
 			10)
         self.subscription  # prevent unused variable warning
-        self.get_logger().warning('main started')
+        self.get_logger().info('main started')
 
 
     def ang_sub(self, msg):
