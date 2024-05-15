@@ -21,7 +21,7 @@ class Controller(Node):
         self.pub = publisher
         self.get_logger().info('controller started')
 
-    def drive_test():
+    def drive_test(self):
         self.get_logger().warning("Im Working")
 
 
