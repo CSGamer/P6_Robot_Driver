@@ -13,7 +13,7 @@ LIN_VEL_STEP_SIZE = 0.01
 
 class Controller(Node):
     target_linear_velocity = 0.0
-    target_angular_velocity = 0.2
+    target_angular_velocity = 2.0
     control_linear_velocity = 0.0
     control_angular_velocity = 0.0
     pub = None
