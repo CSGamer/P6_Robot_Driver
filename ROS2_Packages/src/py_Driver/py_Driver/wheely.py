@@ -21,13 +21,16 @@ class Controller(Node):
         self.pub = publisher
         self.get_logger().info('controller started')
 
+    def drive_test():
+        self.get_logger().warning("Im Working")
+
 
 class Program(Node):
-
+    contr = None
     def __init__(self,publisher):
         super().__init__('program')
         self.get_logger().info('starting controller ')    
-        contr = Controller(publisher)
+        self.contr = Controller(publisher)
         self.get_logger().info('starting main')
         self.subscription = self.create_subscription(
 		String,
@@ -49,7 +52,7 @@ class Program(Node):
         self.ang_reg(msg)
 
     def ang_reg(self, msg):
-        self.drive_test()
+        self.contr.drive_test()
 
     def dist_sub(self, msg):
         self.get_logger().info('I heard: "%s"' % msg.data)
