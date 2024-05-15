@@ -17,7 +17,7 @@ class Controller(Node):
     pub = None
 	
     def __init__(self,publisher):
-        super.__init__('controller')
+        super().__init__('controller')
         self.pub = publisher
         self.get_logger().info('controller started')
 
@@ -25,7 +25,7 @@ class Controller(Node):
 class Program(Node):
 
     def __init__(self,publisher):
-        super.__init__('program')
+        super().__init__('program')
         self.get_logger().info('starting controller ')    
         contr = Controller(publisher)
         self.get_logger().info('starting main')
