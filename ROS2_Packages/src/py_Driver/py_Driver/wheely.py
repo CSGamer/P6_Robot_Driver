@@ -9,6 +9,8 @@ from geometry_msgs.msg import Twist
 from rclpy.qos import QoSProfile
 
 
+LIN_VEL_STEP_SIZE = 0.01
+
 class Controller(Node):
     target_linear_velocity = 0.0
     target_angular_velocity = 0.2
@@ -21,9 +23,26 @@ class Controller(Node):
         self.pub = publisher
         self.get_logger().info('controller started')
 
-    def drive_test(self):
-        self.get_logger().warning("Im Working")
+    def make_simple_profile(self,output, input, slop):
+        if input > output:
+            output = min(input, output + slop)
+        elif input < output:
+            output = max(input, output - slop)
+        else:
+            output = input
+        return output
 
+    def drive_test(self):
+        twist = Twist()
+        self.control_linear_velocity = self.make_simple_profile(self.control_linear_velocity, self.target_linear_velocity, (LIN_VEL_STEP_SIZE / 2.0))
+        twist.linear.x = self.control_linear_velocity
+        twist.linear.y = 0.0
+        twist.linear.z = 0.0
+        self.control_angular_velocity = self.make_simple_profile(self.control_angular_velocity, self.target_angular_velocity, (LIN_VEL_STEP_SIZE / 2.0))
+        twist.angular.x = 0.0
+        twist.angular.y = 0.0
+        twist.angular.z = self.control_angular_velocity
+        self.pub.publish(twist)
 
 class Program(Node):
     contr = None
