@@ -103,7 +103,7 @@ class Program(Node):
         
         # Convert elements to floats
         float_array = [float(element) for element in elements]
-        print(float_array)
+        print([flo for flo in float_array])
         
         self.ang_reg(msg)
 
