@@ -164,6 +164,7 @@ class Program(Node):
         p = 10
         out = error* p
         self.contr.set_velocity(out)
+        self.contr.drive()
 
     
 		
