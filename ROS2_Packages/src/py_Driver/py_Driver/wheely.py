@@ -9,8 +9,15 @@ from std_msgs.msg import Float32
 from geometry_msgs.msg import Twist
 from rclpy.qos import QoSProfile
 
+TURTLEBOT3_MODEL = os.environ['TURTLEBOT3_MODEL']
 
 LIN_VEL_STEP_SIZE = 0.01
+
+BURGER_MAX_LIN_VEL = 0.22
+BURGER_MAX_ANG_VEL = 2.84
+
+WAFFLE_MAX_LIN_VEL = 0.26
+WAFFLE_MAX_ANG_VEL = 1.82
 
 ANGLE_SET_POINT = 0 #img x-coordinate
 DIST_SET_POINT = 1500 #mm
@@ -46,23 +53,38 @@ class Controller(Node):
             input_vel = input_vel
 
         return input_vel
+        
+    def check_linear_limit_velocity(self, velocity):
+        if TURTLEBOT3_MODEL == 'burger':
+            return self.constrain(velocity, -BURGER_MAX_LIN_VEL, BURGER_MAX_LIN_VEL)
+        else:
+            return self.constrain(velocity, -WAFFLE_MAX_LIN_VEL, WAFFLE_MAX_LIN_VEL)
+
+
+    def check_angular_limit_velocity(self, velocity):
+        if TURTLEBOT3_MODEL == 'burger':
+            return self.constrain(velocity, -BURGER_MAX_ANG_VEL, BURGER_MAX_ANG_VEL)
+        else:
+            return self.constrain(velocity, -WAFFLE_MAX_ANG_VEL, WAFFLE_MAX_ANG_VEL)
 
     def set_angle_vel(self, val):
-        self.target_angular_velocity = val
+        self.target_angular_velocity = self.check_angular_limit_velocity(val)
 
     def set_velocity(self, val):
-        self.target_linear_velocity = val
+        self.get_logger().warning('speed_val' + val)
+        val = val/1204
+        self.target_linear_velocity = self.check_linear_limit_velocity(val)
 
     def drive(self):
         twist = Twist()
-        self.control_linear_velocity = self.make_simple_profile(self.control_linear_velocity, self.target_linear_velocity, (LIN_VEL_STEP_SIZE / 2.0))
-        twist.linear.x = self.control_linear_velocity
+        #self.control_linear_velocity = self.make_simple_profile(self.control_linear_velocity, self.target_linear_velocity, (LIN_VEL_STEP_SIZE / 2.0))
+        twist.linear.x = self.target_linear_velocity
         twist.linear.y = 0.0
         twist.linear.z = 0.0
-        self.control_angular_velocity = self.make_simple_profile(self.control_angular_velocity, self.target_angular_velocity, (LIN_VEL_STEP_SIZE / 2.0))
+        #self.control_angular_velocity = self.make_simple_profile(self.control_angular_velocity, self.target_angular_velocity, (LIN_VEL_STEP_SIZE / 2.0))
         twist.angular.x = 0.0
         twist.angular.y = 0.0
-        twist.angular.z = self.control_angular_velocity
+        twist.angular.z = self.target_angular_velocity
         self.pub.publish(twist)        
 
     def drive_test(self):
@@ -129,14 +151,21 @@ class Program(Node):
         self.ang_reg(error)
 
     def ang_reg(self, error):
-        self.contr.drive_test()
+        self.contr.set_angle(error)
+
 
     def dist_sub(self, msg):
         self.get_logger().info('I heard: "%s"' % msg.data)
-        self.dist_reg(msg)
+        error = DIST_SET_POINT - float(msg.data)
+        self.dist_reg(error)
 
-    def dist_reg(self, msg):
-        self.contr.drive_test()
+    def dist_reg(self, error):
+        error = error / 1000 * 86.67
+        p = 10
+        out = error* p
+        self.contr.set_velocity(out)
+
+    
 		
 
 
