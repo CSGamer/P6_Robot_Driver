@@ -99,7 +99,7 @@ class Program(Node):
 
         #string = "[ID, x, y, width, height, FPS]"
         # Remove brackets and split by comma
-        elements = msg.data.strip("[]").split(", ")
+        elements = msg.data.strip("[]\n").split(", ")
         
         # Convert elements to floats
         float_array = [float(element) for element in elements]
