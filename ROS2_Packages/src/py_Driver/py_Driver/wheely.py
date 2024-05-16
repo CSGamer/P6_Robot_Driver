@@ -156,7 +156,7 @@ class Program(Node):
 
     def dist_sub(self, msg):
         self.get_logger().info('I heard: "%s"' % msg.data)
-        error = DIST_SET_POINT - float(msg.data)
+        error =float(msg.data) -  DIST_SET_POINT
         self.dist_reg(error)
 
     def dist_reg(self, error):
