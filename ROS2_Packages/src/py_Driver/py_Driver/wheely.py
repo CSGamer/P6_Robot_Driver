@@ -13,7 +13,7 @@ LIN_VEL_STEP_SIZE = 0.01
 
 class Controller(Node):
     target_linear_velocity = 0.0
-    target_angular_velocity = 2.0
+    target_angular_velocity = 0.0
     control_linear_velocity = 0.0
     control_angular_velocity = 0.0
     pub = None
@@ -32,7 +32,36 @@ class Controller(Node):
             output = input
         return output
 
+    def constrain(self, input_vel, low_bound, high_bound):
+        if input_vel < low_bound:
+            input_vel = low_bound
+        elif input_vel > high_bound:
+            input_vel = high_bound
+        else:
+            input_vel = input_vel
+
+        return input_vel
+
+    def set_angle_vel(self, val):
+        self.target_angular_velocity = val
+
+    def set_velocity(self, val):
+        self.target_linear_velocity = val
+
+    def drive(self):
+        twist = Twist()
+        self.control_linear_velocity = self.make_simple_profile(self.control_linear_velocity, self.target_linear_velocity, (LIN_VEL_STEP_SIZE / 2.0))
+        twist.linear.x = self.control_linear_velocity
+        twist.linear.y = 0.0
+        twist.linear.z = 0.0
+        self.control_angular_velocity = self.make_simple_profile(self.control_angular_velocity, self.target_angular_velocity, (LIN_VEL_STEP_SIZE / 2.0))
+        twist.angular.x = 0.0
+        twist.angular.y = 0.0
+        twist.angular.z = self.control_angular_velocity
+        self.pub.publish(twist)        
+
     def drive_test(self):
+        self.target_angular_velocity = 20
         twist = Twist()
         self.control_linear_velocity = self.make_simple_profile(self.control_linear_velocity, self.target_linear_velocity, (LIN_VEL_STEP_SIZE / 2.0))
         twist.linear.x = self.control_linear_velocity
@@ -65,8 +94,15 @@ class Program(Node):
         self.subscription  # prevent unused variable warning
         self.get_logger().info('main started')
 
-
     def ang_sub(self, msg):
+        string = "[ID, x, y, width, height, FPS]"
+        # Remove brackets and split by comma
+        elements = string.strip("[]").split(", ")
+        
+        # Convert elements to floats
+        float_array = [float(element) for element in elements]
+        print(float_array)
+        
         self.get_logger().info('I heard: "%s"' % msg.data)
         self.ang_reg(msg)
 
