@@ -136,7 +136,7 @@ class Program(Node):
         self.dist_reg(msg)
 
     def dist_reg(self, msg):
-        self.drive_test()
+        self.contr.drive_test()
 		
 
 
