@@ -73,6 +73,7 @@ class Controller(Node):
     def set_velocity(self, val):
         self.get_logger().warning('speed_val "%s"' % val)
         val = val/1204
+        self.get_logger().error('motort_val "%s"' % val)
         self.target_linear_velocity = self.check_linear_limit_velocity(val)
 
     def drive(self):
@@ -162,7 +163,7 @@ class Program(Node):
     def dist_reg(self, error):
         error = error / 1000 * 86.67
         p = 10
-        out = error* p
+        out = error * p
         self.contr.set_velocity(out)
         self.contr.drive()
 
