@@ -109,7 +109,7 @@ class Program(Node):
         self.get_logger().info('starting main')
         self.subscription = self.create_subscription(
 		Float32,
-			'distance',
+			'scan',
 			self.dist_sub,
 			10)
         self.subscription  # prevent unused variable warning
@@ -156,8 +156,8 @@ class Program(Node):
 
     def dist_sub(self, msg):
         self.get_logger().info('I heard: "%s"' % msg.data)
-        error =float(msg.data) -  DIST_SET_POINT
-        self.dist_reg(error)
+        #error =float(msg.data) -  DIST_SET_POINT
+        #self.dist_reg(error)
 
     def dist_reg(self, error):
         error = error / 1000 * 86.67
