@@ -5,6 +5,7 @@ import rclpy
 from rclpy.node import Node
 
 from std_msgs.msg import String
+from std_msgs.msg import Float32
 from geometry_msgs.msg import Twist
 from rclpy.qos import QoSProfile
 
@@ -85,7 +86,7 @@ class Program(Node):
         self.contr = Controller(publisher)
         self.get_logger().info('starting main')
         self.subscription = self.create_subscription(
-		String,
+		Float32,
 			'distance',
 			self.dist_sub,
 			10)
@@ -117,6 +118,8 @@ class Program(Node):
         # Convert elements to floats
         float_array = [float(element) for element in elements]
 
+        error = None
+
         if (float_array[0] == 1): 
             error = float_array[1] + (float_array[3]/2)
             print(error)
@@ -125,7 +128,7 @@ class Program(Node):
         
         self.ang_reg(error)
 
-    def ang_reg(self, err):
+    def ang_reg(self, error):
         self.contr.drive_test()
 
     def dist_sub(self, msg):
