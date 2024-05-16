@@ -11,6 +11,10 @@ from rclpy.qos import QoSProfile
 
 LIN_VEL_STEP_SIZE = 0.01
 
+ANGLE_SET_POINT = 0 #img x-coordinate
+DIST_SET_POINT = 1500 #mm
+
+
 class Controller(Node):
     target_linear_velocity = 0.0
     target_angular_velocity = 0.0
@@ -92,22 +96,36 @@ class Program(Node):
 			self.dist_sub,
 			10)
         self.subscription  # prevent unused variable warning
+        self.subscription = self.create_subscription(
+		String,
+			'looper',
+			self.looper,
+			10)
+        self.subscription  # prevent unused variable warning
         self.get_logger().info('main started')
+
+    def looper(self):
+        self.contr.drive()
 
     def ang_sub(self, msg):
         self.get_logger().info('I heard: "%s"' % msg.data)
 
-        #string = "[ID, x, y, width, height, FPS]"
+        #Structure [ID, x, y, width, height, FPS] 
         # Remove brackets and split by comma
         elements = msg.data.strip("[]\n").split(", ")
         
         # Convert elements to floats
         float_array = [float(element) for element in elements]
-        print([flo for flo in float_array])
-        
-        self.ang_reg(msg)
 
-    def ang_reg(self, msg):
+        if (float_array[0] == 1): 
+            error = float_array[1] + (float_array[3]/2)
+            print(error)
+
+        #print([flo for flo in float_array])
+        
+        self.ang_reg(error)
+
+    def ang_reg(self, err):
         self.contr.drive_test()
 
     def dist_sub(self, msg):
