@@ -75,11 +75,9 @@ class Controller(Node):
         val = val/1204
         self.get_logger().error('motort_val "%s"' % val)
         self.target_linear_velocity = self.check_linear_limit_velocity(val)
-        self.drive()
 
     def drive(self):
-        self.get_logger().info('i should be driving')
-        twist = Twist()
+        twist = Twist()  
         #self.control_linear_velocity = self.make_simple_profile(self.control_linear_velocity, self.target_linear_velocity, (LIN_VEL_STEP_SIZE / 2.0))
         twist.linear.x = self.target_linear_velocity
         twist.linear.y = 0.0
@@ -88,6 +86,7 @@ class Controller(Node):
         twist.angular.x = 0.0
         twist.angular.y = 0.0
         twist.angular.z = self.target_angular_velocity
+        self.get_logger().info('i should be driving at speed: "%s"' %twist.linear.x)
         self.pub.publish(twist)        
 
     def drive_test(self):
@@ -167,7 +166,7 @@ class Program(Node):
         p = 10
         out = error * p
         self.contr.set_velocity(out)
-        #self.contr.drive()
+        self.contr.drive()
 
     
 		
