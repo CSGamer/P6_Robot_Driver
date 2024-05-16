@@ -21,7 +21,9 @@ setup(
     entry_points={
         'console_scripts': [
          	'talker = lidar.publisher3:main',
-                'listener = lidar.subscriber:main',
+            'test_sens = lidar.publisher4:main',
+            'center_pub = lidar.lidar_center_pub:main',
+            'listener = lidar.subscriber:main',
         ],
     },
 )
