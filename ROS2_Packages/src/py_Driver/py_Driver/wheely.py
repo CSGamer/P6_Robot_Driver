@@ -71,7 +71,7 @@ class Controller(Node):
         self.target_angular_velocity = self.check_angular_limit_velocity(val)
 
     def set_velocity(self, val):
-        self.get_logger().warning('speed_val' + val)
+        self.get_logger().warning('speed_val "%s"' % val)
         val = val/1204
         self.target_linear_velocity = self.check_linear_limit_velocity(val)
 
