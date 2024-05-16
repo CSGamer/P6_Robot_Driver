@@ -68,6 +68,9 @@ class Controller(Node):
             return self.constrain(velocity, -WAFFLE_MAX_ANG_VEL, WAFFLE_MAX_ANG_VEL)
 
     def set_angle_vel(self, val):
+        self.get_logger().warning('angle_val "%s"' % val)
+        val = val/54
+        self.get_logger().error('motor_val "%s"' % val)
         self.target_angular_velocity = self.check_angular_limit_velocity(val)
 
     def set_velocity(self, val):
@@ -145,7 +148,8 @@ class Program(Node):
         error = None
 
         if (float_array[0] == 1): 
-            error = float_array[1] + (float_array[3]/2)
+            error = (float_array[1] + (float_array[3]/2)) - 160
+
             print(error)
 
         #print([flo for flo in float_array])
@@ -154,6 +158,7 @@ class Program(Node):
 
     def ang_reg(self, error):
         self.contr.set_angle(error)
+        self.contr.drive()
 
 
     def dist_sub(self, msg):
