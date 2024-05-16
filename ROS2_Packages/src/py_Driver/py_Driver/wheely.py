@@ -95,15 +95,16 @@ class Program(Node):
         self.get_logger().info('main started')
 
     def ang_sub(self, msg):
-        string = "[ID, x, y, width, height, FPS]"
+        self.get_logger().info('I heard: "%s"' % msg.data)
+
+        #string = "[ID, x, y, width, height, FPS]"
         # Remove brackets and split by comma
-        elements = string.strip("[]").split(", ")
+        elements = msg.data.strip("[]").split(", ")
         
         # Convert elements to floats
         float_array = [float(element) for element in elements]
         print(float_array)
         
-        self.get_logger().info('I heard: "%s"' % msg.data)
         self.ang_reg(msg)
 
     def ang_reg(self, msg):
