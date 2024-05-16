@@ -109,7 +109,7 @@ class Program(Node):
         self.get_logger().info('starting main')
         self.subscription = self.create_subscription(
 		Float32,
-			'scan',
+			'distance',
 			self.dist_sub,
 			10)
         self.subscription  # prevent unused variable warning
