@@ -86,14 +86,14 @@ class Program(Node):
         self.get_logger().info('starting main')
         self.subscription = self.create_subscription(
 		String,
-			'Cam_Detections',
-			self.ang_sub,
+			'distance',
+			self.dist_sub,
 			10)
         self.subscription  # prevent unused variable warning
         self.subscription = self.create_subscription(
 		String,
-			'distance',
-			self.dist_sub,
+			'Cam_Detections',
+			self.ang_sub,
 			10)
         self.subscription  # prevent unused variable warning
         self.subscription = self.create_subscription(
