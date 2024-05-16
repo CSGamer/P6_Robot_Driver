@@ -30,7 +30,7 @@ class LaserPublisher(Node):
 				base_angle = (result[1] - 160) * 6
 				for m in range(6):
 					angle = base_angle + m
-					if (0 <= angle < 30) or (329 <= angle < 360):
+					if (0 == angle):
 						distance = result[(6 * (m + 1)) + 1] * 256 + result[(6 * (m + 1))] - 100
 						self.distance_publisher.publish(Float32(data=float(distance)))
 						#print(f"Angle: {angle}, Distance: {distance}")  # Debug print
