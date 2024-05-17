@@ -40,6 +40,9 @@ install(TARGETS cam_sub
 install(TARGETS cam_Nano
   DESTINATION lib/${PROJECT_NAME})
 
+install(TARGETS cam_img
+  DESTINATION lib/${PROJECT_NAME})
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
