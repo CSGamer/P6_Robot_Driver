@@ -148,7 +148,7 @@ class Program(Node):
         error = None
 
         if (float_array[0] == 1): 
-            error = (float_array[1] + (float_array[3]/2)) - 160
+            error = ((float_array[1] + (float_array[3]/2)) - 160)/5.3
 
             print(error)
             self.ang_reg(error)
