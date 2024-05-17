@@ -70,7 +70,7 @@ class Controller(Node):
 
     def set_angle(self, val):
         self.get_logger().warning('angle_val "%s"' % val)
-        val = val/54 * 0.75
+        val = val/54
         self.get_logger().error('motor_val "%s"' % val)
         self.target_angular_velocity = self.check_angular_limit_velocity(val)
 
@@ -157,8 +157,10 @@ class Program(Node):
         
 
     def ang_reg(self, error):
+        p = 0.75
+        error = error * p
         self.contr.set_angle(error)
-        self.contr.drive()
+        #self.contr.drive()
 
 
     def dist_sub(self, msg):
@@ -171,7 +173,7 @@ class Program(Node):
         p = 10
         out = error * p
         self.contr.set_velocity(out)
-        self.contr.drive()
+        #self.contr.drive()
 
     
 		

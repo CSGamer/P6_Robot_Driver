@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'wheely = py_Driver.py_wheely:main',
             'wheely2 = py_Driver.wheely:main',
+            'routine = py_Driver.routine:main',
         ],
     },
 )
