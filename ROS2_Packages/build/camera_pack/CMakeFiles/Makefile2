@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/c
 
 # The main recursive "all" target.
 all: CMakeFiles/cam_Nano.dir/all
+all: CMakeFiles/cam_img.dir/all
 all: CMakeFiles/cam_sub.dir/all
 .PHONY : all
 
@@ -75,6 +76,7 @@ preinstall:
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/camera_pack_uninstall.dir/clean
 clean: CMakeFiles/cam_Nano.dir/clean
+clean: CMakeFiles/cam_img.dir/clean
 clean: CMakeFiles/cam_sub.dir/clean
 .PHONY : clean
 
@@ -157,13 +159,39 @@ CMakeFiles/cam_Nano.dir/clean:
 .PHONY : CMakeFiles/cam_Nano.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/cam_img.dir
+
+# All Build rule for target.
+CMakeFiles/cam_img.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cam_img.dir/build.make CMakeFiles/cam_img.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cam_img.dir/build.make CMakeFiles/cam_img.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack/CMakeFiles --progress-num=3,4 "Built target cam_img"
+.PHONY : CMakeFiles/cam_img.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/cam_img.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cam_img.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack/CMakeFiles 0
+.PHONY : CMakeFiles/cam_img.dir/rule
+
+# Convenience name for target.
+cam_img: CMakeFiles/cam_img.dir/rule
+.PHONY : cam_img
+
+# clean rule for target.
+CMakeFiles/cam_img.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cam_img.dir/build.make CMakeFiles/cam_img.dir/clean
+.PHONY : CMakeFiles/cam_img.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/cam_sub.dir
 
 # All Build rule for target.
 CMakeFiles/cam_sub.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cam_sub.dir/build.make CMakeFiles/cam_sub.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cam_sub.dir/build.make CMakeFiles/cam_sub.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack/CMakeFiles --progress-num=3,4 "Built target cam_sub"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack/CMakeFiles --progress-num=5,6 "Built target cam_sub"
 .PHONY : CMakeFiles/cam_sub.dir/all
 
 # Build rule for subdir invocation for target.

@@ -10,4 +10,7 @@ setup.py
 ../../build/py_Driver/py_Driver.egg-info/zip-safe
 py_Driver/__init__.py
 py_Driver/py_wheely.py
+py_Driver/routine.py
+py_Driver/single_control.py
+py_Driver/wheely.py
 resource/py_Driver

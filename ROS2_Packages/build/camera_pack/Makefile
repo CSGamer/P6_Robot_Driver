@@ -211,6 +211,19 @@ cam_Nano/fast:
 .PHONY : cam_Nano/fast
 
 #=============================================================================
+# Target rules for targets named cam_img
+
+# Build rule for target.
+cam_img: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cam_img
+.PHONY : cam_img
+
+# fast build rule for target.
+cam_img/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cam_img.dir/build.make CMakeFiles/cam_img.dir/build
+.PHONY : cam_img/fast
+
+#=============================================================================
 # Target rules for targets named cam_sub
 
 # Build rule for target.
@@ -271,6 +284,30 @@ src/rd_Nano_Ros.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cam_Nano.dir/build.make CMakeFiles/cam_Nano.dir/src/rd_Nano_Ros.cpp.s
 .PHONY : src/rd_Nano_Ros.cpp.s
 
+src/rd_img_gen.o: src/rd_img_gen.cpp.o
+.PHONY : src/rd_img_gen.o
+
+# target to build an object file
+src/rd_img_gen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cam_img.dir/build.make CMakeFiles/cam_img.dir/src/rd_img_gen.cpp.o
+.PHONY : src/rd_img_gen.cpp.o
+
+src/rd_img_gen.i: src/rd_img_gen.cpp.i
+.PHONY : src/rd_img_gen.i
+
+# target to preprocess a source file
+src/rd_img_gen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cam_img.dir/build.make CMakeFiles/cam_img.dir/src/rd_img_gen.cpp.i
+.PHONY : src/rd_img_gen.cpp.i
+
+src/rd_img_gen.s: src/rd_img_gen.cpp.s
+.PHONY : src/rd_img_gen.s
+
+# target to generate assembly for a file
+src/rd_img_gen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cam_img.dir/build.make CMakeFiles/cam_img.dir/src/rd_img_gen.cpp.s
+.PHONY : src/rd_img_gen.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -287,6 +324,7 @@ help:
 	@echo "... camera_pack_uninstall"
 	@echo "... uninstall"
 	@echo "... cam_Nano"
+	@echo "... cam_img"
 	@echo "... cam_sub"
 	@echo "... src/cam_sub.o"
 	@echo "... src/cam_sub.i"
@@ -294,6 +332,9 @@ help:
 	@echo "... src/rd_Nano_Ros.o"
 	@echo "... src/rd_Nano_Ros.i"
 	@echo "... src/rd_Nano_Ros.s"
+	@echo "... src/rd_img_gen.o"
+	@echo "... src/rd_img_gen.i"
+	@echo "... src/rd_img_gen.s"
 .PHONY : help
 
 

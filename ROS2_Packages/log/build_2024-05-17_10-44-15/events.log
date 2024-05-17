@@ -1,0 +1,41 @@
+[0.000000] (-) TimerEvent: {}
+[0.001752] (-) JobUnselected: {'identifier': 'bones'}
+[0.002116] (-) JobUnselected: {'identifier': 'camera_pack'}
+[0.002563] (-) JobUnselected: {'identifier': 'lidar'}
+[0.002802] (-) JobUnselected: {'identifier': 'pubsub'}
+[0.002956] (py_Driver) JobQueued: {'identifier': 'py_Driver', 'dependencies': OrderedDict()}
+[0.003108] (py_Driver) JobStarted: {'identifier': 'py_Driver'}
+[0.097204] (-) TimerEvent: {}
+[0.197934] (-) TimerEvent: {}
+[0.298578] (-) TimerEvent: {}
+[0.399247] (-) TimerEvent: {}
+[0.499940] (-) TimerEvent: {}
+[0.600607] (-) TimerEvent: {}
+[0.701266] (-) TimerEvent: {}
+[0.801951] (-) TimerEvent: {}
+[0.902564] (-) TimerEvent: {}
+[1.003179] (-) TimerEvent: {}
+[1.103821] (-) TimerEvent: {}
+[1.204548] (-) TimerEvent: {}
+[1.305159] (-) TimerEvent: {}
+[1.405907] (-) TimerEvent: {}
+[1.506796] (-) TimerEvent: {}
+[1.607460] (-) TimerEvent: {}
+[1.708099] (-) TimerEvent: {}
+[1.808768] (-) TimerEvent: {}
+[1.909447] (-) TimerEvent: {}
+[2.010125] (-) TimerEvent: {}
+[2.110772] (-) TimerEvent: {}
+[2.211416] (-) TimerEvent: {}
+[2.312048] (-) TimerEvent: {}
+[2.412661] (-) TimerEvent: {}
+[2.513269] (-) TimerEvent: {}
+[2.613971] (-) TimerEvent: {}
+[2.714599] (-) TimerEvent: {}
+[2.815343] (-) TimerEvent: {}
+[2.916314] (-) TimerEvent: {}
+[3.016972] (-) TimerEvent: {}
+[3.117831] (-) TimerEvent: {}
+[3.173971] (py_Driver) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_parallel_executor/executor/parallel.py", line 75, in execute\n    loop.run_until_complete(future)\n  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete\n    self.run_forever()\n  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever\n    self._run_once()\n  File "/usr/lib/python3.10/asyncio/base_events.py", line 1871, in _run_once\n    event_list = self._selector.select(timeout)\n  File "/usr/lib/python3.10/selectors.py", line 469, in select\n    fd_event_list = self._selector.poll(timeout, max_ev)\nKeyboardInterrupt\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 102, in build\n    return await extension.build(additional_hooks=additional_hooks)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/build.py", line 90, in build\n    available_commands = await self._get_available_commands(\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/build.py", line 188, in _get_available_commands\n    output = await check_output(\n  File "/usr/lib/python3/dist-packages/colcon_core/subprocess.py", line 129, in check_output\n    assert not rc, f\'Expected {args} to pass: {stderr_data}\'\nAssertionError: Expected [\'/usr/bin/python3\', \'-W\', \'ignore:setup.py install is deprecated\', \'setup.py\', \'--help-commands\'] to pass: \n'}
+[3.176603] (py_Driver) JobEnded: {'identifier': 'py_Driver', 'rc': 'SIGINT'}
+[3.185615] (-) EventReactorShutdown: {}
