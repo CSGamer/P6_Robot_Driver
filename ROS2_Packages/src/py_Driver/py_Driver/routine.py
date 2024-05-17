@@ -15,7 +15,7 @@ class NumberPublisher(Node):
         msg = String()
         msg.data = '1'
         self.publisher_.publish(msg)
-        self.get_logger().info('Publishing: "%d"' % msg.data)
+        self.get_logger().info('Publishing ')
 
 def main(args=None):
     rclpy.init(args=args)
