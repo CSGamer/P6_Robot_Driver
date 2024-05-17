@@ -2,18 +2,18 @@
 
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int32
+from std_msgs.msg import String
 
 class NumberPublisher(Node):
     def __init__(self):
-        super().__init__('number_publisher')
-        self.publisher_ = self.create_publisher(Int32, 'number', 10)
+        super().__init__('looper')
+        self.publisher_ = self.create_publisher(Int32, 'looper', 10)
         timer_period = 0.1  # seconds (10 times a second)
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
     def timer_callback(self):
-        msg = Int32()
-        msg.data = 1
+        msg = String()
+        msg.data = '1'
         self.publisher_.publish(msg)
         self.get_logger().info('Publishing: "%d"' % msg.data)
 
