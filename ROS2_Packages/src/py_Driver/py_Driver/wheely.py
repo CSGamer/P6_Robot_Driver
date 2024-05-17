@@ -151,10 +151,9 @@ class Program(Node):
             error = (float_array[1] + (float_array[3]/2)) - 160
 
             print(error)
-
+            self.ang_reg(error)
         #print([flo for flo in float_array])
         
-        self.ang_reg(error)
 
     def ang_reg(self, error):
         self.contr.set_angle(error)
