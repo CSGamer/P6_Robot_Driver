@@ -70,7 +70,7 @@ class Controller(Node):
 
     def set_angle(self, val):
         self.get_logger().warning('angle_val "%s"' % val)
-        val = val/54
+        val = val/54 * 0.75
         self.get_logger().error('motor_val "%s"' % val)
         self.target_angular_velocity = self.check_angular_limit_velocity(val)
 
