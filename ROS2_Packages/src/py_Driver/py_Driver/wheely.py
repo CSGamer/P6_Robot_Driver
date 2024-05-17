@@ -133,7 +133,7 @@ class Program(Node):
         self.subscription  # prevent unused variable warning
         self.get_logger().info('main started')
 
-    def looper(self):
+    def looper(self,msg):
         self.contr.drive()
 
     def ang_sub(self, msg):
