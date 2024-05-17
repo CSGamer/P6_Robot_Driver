@@ -154,9 +154,8 @@ class Program(Node):
         if (float_array[0] == 1): 
             error = ((float_array[1] + (float_array[3]/2)) - ANGLE_SET_POINT)/5.3
             error = math.floor(error)
-            print(error)
             self.ang_reg(-error)
-        #print([flo for flo in float_array])
+            #print([flo for flo in float_array])
         
 
     def ang_reg(self, error):
