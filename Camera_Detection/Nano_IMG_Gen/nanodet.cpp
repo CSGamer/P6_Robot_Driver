@@ -402,7 +402,11 @@ int main(int argc, char** argv){
         if (frame_counter % 10 == 0) {
             std::stringstream ss;
             ss << "frame_" << frame_counter << ".jpg";
-            cv::imwrite(ss.str(), frame);
+            if (!cv::imwrite(ss.str(), frame)) {
+                std::cerr << "ERROR: Unable to save the frame to " << ss.str() << std::endl;
+            } else {
+                std::cout << "Saved " << ss.str() << std::endl;
+            }
         }
         frame_counter++;
 
