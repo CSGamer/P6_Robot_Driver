@@ -2,6 +2,7 @@ import os
 import select
 import sys
 import rclpy
+import math
 from rclpy.node import Node
 
 from std_msgs.msg import String
@@ -148,10 +149,10 @@ class Program(Node):
         error = None
 
         if (float_array[0] == 1): 
-            error = ((float_array[1] + (float_array[3]/2)) - 160)/5.3
-
+            error = ((float_array[1] + (float_array[3]/2)) - 300)/5.3
+            error = math.floor(error)
             print(error)
-            self.ang_reg(error)
+            self.ang_reg(-error)
         #print([flo for flo in float_array])
         
 
