@@ -384,7 +384,7 @@ int main(int argc, char** argv){
         return 0;
     }
 
-    std::cout << "Start grabbing, press ESC on Live window to terminate" << std::endl;
+    //std::cout << "Start grabbing, press ESC on Live window to terminate" << std::endl;
 	while(1){
 
         cap >> frame;

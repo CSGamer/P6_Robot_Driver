@@ -373,7 +373,7 @@ int main(int argc, char** argv){
         return 0;
     }
 
-    std::cout << "Start grabbing, press ESC on Live window to terminate" << std::endl;
+    //std::cout << "Start grabbing, press ESC on Live window to terminate" << std::endl;
     int frame_counter = 0;  // Counter to keep track of frames
 
 	while(1){
@@ -405,7 +405,7 @@ int main(int argc, char** argv){
             if (!cv::imwrite(ss.str(), frame)) {
                 std::cerr << "ERROR: Unable to save the frame to " << ss.str() << std::endl;
             } else {
-                std::cout << "Saved " << ss.str() << std::endl;
+                //std::cout << "Saved " << ss.str() << std::endl;
             }
         }
         frame_counter++;

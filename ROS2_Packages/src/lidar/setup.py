@@ -24,6 +24,7 @@ setup(
             'test_sens = lidar.publisher4:main',
             'center_pub = lidar.center_pub:main',
             'focus_pub = lidar.focus_pub:main',
+            'timed_focus = lidar.timed_focus:main',
             'listener = lidar.subscriber:main',
         ],
     },

@@ -26,6 +26,7 @@ DIST_SET_POINT = 1500 #mm
 P_Ang = 0.85
 P_Dist = 10
 
+
 class Controller(Node):
     target_linear_velocity = 0.0
     target_angular_velocity = 0.0
@@ -35,7 +36,8 @@ class Controller(Node):
 	
     def __init__(self,publisher):
         super().__init__('controller')
-        self.pub = publisher
+        qos = QoSProfile(depth=10)
+        self.pub = self.create_publisher(Twist, 'cmd_vel', qos)
         self.get_logger().info('controller started')
 
     def make_simple_profile(self,output, input, slop):
@@ -94,6 +96,7 @@ class Controller(Node):
         twist.angular.z = self.target_angular_velocity
         self.get_logger().info('linear vel: "%s"  angular vel "%s"' %(twist.linear.x, twist.angular.z))
         self.pub.publish(twist)        
+
 
 class Program(Node):
     contr = None
@@ -164,12 +167,16 @@ class Program(Node):
         self.contr.set_velocity(out)
         #self.contr.drive()
 
+    
+		
+
+
 def main(args=None):
     rclpy.init(args=args)
     print("Starting Program")
-    qos = QoSProfile(depth=10)
-    node = rclpy.create_node('teleop_keyboard')
-    pub = node.create_publisher(Twist, 'cmd_vel', qos)
+    #qos = QoSProfile(depth=10)
+    #node = rclpy.create_node('teleop_keyboard')
+    pub = None # node.create_publisher(Twist, 'cmd_vel', qos)
 
 	#node = rclpy.create_node('teleop_keyboard')
     minimal_subscriber = Program(pub)
@@ -185,3 +192,7 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+
+
+
+

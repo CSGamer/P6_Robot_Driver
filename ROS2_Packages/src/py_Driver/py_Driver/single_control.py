@@ -96,19 +96,6 @@ class Controller(Node):
         self.get_logger().info('linear vel: "%s"  angular vel "%s"' %(twist.linear.x, twist.angular.z))
         self.pub.publish(twist)        
 
-    def drive_test(self):
-        self.target_angular_velocity = 20
-        twist = Twist()
-        self.control_linear_velocity = self.make_simple_profile(self.control_linear_velocity, self.target_linear_velocity, (LIN_VEL_STEP_SIZE / 2.0))
-        twist.linear.x = self.control_linear_velocity
-        twist.linear.y = 0.0
-        twist.linear.z = 0.0
-        self.control_angular_velocity = self.make_simple_profile(self.control_angular_velocity, self.target_angular_velocity, (LIN_VEL_STEP_SIZE / 2.0))
-        twist.angular.x = 0.0
-        twist.angular.y = 0.0
-        twist.angular.z = self.control_angular_velocity
-        self.pub.publish(twist)
-
 class Program(Node):
     contr = None
     def __init__(self,publisher):

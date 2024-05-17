@@ -23,6 +23,7 @@ setup(
             'wheely = py_Driver.py_wheely:main',
             'controller = py_Driver.wheely:main',
             'single_contr = py_Driver.single_control:main',
+            'extra_contr = py_Driver.extra_controller:main',
             'routine = py_Driver.routine:main',
         ],
     },
