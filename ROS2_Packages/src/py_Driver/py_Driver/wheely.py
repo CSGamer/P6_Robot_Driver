@@ -23,8 +23,8 @@ WAFFLE_MAX_ANG_VEL = 1.82
 ANGLE_SET_POINT = 300 #img x-coordinate
 DIST_SET_POINT = 300 #mm
 
-P_Ang = 0.15
-P_Dist = 10
+P_Ang = 0.1
+P_Dist = 0.1
 
 
 class Controller(Node):
@@ -72,15 +72,15 @@ class Controller(Node):
             return self.constrain(velocity, -WAFFLE_MAX_ANG_VEL, WAFFLE_MAX_ANG_VEL)
 
     def set_angle(self, val):
-        self.get_logger().warning('angle_val "%s"' % val)
+        #self.get_logger().warning('angle_val "%s"' % val)
         val = val/54
-        self.get_logger().error('motor_val "%s"' % val)
+        #self.get_logger().error('motor_val "%s"' % val)
         self.target_angular_velocity = self.check_angular_limit_velocity(val)
 
     def set_velocity(self, val):
-        self.get_logger().warning('speed_val "%s"' % val)
+        #self.get_logger().warning('speed_val "%s"' % val)
         val = val/1204
-        self.get_logger().error('motort_val "%s"' % val)
+        #self.get_logger().error('motort_val "%s"' % val)
         self.target_linear_velocity = self.check_linear_limit_velocity(val)
 
     def drive(self):
@@ -93,7 +93,7 @@ class Controller(Node):
         twist.angular.x = 0.0
         twist.angular.y = 0.0
         twist.angular.z = self.target_angular_velocity
-        self.get_logger().info('i should be driving at speed: "%s"' %(twist.linear.x + twist.angular.z))
+        self.get_logger().info('linear vel: "%s"  angular vel "%s"' %(twist.linear.x, twist.angular.z))
         self.pub.publish(twist)        
 
     def drive_test(self):
@@ -140,7 +140,7 @@ class Program(Node):
         self.contr.drive()
 
     def ang_sub(self, msg):
-        self.get_logger().info('I heard: "%s"' % msg.data)
+        #self.get_logger().info('I heard: "%s"' % msg.data)
 
         #Structure [ID, x, y, width, height, FPS] 
         # Remove brackets and split by comma
@@ -167,7 +167,7 @@ class Program(Node):
 
 
     def dist_sub(self, msg):
-        self.get_logger().info('I heard: "%s"' % msg.data)
+        #self.get_logger().info('I heard: "%s"' % msg.data)
         if (float(msg.data) != -100):
             error =float(msg.data) -  DIST_SET_POINT
             self.dist_reg(error)
