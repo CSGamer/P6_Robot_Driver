@@ -89,7 +89,7 @@ class Controller(Node):
         twist.angular.x = 0.0
         twist.angular.y = 0.0
         twist.angular.z = self.target_angular_velocity
-        self.get_logger().info('i should be driving at speed: "%s"' %(twist.linear.x + twist.angluar.z))
+        self.get_logger().info('i should be driving at speed: "%s"' %(twist.linear.x + twist.angular.z))
         self.pub.publish(twist)        
 
     def drive_test(self):
