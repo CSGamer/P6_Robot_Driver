@@ -72,15 +72,15 @@ class Controller(Node):
             return self.constrain(velocity, -WAFFLE_MAX_ANG_VEL, WAFFLE_MAX_ANG_VEL)
 
     def set_angle(self, val):
-        #self.get_logger().warning('angle_val "%s"' % val)
+        self.get_logger().warning('angle_val "%s"' % val)
         val = val/54
-        #self.get_logger().error('motor_val "%s"' % val)
+        self.get_logger().warning('motor_val "%s"' % val)
         self.target_angular_velocity = self.check_angular_limit_velocity(val)
 
     def set_velocity(self, val):
-        #self.get_logger().warning('speed_val "%s"' % val)
+        self.get_logger().error('speed_val "%s"' % val)
         val = val/1204
-        #self.get_logger().error('motort_val "%s"' % val)
+        self.get_logger().error('motort_val "%s"' % val)
         self.target_linear_velocity = self.check_linear_limit_velocity(val)
 
     def drive(self):
@@ -140,7 +140,7 @@ class Program(Node):
         self.contr.drive()
 
     def ang_sub(self, msg):
-        #self.get_logger().info('I heard: "%s"' % msg.data)
+        self.get_logger().warning('I heard: "%s"' % msg.data)
 
         #Structure [ID, x, y, width, height, FPS] 
         # Remove brackets and split by comma
@@ -166,7 +166,7 @@ class Program(Node):
 
 
     def dist_sub(self, msg):
-        #self.get_logger().info('I heard: "%s"' % msg.data)
+        self.get_logger().error('I heard: "%s"' % msg.data)
         if (float(msg.data) != -100):
             error =float(msg.data) -  DIST_SET_POINT
             self.dist_reg(error)

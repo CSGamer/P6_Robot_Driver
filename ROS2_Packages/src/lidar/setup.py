@@ -23,6 +23,7 @@ setup(
          	'talker = lidar.publisher3:main',
             'test_sens = lidar.publisher4:main',
             'center_pub = lidar.center_pub:main',
+            'focus_pub = lidar.focus_pub:main',
             'listener = lidar.subscriber:main',
         ],
     },
