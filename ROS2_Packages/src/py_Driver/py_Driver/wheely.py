@@ -20,8 +20,11 @@ BURGER_MAX_ANG_VEL = 2.84
 WAFFLE_MAX_LIN_VEL = 0.26
 WAFFLE_MAX_ANG_VEL = 1.82
 
-ANGLE_SET_POINT = 0 #img x-coordinate
-DIST_SET_POINT = 1500 #mm
+ANGLE_SET_POINT = 300 #img x-coordinate
+DIST_SET_POINT = 300 #mm
+
+P_Ang = 0.15
+P_Dist = 10
 
 
 class Controller(Node):
@@ -149,7 +152,7 @@ class Program(Node):
         error = None
 
         if (float_array[0] == 1): 
-            error = ((float_array[1] + (float_array[3]/2)) - 300)/5.3
+            error = ((float_array[1] + (float_array[3]/2)) - ANGLE_SET_POINT)/5.3
             error = math.floor(error)
             print(error)
             self.ang_reg(-error)
@@ -157,7 +160,7 @@ class Program(Node):
         
 
     def ang_reg(self, error):
-        p = 0.75
+        p = P_Ang
         error = error * p
         self.contr.set_angle(error)
         #self.contr.drive()
@@ -170,7 +173,7 @@ class Program(Node):
 
     def dist_reg(self, error):
         error = error / 1000 * 86.67
-        p = 10
+        p = P_Dist
         out = error * p
         self.contr.set_velocity(out)
         #self.contr.drive()
