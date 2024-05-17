@@ -67,7 +67,7 @@ class Controller(Node):
         else:
             return self.constrain(velocity, -WAFFLE_MAX_ANG_VEL, WAFFLE_MAX_ANG_VEL)
 
-    def set_angle_vel(self, val):
+    def set_angle(self, val):
         self.get_logger().warning('angle_val "%s"' % val)
         val = val/54
         self.get_logger().error('motor_val "%s"' % val)
