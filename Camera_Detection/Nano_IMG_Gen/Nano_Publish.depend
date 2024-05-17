@@ -1,0 +1,120 @@
+# depslib dependency file v1.0
+1715947739 source:/home/hvalborg2/Desktop/P6_Robot_Driver/Camera_Detection/Nano_IMG_Gen/nanodet.cpp
+	"net.h"
+	<opencv2/core/core.hpp>
+	<opencv2/highgui/highgui.hpp>
+	<opencv2/imgproc/imgproc.hpp>
+	<stdlib.h>
+	<float.h>
+	<stdio.h>
+	<vector>
+	<iostream>
+
+1713172091 /usr/local/include/ncnn/net.h
+	"blob.h"
+	"layer.h"
+	"mat.h"
+	"option.h"
+	"platform.h"
+	<android/asset_manager.h>
+
+1713172091 /usr/local/include/ncnn/blob.h
+	"mat.h"
+	"platform.h"
+
+1713172091 /usr/local/include/ncnn/mat.h
+	<stdlib.h>
+	<string.h>
+	<arm_neon.h>
+	<emmintrin.h>
+	<immintrin.h>
+	<msa.h>
+	<lsxintrin.h>
+	<riscv_vector.h>
+	"cpu.h"
+	"allocator.h"
+	"option.h"
+	"platform.h"
+	<android/bitmap.h>
+	<jni.h>
+
+1713172091 /usr/local/include/ncnn/cpu.h
+	<stddef.h>
+	<windows.h>
+	<sched.h>
+	"platform.h"
+
+1713172091 /usr/local/include/ncnn/platform.h
+	"ncnn_export.h"
+	<windows.h>
+	<process.h>
+	<pthread.h>
+	"simplestl.h"
+	<algorithm>
+	<list>
+	<vector>
+	<string>
+	"simplemath.h"
+	<math.h>
+	<fenv.h>
+	"simplevk.h"
+	<vulkan/vulkan.h>
+	"vulkan_header_fix.h"
+	<android/log.h>
+	<stdio.h>
+
+1713172091 /usr/local/include/ncnn/ncnn_export.h
+
+1713172091 /usr/local/include/ncnn/simplestl.h
+	<stddef.h>
+	<stdint.h>
+	<string.h>
+	<new>
+
+1713172091 /usr/local/include/ncnn/simplemath.h
+	"platform.h"
+
+1713172091 /usr/local/include/ncnn/simplevk.h
+	"platform.h"
+	<stddef.h>
+	<stdint.h>
+
+1713172091 /usr/local/include/ncnn/vulkan_header_fix.h
+
+1713172091 /usr/local/include/ncnn/allocator.h
+	<windows.h>
+	"platform.h"
+	<stdlib.h>
+	<android/hardware_buffer.h>
+
+1713172091 /usr/local/include/ncnn/option.h
+	"platform.h"
+
+1713172091 /usr/local/include/ncnn/layer.h
+	"mat.h"
+	"modelbin.h"
+	"option.h"
+	"paramdict.h"
+	"platform.h"
+	"command.h"
+	"pipeline.h"
+
+1713172091 /usr/local/include/ncnn/modelbin.h
+	"mat.h"
+
+1713172091 /usr/local/include/ncnn/paramdict.h
+	"mat.h"
+
+1713172091 /usr/local/include/ncnn/command.h
+	"platform.h"
+	"mat.h"
+
+1713172091 /usr/local/include/ncnn/pipeline.h
+	"mat.h"
+	"platform.h"
+	"gpu.h"
+
+1713172091 /usr/local/include/ncnn/gpu.h
+	"platform.h"
+	"mat.h"
+

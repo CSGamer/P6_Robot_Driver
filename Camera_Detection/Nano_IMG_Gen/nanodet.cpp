@@ -388,7 +388,7 @@ int main(int argc, char** argv){
 
         std::vector<Object> objects;
         detect_nanodet(frame, objects);
-        //draw_objects(frame, objects);
+        draw_objects(frame, objects);
 
         Tend = std::chrono::steady_clock::now();
 
