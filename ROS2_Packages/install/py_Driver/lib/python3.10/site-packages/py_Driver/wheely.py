@@ -26,7 +26,6 @@ DIST_SET_POINT = 1500 #mm
 P_Ang = 0.85
 P_Dist = 10
 
-
 class Controller(Node):
     target_linear_velocity = 0.0
     target_angular_velocity = 0.0
@@ -95,19 +94,6 @@ class Controller(Node):
         twist.angular.z = self.target_angular_velocity
         self.get_logger().info('linear vel: "%s"  angular vel "%s"' %(twist.linear.x, twist.angular.z))
         self.pub.publish(twist)        
-
-    def drive_test(self):
-        self.target_angular_velocity = 20
-        twist = Twist()
-        self.control_linear_velocity = self.make_simple_profile(self.control_linear_velocity, self.target_linear_velocity, (LIN_VEL_STEP_SIZE / 2.0))
-        twist.linear.x = self.control_linear_velocity
-        twist.linear.y = 0.0
-        twist.linear.z = 0.0
-        self.control_angular_velocity = self.make_simple_profile(self.control_angular_velocity, self.target_angular_velocity, (LIN_VEL_STEP_SIZE / 2.0))
-        twist.angular.x = 0.0
-        twist.angular.y = 0.0
-        twist.angular.z = self.control_angular_velocity
-        self.pub.publish(twist)
 
 class Program(Node):
     contr = None
@@ -178,10 +164,6 @@ class Program(Node):
         self.contr.set_velocity(out)
         #self.contr.drive()
 
-    
-		
-
-
 def main(args=None):
     rclpy.init(args=args)
     print("Starting Program")
@@ -203,7 +185,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
-
-
-

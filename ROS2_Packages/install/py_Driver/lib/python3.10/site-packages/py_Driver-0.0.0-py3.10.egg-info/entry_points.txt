@@ -1,5 +1,6 @@
 [console_scripts]
 controller = py_Driver.wheely:main
+extra_contr = py_Driver.extra_controller:main
 routine = py_Driver.routine:main
 single_contr = py_Driver.single_control:main
 wheely = py_Driver.py_wheely:main

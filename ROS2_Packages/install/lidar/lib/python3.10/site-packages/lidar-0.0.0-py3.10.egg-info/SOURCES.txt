@@ -18,6 +18,7 @@ lidar/publisher2.py
 lidar/publisher3.py
 lidar/publisher4.py
 lidar/subscriber.py
+lidar/timed_focus.py
 resource/lidar
 test/test_copyright.py
 test/test_flake8.py

@@ -1,0 +1,26 @@
+[1.625s] Invoking command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/opt/ros/humble /usr/bin/cmake --build /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub -- -j4 -l4
+[1.973s] [ 33%] Built target rd_Ros
+[1.978s] [ 66%] Built target rd_Nano
+[2.019s] [100%] Built target sub
+[2.104s] Invoked command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/opt/ros/humble /usr/bin/cmake --build /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub -- -j4 -l4
+[2.355s] Invoking command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/opt/ros/humble /usr/bin/cmake --install /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub
+[4.010s] -- Install configuration: ""
+[4.014s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/lib/pubsub/rd_Ros
+[4.014s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/lib/pubsub/sub
+[4.015s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/lib/pubsub/rd_Nano
+[4.015s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/ament_index/resource_index/package_run_dependencies/pubsub
+[4.016s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/ament_index/resource_index/parent_prefix_path/pubsub
+[4.017s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/environment/ament_prefix_path.sh
+[4.017s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/environment/ament_prefix_path.dsv
+[4.018s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/environment/path.sh
+[4.018s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/environment/path.dsv
+[4.019s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/local_setup.bash
+[4.019s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/local_setup.sh
+[4.020s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/local_setup.zsh
+[4.021s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/local_setup.dsv
+[4.021s] -- Installing: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/package.dsv
+[4.022s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/ament_index/resource_index/packages/pubsub
+[4.023s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/cmake/pubsubConfig.cmake
+[4.024s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/cmake/pubsubConfig-version.cmake
+[4.024s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/package.xml
+[4.025s] Invoked command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/opt/ros/humble /usr/bin/cmake --install /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub

@@ -1,0 +1,27 @@
+[4.095s] Invoking command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/lidar': PYTHONPATH=/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/prefix_override:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lidar build --build-base /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build install --record /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/install.log --single-version-externally-managed install_data
+[5.551s] running egg_info
+[5.554s] writing ../../build/lidar/lidar.egg-info/PKG-INFO
+[5.556s] writing dependency_links to ../../build/lidar/lidar.egg-info/dependency_links.txt
+[5.557s] writing entry points to ../../build/lidar/lidar.egg-info/entry_points.txt
+[5.558s] writing requirements to ../../build/lidar/lidar.egg-info/requires.txt
+[5.559s] writing top-level names to ../../build/lidar/lidar.egg-info/top_level.txt
+[5.569s] reading manifest file '../../build/lidar/lidar.egg-info/SOURCES.txt'
+[5.571s] adding license file 'LICENSE'
+[5.574s] writing manifest file '../../build/lidar/lidar.egg-info/SOURCES.txt'
+[5.575s] running build
+[5.576s] running build_py
+[5.580s] running install
+[5.582s] running install_lib
+[5.593s] running install_data
+[5.595s] running install_egg_info
+[5.602s] removing '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar-0.0.0-py3.10.egg-info' (and everything under it)
+[5.604s] Copying ../../build/lidar/lidar.egg-info to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar-0.0.0-py3.10.egg-info
+[5.612s] running install_scripts
+[5.716s] Installing center_pub script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/lidar
+[5.717s] Installing focus_pub script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/lidar
+[5.718s] Installing listener script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/lidar
+[5.719s] Installing talker script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/lidar
+[5.720s] Installing test_sens script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/lidar
+[5.721s] Installing timed_focus script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/lidar
+[5.724s] writing list of installed files to '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/install.log'
+[5.869s] Invoked command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/lidar' returned '0': PYTHONPATH=/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/prefix_override:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lidar build --build-base /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build install --record /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/install.log --single-version-externally-managed install_data

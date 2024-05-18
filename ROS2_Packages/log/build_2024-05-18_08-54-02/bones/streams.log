@@ -1,0 +1,22 @@
+[0.164s] Invoking command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/opt/ros/humble /usr/bin/cmake --build /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones -- -j4 -l4
+[1.704s] [100%] Built target doggy
+[1.712s] Invoked command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/opt/ros/humble /usr/bin/cmake --build /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones -- -j4 -l4
+[1.942s] Invoking command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/opt/ros/humble /usr/bin/cmake --install /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones
+[2.007s] -- Install configuration: ""
+[2.009s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/lib/bones/doggy
+[2.015s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/ament_index/resource_index/package_run_dependencies/bones
+[2.016s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/ament_index/resource_index/parent_prefix_path/bones
+[2.016s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/environment/ament_prefix_path.sh
+[2.017s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/environment/ament_prefix_path.dsv
+[2.023s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/environment/path.sh
+[2.024s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/environment/path.dsv
+[2.025s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/local_setup.bash
+[2.027s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/local_setup.sh
+[2.028s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/local_setup.zsh
+[2.028s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/local_setup.dsv
+[2.029s] -- Installing: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/package.dsv
+[2.030s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/ament_index/resource_index/packages/bones
+[2.032s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/cmake/bonesConfig.cmake
+[2.033s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/cmake/bonesConfig-version.cmake
+[2.043s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/package.xml
+[2.054s] Invoked command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/opt/ros/humble /usr/bin/cmake --install /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones

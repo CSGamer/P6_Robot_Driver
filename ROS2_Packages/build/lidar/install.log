@@ -1,3 +1,4 @@
+/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar/timed_focus.py
 /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar/publisher4.py
 /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar/publisher.py
 /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar/publisher2.py
@@ -7,6 +8,7 @@
 /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar/__init__.py
 /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar/publisher3.py
 /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar/focus_pub.py
+/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar/__pycache__/timed_focus.cpython-310.pyc
 /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar/__pycache__/publisher4.cpython-310.pyc
 /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar/__pycache__/publisher.cpython-310.pyc
 /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar/__pycache__/publisher2.cpython-310.pyc
@@ -30,3 +32,4 @@
 /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/lidar/listener
 /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/lidar/talker
 /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/lidar/test_sens
+/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/lidar/timed_focus

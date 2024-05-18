@@ -8,7 +8,11 @@ setup.py
 ../../build/py_Driver/py_Driver.egg-info/requires.txt
 ../../build/py_Driver/py_Driver.egg-info/top_level.txt
 ../../build/py_Driver/py_Driver.egg-info/zip-safe
+launch/hvalborg.launch.py
+launch/terminal.launch.py
+launch/timed.launch.py
 py_Driver/__init__.py
+py_Driver/extra_controller.py
 py_Driver/py_wheely.py
 py_Driver/routine.py
 py_Driver/single_control.py
