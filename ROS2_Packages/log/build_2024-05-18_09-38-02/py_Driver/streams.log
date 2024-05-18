@@ -1,0 +1,28 @@
+[6.346s] Invoking command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/py_Driver': PYTHONPATH=/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver/prefix_override:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/py_Driver build --build-base /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver/build install --record /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver/install.log --single-version-externally-managed install_data
+[9.816s] running egg_info
+[9.820s] writing ../../build/py_Driver/py_Driver.egg-info/PKG-INFO
+[9.824s] writing dependency_links to ../../build/py_Driver/py_Driver.egg-info/dependency_links.txt
+[9.826s] writing entry points to ../../build/py_Driver/py_Driver.egg-info/entry_points.txt
+[9.827s] writing requirements to ../../build/py_Driver/py_Driver.egg-info/requires.txt
+[9.828s] writing top-level names to ../../build/py_Driver/py_Driver.egg-info/top_level.txt
+[9.838s] reading manifest file '../../build/py_Driver/py_Driver.egg-info/SOURCES.txt'
+[9.845s] writing manifest file '../../build/py_Driver/py_Driver.egg-info/SOURCES.txt'
+[9.846s] running build
+[9.846s] running build_py
+[9.852s] copying py_Driver/extra_controller.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver/build/lib/py_Driver
+[9.854s] running install
+[9.855s] running install_lib
+[9.861s] copying /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver/build/lib/py_Driver/extra_controller.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages/py_Driver
+[9.866s] byte-compiling /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages/py_Driver/extra_controller.py to extra_controller.cpython-310.pyc
+[9.876s] running install_data
+[9.880s] running install_egg_info
+[9.899s] removing '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages/py_Driver-0.0.0-py3.10.egg-info' (and everything under it)
+[9.901s] Copying ../../build/py_Driver/py_Driver.egg-info to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages/py_Driver-0.0.0-py3.10.egg-info
+[9.916s] running install_scripts
+[10.029s] Installing controller script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/py_Driver
+[10.031s] Installing extra_contr script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/py_Driver
+[10.032s] Installing routine script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/py_Driver
+[10.033s] Installing single_contr script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/py_Driver
+[10.034s] Installing wheely script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/py_Driver
+[10.037s] writing list of installed files to '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver/install.log'
+[10.190s] Invoked command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/py_Driver' returned '0': PYTHONPATH=/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver/prefix_override:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/py_Driver build --build-base /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver/build install --record /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver/install.log --single-version-externally-managed install_data

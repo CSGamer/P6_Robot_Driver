@@ -23,8 +23,8 @@ WAFFLE_MAX_ANG_VEL = 1.82
 ANGLE_SET_POINT = 300 #img x-coordinate
 DIST_SET_POINT = 1500 #mm
 
-P_Ang = 0.85
-P_Dist = 10
+P_Ang = 0.75
+P_Dist = 5
 
 
 class Controller(Node):
@@ -158,7 +158,10 @@ class Program(Node):
         #self.get_logger().info('I heard: "%s"' % msg.data)
         if (float(msg.data) != -100):
             error =float(msg.data) -  DIST_SET_POINT
-            self.dist_reg(error)
+            if (error >= 0):
+                self.dist_reg(error)
+            else:
+                self.dist_reg(0)
 
     def dist_reg(self, error):
         error = error / 1000 * 86.67
