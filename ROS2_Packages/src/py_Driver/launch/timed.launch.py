@@ -17,12 +17,12 @@ def generate_launch_description():
         ),
         
         # Node from camera_pack
-        Node(
-            package='camera_pack',
-            executable='Cam_Nano',
-            name='Cam_Nano',
-            output='screen'
-        ),
+        #Node(
+        #    package='camera_pack',
+        #    executable='Cam_Nano',
+        #    name='Cam_Nano',
+        #    output='screen'
+        #),
         
         # Node from lidar
         Node(
