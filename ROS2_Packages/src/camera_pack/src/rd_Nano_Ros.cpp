@@ -13,7 +13,7 @@ using namespace std::chrono_literals;
 class ProcessPublisher : public rclcpp::Node
 {
 public:
-    ProcessPublisher() : Node("process_publisher"), previous_value_("") {
+    ProcessPublisher() : Node("cam_publisher"), previous_value_("") {
         publisher_ = this->create_publisher<std_msgs::msg::String>("Cam_Detections", 10);
 
         // Launch the PR executable and read its output

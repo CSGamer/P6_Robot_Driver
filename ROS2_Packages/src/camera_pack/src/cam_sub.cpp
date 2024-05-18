@@ -12,7 +12,7 @@ using std::placeholders::_1;
 class ObjectSubscriber : public rclcpp::Node
 {
 public:
-    ObjectSubscriber() : Node("object_subscriber")
+    ObjectSubscriber() : Node("cam_subscriber")
     {
         subscription_ = this->create_subscription<std_msgs::msg::String>(
             "Cam_Detections", 10, std::bind(&ObjectSubscriber::topic_callback, this, _1));

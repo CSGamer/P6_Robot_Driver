@@ -35,9 +35,9 @@ class Controller(Node):
     pub = None
 	
     def __init__(self,publisher):
-        super().__init__('controller')
+        #super().__init__('controller')
         qos = QoSProfile(depth=10)
-        self.pub = self.create_publisher(Twist, 'cmd_vel', qos)
+        self.pub = publisher.create_publisher(Twist, 'cmd_vel', qos)
         self.get_logger().info('controller started')
 
     def make_simple_profile(self,output, input, slop):
@@ -103,7 +103,7 @@ class Program(Node):
     def __init__(self,publisher):
         super().__init__('program')
         self.get_logger().info('starting controller ')    
-        self.contr = Controller(publisher)
+        self.contr = Controller(self)
         self.get_logger().info('starting main')
         self.subscription = self.create_subscription(
 		Float32,
