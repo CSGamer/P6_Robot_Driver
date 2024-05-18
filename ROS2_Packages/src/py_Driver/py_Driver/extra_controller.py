@@ -158,7 +158,10 @@ class Program(Node):
         #self.get_logger().info('I heard: "%s"' % msg.data)
         if (float(msg.data) != -100):
             error =float(msg.data) -  DIST_SET_POINT
-            self.dist_reg(error)
+            if (error >= 0):
+                self.dist_reg(error)
+            else:
+                self.dist_reg(0)
 
     def dist_reg(self, error):
         error = error / 1000 * 86.67
