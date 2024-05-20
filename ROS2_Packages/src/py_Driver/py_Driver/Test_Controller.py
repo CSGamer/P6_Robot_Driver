@@ -159,7 +159,7 @@ class Program(Node):
         #self.get_logger().info('I heard: "%s"' % msg.data)
         if (float(msg.data) != -100):
             error =float(msg.data) -  DIST_SET_POINT
-            self.get_logger().info('goal dist: %s \t meas_dist' %(DIST_SET_POINT, error))
+            self.get_logger().info(f'goal dist: {DIST_SET_POINT} \t meas_dist: {error}')
             if (error >= 0):
                 self.dist_reg(error)
             else:
