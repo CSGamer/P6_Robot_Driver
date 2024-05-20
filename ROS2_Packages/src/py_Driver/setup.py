@@ -28,6 +28,7 @@ setup(
             'single_contr = py_Driver.single_control:main',
             'extra_contr = py_Driver.extra_controller:main',
             'routine = py_Driver.routine:main',
+            'test_contr = py_Driver.Test_Controller:main',
         ],
     },
 )
