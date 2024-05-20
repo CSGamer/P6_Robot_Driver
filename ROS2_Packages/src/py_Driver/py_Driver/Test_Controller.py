@@ -35,7 +35,7 @@ class Controller(Node):
     pub = None
 	
     def __init__(self,publisher):
-        #super().__init__('controller')
+        super().__init__('controller')
         qos = QoSProfile(depth=10)
         self.pub = publisher.create_publisher(Twist, 'cmd_vel', qos)
         self.get_logger().info('controller started')
