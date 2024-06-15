@@ -1,0 +1,59 @@
+[0.205s] Invoking command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/opt/ros/humble /usr/bin/cmake --build /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack -- -j4 -l4
+[2.570s] [ 16%] [32mBuilding CXX object CMakeFiles/cam_img.dir/src/rd_img_gen.cpp.o[0m
+[2.570s] [ 33%] [32mBuilding CXX object CMakeFiles/cam_Nano.dir/src/rd_Nano_Ros.cpp.o[0m
+[2.570s] [ 50%] [32mBuilding CXX object CMakeFiles/cam_sub.dir/src/cam_sub.cpp.o[0m
+[22.860s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[22.861s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[22.861s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[22.862s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[22.863s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[22.864s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[22.865s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[22.866s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[22.866s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[22.867s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[22.868s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[22.870s]                  from [01m[K/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/camera_pack/src/cam_sub.cpp:3[m[K:
+[22.871s] [01m[K/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/camera_pack/src/cam_sub.cpp:[m[K In member function ‘[01m[Kvoid ObjectSubscriber::topic_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr) const[m[K’:
+[22.872s] [01m[K/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/camera_pack/src/cam_sub.cpp:46:46:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[22.873s]    46 |             RCLCPP_ERROR(this->get_logger(), [01;35m[K"Invalid message format: '%s'. Expected 5 values, received %d."[m[K, msg->data.c_str(), [32m[Kvalues.size()[m[K);
+[22.873s]       |                                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                     [32m[K~~~~~~~~~~~~~[m[K
+[22.874s]       |                                                                                                                                             [32m[K|[m[K
+[22.875s]       |                                                                                                                                             [32m[Kstd::vector<float>::size_type {aka long unsigned int}[m[K
+[22.876s] [01m[K/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/camera_pack/src/cam_sub.cpp:46:106:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[22.877s]    46 |             RCLCPP_ERROR(this->get_logger(), "Invalid message format: '%s'. Expected 5 values, received [01;36m[K%d[m[K.", msg->data.c_str(), values.size());
+[22.878s]       |                                                                                                         [01;36m[K~^[m[K
+[22.878s]       |                                                                                                          [01;36m[K|[m[K
+[22.880s]       |                                                                                                          [01;36m[Kint[m[K
+[22.880s]       |                                                                                                         [32m[K%ld[m[K
+[32.613s] [ 66%] [32m[1mLinking CXX executable cam_img[0m
+[32.636s] [ 83%] [32m[1mLinking CXX executable cam_Nano[0m
+[33.928s] [ 83%] Built target cam_Nano
+[33.938s] [ 83%] Built target cam_img
+[55.782s] [100%] [32m[1mLinking CXX executable cam_sub[0m
+[57.888s] [100%] Built target cam_sub
+[57.933s] Invoked command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/opt/ros/humble /usr/bin/cmake --build /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack -- -j4 -l4
+[58.129s] Invoking command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/opt/ros/humble /usr/bin/cmake --install /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack
+[58.160s] -- Install configuration: ""
+[58.164s] -- Installing: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/camera_pack/cam_sub
+[58.202s] -- Set runtime path of "/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/camera_pack/cam_sub" to ""
+[58.206s] -- Installing: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/camera_pack/cam_Nano
+[58.217s] -- Set runtime path of "/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/camera_pack/cam_Nano" to ""
+[58.221s] -- Installing: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/camera_pack/cam_img
+[58.233s] -- Set runtime path of "/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/camera_pack/cam_img" to ""
+[58.233s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/ament_index/resource_index/package_run_dependencies/camera_pack
+[58.234s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/ament_index/resource_index/parent_prefix_path/camera_pack
+[58.234s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/environment/ament_prefix_path.sh
+[58.235s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/environment/ament_prefix_path.dsv
+[58.236s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/environment/path.sh
+[58.236s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/environment/path.dsv
+[58.236s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/local_setup.bash
+[58.237s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/local_setup.sh
+[58.237s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/local_setup.zsh
+[58.238s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/local_setup.dsv
+[58.238s] -- Installing: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/package.dsv
+[58.241s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/ament_index/resource_index/packages/camera_pack
+[58.242s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/cmake/camera_packConfig.cmake
+[58.242s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/cmake/camera_packConfig-version.cmake
+[58.243s] -- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/package.xml
+[58.250s] Invoked command in '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/opt/ros/humble /usr/bin/cmake --install /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack

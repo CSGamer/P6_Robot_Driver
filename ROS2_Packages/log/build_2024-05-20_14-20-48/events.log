@@ -1,0 +1,770 @@
+[0.000000] (-) TimerEvent: {}
+[0.000717] (bones) JobQueued: {'identifier': 'bones', 'dependencies': OrderedDict()}
+[0.001334] (camera_pack) JobQueued: {'identifier': 'camera_pack', 'dependencies': OrderedDict()}
+[0.001451] (lidar) JobQueued: {'identifier': 'lidar', 'dependencies': OrderedDict()}
+[0.001543] (pubsub) JobQueued: {'identifier': 'pubsub', 'dependencies': OrderedDict()}
+[0.002803] (py_Driver) JobQueued: {'identifier': 'py_Driver', 'dependencies': OrderedDict()}
+[0.003667] (bones) JobStarted: {'identifier': 'bones'}
+[0.068193] (camera_pack) JobStarted: {'identifier': 'camera_pack'}
+[0.099048] (-) TimerEvent: {}
+[0.105654] (lidar) JobStarted: {'identifier': 'lidar'}
+[0.158786] (pubsub) JobStarted: {'identifier': 'pubsub'}
+[0.199151] (-) TimerEvent: {}
+[0.217883] (bones) JobProgress: {'identifier': 'bones', 'progress': 'cmake'}
+[0.228000] (bones) JobProgress: {'identifier': 'bones', 'progress': 'build'}
+[0.228507] (bones) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones', '--', '-j4', '-l4'], 'cwd': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'hvalborg2'), ('SSH_CLIENT', '192.168.137.1 56760 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hvalborg2'), ('OLDPWD', '/home/hvalborg2'), ('SSH_TTY', '/dev/pts/2'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install:/home/hvalborg2/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hvalborg2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hvalborg2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/hvalborg2/turtlebot3_ws/install/turtlebot3:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_bringup:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_node:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_description:/home/hvalborg2/turtlebot3_ws/install/ld08_driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.137.1 56760 192.168.137.14 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-01'), ('PYTHONPATH', '/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hvalborg2/turtlebot3_ws/install/turtlebot3:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_bringup:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_node:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_description:/home/hvalborg2/turtlebot3_ws/install/ld08_driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/opt/ros/humble')]), 'shell': False}
+[0.252357] (camera_pack) JobProgress: {'identifier': 'camera_pack', 'progress': 'cmake'}
+[0.259947] (camera_pack) JobProgress: {'identifier': 'camera_pack', 'progress': 'build'}
+[0.264923] (camera_pack) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack', '--', '-j4', '-l4'], 'cwd': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'hvalborg2'), ('SSH_CLIENT', '192.168.137.1 56760 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hvalborg2'), ('OLDPWD', '/home/hvalborg2'), ('SSH_TTY', '/dev/pts/2'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install:/home/hvalborg2/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hvalborg2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hvalborg2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/hvalborg2/turtlebot3_ws/install/turtlebot3:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_bringup:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_node:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_description:/home/hvalborg2/turtlebot3_ws/install/ld08_driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.137.1 56760 192.168.137.14 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-01'), ('PYTHONPATH', '/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hvalborg2/turtlebot3_ws/install/turtlebot3:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_bringup:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_node:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_description:/home/hvalborg2/turtlebot3_ws/install/ld08_driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/opt/ros/humble')]), 'shell': False}
+[0.299331] (-) TimerEvent: {}
+[0.401094] (-) TimerEvent: {}
+[0.502098] (-) TimerEvent: {}
+[0.604693] (-) TimerEvent: {}
+[0.706013] (-) TimerEvent: {}
+[0.807023] (-) TimerEvent: {}
+[0.930208] (-) TimerEvent: {}
+[1.034115] (-) TimerEvent: {}
+[1.136134] (-) TimerEvent: {}
+[1.239003] (-) TimerEvent: {}
+[1.340672] (-) TimerEvent: {}
+[1.441463] (-) TimerEvent: {}
+[1.543370] (-) TimerEvent: {}
+[1.645331] (-) TimerEvent: {}
+[1.746576] (-) TimerEvent: {}
+[1.847830] (-) TimerEvent: {}
+[1.949266] (-) TimerEvent: {}
+[2.051308] (-) TimerEvent: {}
+[2.152837] (-) TimerEvent: {}
+[2.254410] (-) TimerEvent: {}
+[2.356140] (-) TimerEvent: {}
+[2.458039] (-) TimerEvent: {}
+[2.560050] (-) TimerEvent: {}
+[2.622051] (bones) StdoutLine: {'line': b'[100%] Built target doggy\n'}
+[2.637271] (camera_pack) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/cam_img.dir/src/rd_img_gen.cpp.o\x1b[0m\n'}
+[2.638005] (camera_pack) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/cam_Nano.dir/src/rd_Nano_Ros.cpp.o\x1b[0m\n'}
+[2.638400] (camera_pack) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cam_sub.dir/src/cam_sub.cpp.o\x1b[0m\n'}
+[2.655324] (pubsub) JobProgress: {'identifier': 'pubsub', 'progress': 'cmake'}
+[2.661394] (-) TimerEvent: {}
+[2.674919] (pubsub) JobProgress: {'identifier': 'pubsub', 'progress': 'build'}
+[2.680753] (pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub', '--', '-j4', '-l4'], 'cwd': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'hvalborg2'), ('SSH_CLIENT', '192.168.137.1 56760 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hvalborg2'), ('OLDPWD', '/home/hvalborg2'), ('SSH_TTY', '/dev/pts/2'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install:/home/hvalborg2/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hvalborg2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hvalborg2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/hvalborg2/turtlebot3_ws/install/turtlebot3:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_bringup:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_node:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_description:/home/hvalborg2/turtlebot3_ws/install/ld08_driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.137.1 56760 192.168.137.14 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-01'), ('PYTHONPATH', '/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hvalborg2/turtlebot3_ws/install/turtlebot3:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_bringup:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_node:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_description:/home/hvalborg2/turtlebot3_ws/install/ld08_driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/opt/ros/humble')]), 'shell': False}
+[2.759403] (bones) CommandEnded: {'returncode': 0}
+[2.761527] (-) TimerEvent: {}
+[2.862403] (-) TimerEvent: {}
+[2.963401] (-) TimerEvent: {}
+[3.064218] (-) TimerEvent: {}
+[3.165767] (-) TimerEvent: {}
+[3.274793] (-) TimerEvent: {}
+[3.349903] (bones) JobProgress: {'identifier': 'bones', 'progress': 'install'}
+[3.375118] (-) TimerEvent: {}
+[3.437557] (bones) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones'], 'cwd': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'hvalborg2'), ('SSH_CLIENT', '192.168.137.1 56760 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hvalborg2'), ('OLDPWD', '/home/hvalborg2'), ('SSH_TTY', '/dev/pts/2'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install:/home/hvalborg2/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hvalborg2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hvalborg2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/hvalborg2/turtlebot3_ws/install/turtlebot3:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_bringup:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_node:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_description:/home/hvalborg2/turtlebot3_ws/install/ld08_driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/bones'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.137.1 56760 192.168.137.14 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-01'), ('PYTHONPATH', '/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hvalborg2/turtlebot3_ws/install/turtlebot3:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_bringup:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_node:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_description:/home/hvalborg2/turtlebot3_ws/install/ld08_driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/opt/ros/humble')]), 'shell': False}
+[3.475568] (-) TimerEvent: {}
+[3.512645] (pubsub) StdoutLine: {'line': b'[ 33%] Built target rd_Ros\n'}
+[3.575803] (-) TimerEvent: {}
+[3.586164] (bones) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.593835] (bones) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/lib/bones/doggy\n'}
+[3.597210] (bones) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/ament_index/resource_index/package_run_dependencies/bones\n'}
+[3.599379] (bones) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/ament_index/resource_index/parent_prefix_path/bones\n'}
+[3.601232] (bones) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/environment/ament_prefix_path.sh\n'}
+[3.602911] (bones) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/environment/ament_prefix_path.dsv\n'}
+[3.605071] (bones) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/environment/path.sh\n'}
+[3.607092] (bones) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/environment/path.dsv\n'}
+[3.611510] (bones) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/local_setup.bash\n'}
+[3.613902] (bones) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/local_setup.sh\n'}
+[3.616105] (bones) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/local_setup.zsh\n'}
+[3.618236] (bones) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/local_setup.dsv\n'}
+[3.621337] (bones) StdoutLine: {'line': b'-- Installing: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/package.dsv\n'}
+[3.628558] (bones) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/ament_index/resource_index/packages/bones\n'}
+[3.634469] (bones) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/cmake/bonesConfig.cmake\n'}
+[3.636238] (bones) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/cmake/bonesConfig-version.cmake\n'}
+[3.637853] (bones) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones/share/bones/package.xml\n'}
+[3.659336] (bones) CommandEnded: {'returncode': 0}
+[3.671424] (pubsub) StdoutLine: {'line': b'[ 66%] Built target rd_Nano\n'}
+[3.676016] (-) TimerEvent: {}
+[3.707675] (pubsub) StdoutLine: {'line': b'[100%] Built target sub\n'}
+[3.778787] (-) TimerEvent: {}
+[3.880809] (-) TimerEvent: {}
+[3.886050] (pubsub) CommandEnded: {'returncode': 0}
+[3.981869] (-) TimerEvent: {}
+[4.082862] (-) TimerEvent: {}
+[4.183896] (-) TimerEvent: {}
+[4.288148] (-) TimerEvent: {}
+[4.363387] (bones) JobEnded: {'identifier': 'bones', 'rc': 0}
+[4.369000] (py_Driver) JobStarted: {'identifier': 'py_Driver'}
+[4.388438] (-) TimerEvent: {}
+[4.490281] (-) TimerEvent: {}
+[4.593273] (-) TimerEvent: {}
+[4.694634] (-) TimerEvent: {}
+[4.796662] (-) TimerEvent: {}
+[4.898988] (-) TimerEvent: {}
+[5.000261] (-) TimerEvent: {}
+[5.101571] (-) TimerEvent: {}
+[5.203411] (-) TimerEvent: {}
+[5.304655] (-) TimerEvent: {}
+[5.406558] (-) TimerEvent: {}
+[5.508749] (-) TimerEvent: {}
+[5.610892] (-) TimerEvent: {}
+[5.713245] (-) TimerEvent: {}
+[5.815716] (-) TimerEvent: {}
+[5.916891] (-) TimerEvent: {}
+[6.018696] (-) TimerEvent: {}
+[6.121064] (-) TimerEvent: {}
+[6.222466] (-) TimerEvent: {}
+[6.324743] (-) TimerEvent: {}
+[6.425886] (-) TimerEvent: {}
+[6.527743] (-) TimerEvent: {}
+[6.630672] (-) TimerEvent: {}
+[6.732793] (-) TimerEvent: {}
+[6.834775] (-) TimerEvent: {}
+[6.937581] (-) TimerEvent: {}
+[7.044911] (-) TimerEvent: {}
+[7.147875] (-) TimerEvent: {}
+[7.254266] (-) TimerEvent: {}
+[7.355654] (-) TimerEvent: {}
+[7.457694] (-) TimerEvent: {}
+[7.559693] (-) TimerEvent: {}
+[7.660686] (-) TimerEvent: {}
+[7.761732] (-) TimerEvent: {}
+[7.863563] (-) TimerEvent: {}
+[7.965512] (-) TimerEvent: {}
+[8.066374] (-) TimerEvent: {}
+[8.168442] (-) TimerEvent: {}
+[8.269552] (-) TimerEvent: {}
+[8.371193] (-) TimerEvent: {}
+[8.473469] (-) TimerEvent: {}
+[8.589283] (-) TimerEvent: {}
+[8.690919] (-) TimerEvent: {}
+[8.795666] (-) TimerEvent: {}
+[8.829732] (pubsub) JobProgress: {'identifier': 'pubsub', 'progress': 'install'}
+[8.831792] (pubsub) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub'], 'cwd': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'hvalborg2'), ('SSH_CLIENT', '192.168.137.1 56760 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hvalborg2'), ('OLDPWD', '/home/hvalborg2'), ('SSH_TTY', '/dev/pts/2'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install:/home/hvalborg2/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hvalborg2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hvalborg2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/hvalborg2/turtlebot3_ws/install/turtlebot3:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_bringup:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_node:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_description:/home/hvalborg2/turtlebot3_ws/install/ld08_driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/pubsub'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.137.1 56760 192.168.137.14 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-01'), ('PYTHONPATH', '/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hvalborg2/turtlebot3_ws/install/turtlebot3:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_bringup:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_node:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_description:/home/hvalborg2/turtlebot3_ws/install/ld08_driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/opt/ros/humble')]), 'shell': False}
+[8.901487] (-) TimerEvent: {}
+[8.929839] (lidar) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/lidar', 'build', '--build-base', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build', 'install', '--record', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/lidar', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'hvalborg2', 'SSH_CLIENT': '192.168.137.1 56760 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/hvalborg2', 'OLDPWD': '/home/hvalborg2', 'SSH_TTY': '/dev/pts/2', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install:/home/hvalborg2/turtlebot3_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'hvalborg2', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/hvalborg2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '30', 'AMENT_PREFIX_PATH': '/home/hvalborg2/turtlebot3_ws/install/turtlebot3:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_bringup:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_node:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_description:/home/hvalborg2/turtlebot3_ws/install/ld08_driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.137.1 56760 192.168.137.14 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'LDS_MODEL': 'LDS-01', 'PYTHONPATH': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/prefix_override:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/hvalborg2/turtlebot3_ws/install/turtlebot3:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_bringup:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_node:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_description:/home/hvalborg2/turtlebot3_ws/install/ld08_driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver'}, 'shell': False}
+[9.001876] (-) TimerEvent: {}
+[9.041400] (pubsub) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.054716] (pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/lib/pubsub/rd_Ros\n'}
+[9.067124] (pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/lib/pubsub/sub\n'}
+[9.079459] (pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/lib/pubsub/rd_Nano\n'}
+[9.086313] (pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/ament_index/resource_index/package_run_dependencies/pubsub\n'}
+[9.094045] (pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/ament_index/resource_index/parent_prefix_path/pubsub\n'}
+[9.096899] (pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/environment/ament_prefix_path.sh\n'}
+[9.101644] (pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/environment/ament_prefix_path.dsv\n'}
+[9.102925] (-) TimerEvent: {}
+[9.106323] (pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/environment/path.sh\n'}
+[9.110294] (pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/environment/path.dsv\n'}
+[9.113359] (pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/local_setup.bash\n'}
+[9.116454] (pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/local_setup.sh\n'}
+[9.120322] (pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/local_setup.zsh\n'}
+[9.124213] (pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/local_setup.dsv\n'}
+[9.129941] (pubsub) StdoutLine: {'line': b'-- Installing: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/package.dsv\n'}
+[9.139546] (pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/ament_index/resource_index/packages/pubsub\n'}
+[9.142154] (pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/cmake/pubsubConfig.cmake\n'}
+[9.144131] (pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/cmake/pubsubConfig-version.cmake\n'}
+[9.149929] (pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub/share/pubsub/package.xml\n'}
+[9.171835] (pubsub) CommandEnded: {'returncode': 0}
+[9.203410] (-) TimerEvent: {}
+[9.304572] (-) TimerEvent: {}
+[9.406337] (-) TimerEvent: {}
+[9.508040] (-) TimerEvent: {}
+[9.611127] (-) TimerEvent: {}
+[9.676317] (pubsub) JobEnded: {'identifier': 'pubsub', 'rc': 0}
+[9.711337] (-) TimerEvent: {}
+[9.812339] (-) TimerEvent: {}
+[9.913914] (-) TimerEvent: {}
+[10.015426] (-) TimerEvent: {}
+[10.116566] (-) TimerEvent: {}
+[10.217489] (-) TimerEvent: {}
+[10.318588] (-) TimerEvent: {}
+[10.419917] (-) TimerEvent: {}
+[10.520975] (-) TimerEvent: {}
+[10.622063] (-) TimerEvent: {}
+[10.723197] (-) TimerEvent: {}
+[10.825225] (-) TimerEvent: {}
+[10.926651] (-) TimerEvent: {}
+[11.028116] (-) TimerEvent: {}
+[11.129116] (-) TimerEvent: {}
+[11.230106] (-) TimerEvent: {}
+[11.331108] (-) TimerEvent: {}
+[11.432404] (-) TimerEvent: {}
+[11.533302] (-) TimerEvent: {}
+[11.640106] (-) TimerEvent: {}
+[11.741392] (-) TimerEvent: {}
+[11.843302] (-) TimerEvent: {}
+[11.944983] (-) TimerEvent: {}
+[12.046878] (-) TimerEvent: {}
+[12.148407] (-) TimerEvent: {}
+[12.250337] (-) TimerEvent: {}
+[12.290668] (lidar) StdoutLine: {'line': b'running egg_info\n'}
+[12.307261] (lidar) StdoutLine: {'line': b'writing ../../build/lidar/lidar.egg-info/PKG-INFO\n'}
+[12.319943] (lidar) StdoutLine: {'line': b'writing dependency_links to ../../build/lidar/lidar.egg-info/dependency_links.txt\n'}
+[12.321406] (lidar) StdoutLine: {'line': b'writing entry points to ../../build/lidar/lidar.egg-info/entry_points.txt\n'}
+[12.322528] (lidar) StdoutLine: {'line': b'writing requirements to ../../build/lidar/lidar.egg-info/requires.txt\n'}
+[12.323758] (lidar) StdoutLine: {'line': b'writing top-level names to ../../build/lidar/lidar.egg-info/top_level.txt\n'}
+[12.336357] (lidar) StdoutLine: {'line': b"reading manifest file '../../build/lidar/lidar.egg-info/SOURCES.txt'\n"}
+[12.341811] (lidar) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[12.346136] (lidar) StdoutLine: {'line': b"writing manifest file '../../build/lidar/lidar.egg-info/SOURCES.txt'\n"}
+[12.350543] (-) TimerEvent: {}
+[12.359944] (lidar) StdoutLine: {'line': b'running build\n'}
+[12.361032] (lidar) StdoutLine: {'line': b'running build_py\n'}
+[12.363471] (lidar) StdoutLine: {'line': b'copying lidar/center_pub.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build/lib/lidar\n'}
+[12.367943] (lidar) StdoutLine: {'line': b'running install\n'}
+[12.385267] (lidar) StdoutLine: {'line': b'running install_lib\n'}
+[12.403409] (lidar) StdoutLine: {'line': b'copying /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/build/lib/lidar/center_pub.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar\n'}
+[12.410153] (lidar) StdoutLine: {'line': b'byte-compiling /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar/center_pub.py to center_pub.cpython-310.pyc\n'}
+[12.428940] (lidar) StdoutLine: {'line': b'running install_data\n'}
+[12.430058] (lidar) StdoutLine: {'line': b'running install_egg_info\n'}
+[12.447739] (lidar) StdoutLine: {'line': b"removing '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[12.450820] (-) TimerEvent: {}
+[12.461249] (lidar) StdoutLine: {'line': b'Copying ../../build/lidar/lidar.egg-info to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages/lidar-0.0.0-py3.10.egg-info\n'}
+[12.480763] (lidar) StdoutLine: {'line': b'running install_scripts\n'}
+[12.551139] (-) TimerEvent: {}
+[12.641923] (lidar) StdoutLine: {'line': b'Installing center_pub script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/lidar\n'}
+[12.643492] (lidar) StdoutLine: {'line': b'Installing focus_pub script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/lidar\n'}
+[12.645007] (lidar) StdoutLine: {'line': b'Installing listener script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/lidar\n'}
+[12.646423] (lidar) StdoutLine: {'line': b'Installing talker script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/lidar\n'}
+[12.647843] (lidar) StdoutLine: {'line': b'Installing test_sens script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/lidar\n'}
+[12.648860] (lidar) StdoutLine: {'line': b'Installing timed_focus script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/lidar\n'}
+[12.651310] (-) TimerEvent: {}
+[12.653146] (lidar) StdoutLine: {'line': b"writing list of installed files to '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/lidar/install.log'\n"}
+[12.751686] (-) TimerEvent: {}
+[12.839630] (lidar) CommandEnded: {'returncode': 0}
+[12.851892] (-) TimerEvent: {}
+[12.889701] (lidar) JobEnded: {'identifier': 'lidar', 'rc': 0}
+[12.952165] (-) TimerEvent: {}
+[13.053138] (-) TimerEvent: {}
+[13.154371] (-) TimerEvent: {}
+[13.256221] (-) TimerEvent: {}
+[13.349781] (py_Driver) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/py_Driver', 'build', '--build-base', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver/build', 'install', '--record', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/py_Driver', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'hvalborg2', 'SSH_CLIENT': '192.168.137.1 56760 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/hvalborg2', 'OLDPWD': '/home/hvalborg2', 'SSH_TTY': '/dev/pts/2', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install:/home/hvalborg2/turtlebot3_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'hvalborg2', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/hvalborg2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '30', 'AMENT_PREFIX_PATH': '/home/hvalborg2/turtlebot3_ws/install/turtlebot3:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_bringup:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_node:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_description:/home/hvalborg2/turtlebot3_ws/install/ld08_driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.137.1 56760 192.168.137.14 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'LDS_MODEL': 'LDS-01', 'PYTHONPATH': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver/prefix_override:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/hvalborg2/turtlebot3_ws/install/turtlebot3:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_bringup:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_node:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_description:/home/hvalborg2/turtlebot3_ws/install/ld08_driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver'}, 'shell': False}
+[13.360864] (-) TimerEvent: {}
+[13.463192] (-) TimerEvent: {}
+[13.565715] (-) TimerEvent: {}
+[13.667547] (-) TimerEvent: {}
+[13.769518] (-) TimerEvent: {}
+[13.871328] (-) TimerEvent: {}
+[13.973138] (-) TimerEvent: {}
+[14.074836] (-) TimerEvent: {}
+[14.177011] (-) TimerEvent: {}
+[14.278554] (-) TimerEvent: {}
+[14.379640] (-) TimerEvent: {}
+[14.480806] (-) TimerEvent: {}
+[14.581969] (-) TimerEvent: {}
+[14.683554] (-) TimerEvent: {}
+[14.785443] (-) TimerEvent: {}
+[14.886502] (-) TimerEvent: {}
+[14.988437] (-) TimerEvent: {}
+[15.090304] (-) TimerEvent: {}
+[15.192266] (-) TimerEvent: {}
+[15.294510] (-) TimerEvent: {}
+[15.395624] (-) TimerEvent: {}
+[15.496631] (-) TimerEvent: {}
+[15.597710] (-) TimerEvent: {}
+[15.698833] (-) TimerEvent: {}
+[15.800306] (-) TimerEvent: {}
+[15.901474] (-) TimerEvent: {}
+[15.937314] (py_Driver) StdoutLine: {'line': b'running egg_info\n'}
+[15.941854] (py_Driver) StdoutLine: {'line': b'writing ../../build/py_Driver/py_Driver.egg-info/PKG-INFO\n'}
+[15.943607] (py_Driver) StdoutLine: {'line': b'writing dependency_links to ../../build/py_Driver/py_Driver.egg-info/dependency_links.txt\n'}
+[15.945924] (py_Driver) StdoutLine: {'line': b'writing entry points to ../../build/py_Driver/py_Driver.egg-info/entry_points.txt\n'}
+[15.947520] (py_Driver) StdoutLine: {'line': b'writing requirements to ../../build/py_Driver/py_Driver.egg-info/requires.txt\n'}
+[15.948538] (py_Driver) StdoutLine: {'line': b'writing top-level names to ../../build/py_Driver/py_Driver.egg-info/top_level.txt\n'}
+[15.962231] (py_Driver) StdoutLine: {'line': b"reading manifest file '../../build/py_Driver/py_Driver.egg-info/SOURCES.txt'\n"}
+[15.969730] (py_Driver) StdoutLine: {'line': b"writing manifest file '../../build/py_Driver/py_Driver.egg-info/SOURCES.txt'\n"}
+[15.970869] (py_Driver) StdoutLine: {'line': b'running build\n'}
+[15.971933] (py_Driver) StdoutLine: {'line': b'running build_py\n'}
+[15.975806] (py_Driver) StdoutLine: {'line': b'copying py_Driver/Test_Controller.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver/build/lib/py_Driver\n'}
+[15.979455] (py_Driver) StdoutLine: {'line': b'running install\n'}
+[15.981420] (py_Driver) StdoutLine: {'line': b'running install_lib\n'}
+[15.990603] (py_Driver) StdoutLine: {'line': b'copying /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver/build/lib/py_Driver/Test_Controller.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages/py_Driver\n'}
+[15.996558] (py_Driver) StdoutLine: {'line': b'byte-compiling /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages/py_Driver/Test_Controller.py to Test_Controller.cpython-310.pyc\n'}
+[16.001786] (-) TimerEvent: {}
+[16.004064] (py_Driver) StdoutLine: {'line': b'running install_data\n'}
+[16.006273] (py_Driver) StdoutLine: {'line': b'copying launch/timed.launch.py -> /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/share/py_Driver/launch\n'}
+[16.008603] (py_Driver) StdoutLine: {'line': b'running install_egg_info\n'}
+[16.019855] (py_Driver) StdoutLine: {'line': b"removing '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages/py_Driver-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[16.022785] (py_Driver) StdoutLine: {'line': b'Copying ../../build/py_Driver/py_Driver.egg-info to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages/py_Driver-0.0.0-py3.10.egg-info\n'}
+[16.035418] (py_Driver) StdoutLine: {'line': b'running install_scripts\n'}
+[16.102188] (-) TimerEvent: {}
+[16.178175] (py_Driver) StdoutLine: {'line': b'Installing controller script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/py_Driver\n'}
+[16.179713] (py_Driver) StdoutLine: {'line': b'Installing extra_contr script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/py_Driver\n'}
+[16.181078] (py_Driver) StdoutLine: {'line': b'Installing routine script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/py_Driver\n'}
+[16.182641] (py_Driver) StdoutLine: {'line': b'Installing single_contr script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/py_Driver\n'}
+[16.183963] (py_Driver) StdoutLine: {'line': b'Installing test_contr script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/py_Driver\n'}
+[16.185373] (py_Driver) StdoutLine: {'line': b'Installing wheely script to /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/py_Driver\n'}
+[16.188739] (py_Driver) StdoutLine: {'line': b"writing list of installed files to '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/py_Driver/install.log'\n"}
+[16.202487] (-) TimerEvent: {}
+[16.304265] (-) TimerEvent: {}
+[16.364385] (py_Driver) CommandEnded: {'returncode': 0}
+[16.405114] (-) TimerEvent: {}
+[16.431792] (py_Driver) JobEnded: {'identifier': 'py_Driver', 'rc': 0}
+[16.505338] (-) TimerEvent: {}
+[16.606325] (-) TimerEvent: {}
+[16.708684] (-) TimerEvent: {}
+[16.810930] (-) TimerEvent: {}
+[16.913236] (-) TimerEvent: {}
+[17.015904] (-) TimerEvent: {}
+[17.119338] (-) TimerEvent: {}
+[17.220353] (-) TimerEvent: {}
+[17.322493] (-) TimerEvent: {}
+[17.431197] (-) TimerEvent: {}
+[17.534877] (-) TimerEvent: {}
+[17.637087] (-) TimerEvent: {}
+[17.741974] (-) TimerEvent: {}
+[17.844159] (-) TimerEvent: {}
+[17.946464] (-) TimerEvent: {}
+[18.050111] (-) TimerEvent: {}
+[18.152296] (-) TimerEvent: {}
+[18.254632] (-) TimerEvent: {}
+[18.356930] (-) TimerEvent: {}
+[18.457897] (-) TimerEvent: {}
+[18.558824] (-) TimerEvent: {}
+[18.660361] (-) TimerEvent: {}
+[18.761308] (-) TimerEvent: {}
+[18.862230] (-) TimerEvent: {}
+[18.963808] (-) TimerEvent: {}
+[19.065324] (-) TimerEvent: {}
+[19.166758] (-) TimerEvent: {}
+[19.268390] (-) TimerEvent: {}
+[19.370399] (-) TimerEvent: {}
+[19.472562] (-) TimerEvent: {}
+[19.574729] (-) TimerEvent: {}
+[19.676890] (-) TimerEvent: {}
+[19.779171] (-) TimerEvent: {}
+[19.881293] (-) TimerEvent: {}
+[19.983629] (-) TimerEvent: {}
+[20.085793] (-) TimerEvent: {}
+[20.188140] (-) TimerEvent: {}
+[20.290124] (-) TimerEvent: {}
+[20.391117] (-) TimerEvent: {}
+[20.492077] (-) TimerEvent: {}
+[20.593089] (-) TimerEvent: {}
+[20.694071] (-) TimerEvent: {}
+[20.795129] (-) TimerEvent: {}
+[20.896168] (-) TimerEvent: {}
+[20.997962] (-) TimerEvent: {}
+[21.099664] (-) TimerEvent: {}
+[21.201288] (-) TimerEvent: {}
+[21.302990] (-) TimerEvent: {}
+[21.404924] (-) TimerEvent: {}
+[21.506896] (-) TimerEvent: {}
+[21.608545] (-) TimerEvent: {}
+[21.710065] (-) TimerEvent: {}
+[21.811578] (-) TimerEvent: {}
+[21.913100] (-) TimerEvent: {}
+[22.014623] (-) TimerEvent: {}
+[22.116326] (-) TimerEvent: {}
+[22.217899] (-) TimerEvent: {}
+[22.319687] (-) TimerEvent: {}
+[22.427154] (-) TimerEvent: {}
+[22.529718] (-) TimerEvent: {}
+[22.632247] (-) TimerEvent: {}
+[22.734381] (-) TimerEvent: {}
+[22.836514] (-) TimerEvent: {}
+[22.926868] (camera_pack) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[22.928352] (camera_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[22.929276] (camera_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[22.930047] (camera_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[22.930832] (camera_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[22.931808] (camera_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[22.932568] (camera_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[22.933367] (camera_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[22.934125] (camera_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[22.934944] (camera_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[22.935902] (camera_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[22.936636] (-) TimerEvent: {}
+[22.937830] (camera_pack) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/camera_pack/src/cam_sub.cpp:3\x1b[m\x1b[K:\n'}
+[22.938734] (camera_pack) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/camera_pack/src/cam_sub.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ObjectSubscriber::topic_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[22.939639] (camera_pack) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/camera_pack/src/cam_sub.cpp:46:46:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 6 has type \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<float>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[22.940451] (camera_pack) StderrLine: {'line': b'   46 |             RCLCPP_ERROR(this->get_logger(), \x1b[01;35m\x1b[K"Invalid message format: \'%s\'. Expected 5 values, received %d."\x1b[m\x1b[K, msg->data.c_str(), \x1b[32m\x1b[Kvalues.size()\x1b[m\x1b[K);\n'}
+[22.941230] (camera_pack) StderrLine: {'line': b'      |                                              \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                     \x1b[32m\x1b[K~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[22.942016] (camera_pack) StderrLine: {'line': b'      |                                                                                                                                             \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[22.942790] (camera_pack) StderrLine: {'line': b'      |                                                                                                                                             \x1b[32m\x1b[Kstd::vector<float>::size_type {aka long unsigned int}\x1b[m\x1b[K\n'}
+[22.943697] (camera_pack) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/camera_pack/src/cam_sub.cpp:46:106:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[22.944570] (camera_pack) StderrLine: {'line': b'   46 |             RCLCPP_ERROR(this->get_logger(), "Invalid message format: \'%s\'. Expected 5 values, received \x1b[01;36m\x1b[K%d\x1b[m\x1b[K.", msg->data.c_str(), values.size());\n'}
+[22.945374] (camera_pack) StderrLine: {'line': b'      |                                                                                                         \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[22.946161] (camera_pack) StderrLine: {'line': b'      |                                                                                                          \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[22.947152] (camera_pack) StderrLine: {'line': b'      |                                                                                                          \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[22.948053] (camera_pack) StderrLine: {'line': b'      |                                                                                                         \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[23.036861] (-) TimerEvent: {}
+[23.138423] (-) TimerEvent: {}
+[23.239943] (-) TimerEvent: {}
+[23.341465] (-) TimerEvent: {}
+[23.443007] (-) TimerEvent: {}
+[23.544456] (-) TimerEvent: {}
+[23.646587] (-) TimerEvent: {}
+[23.748773] (-) TimerEvent: {}
+[23.850989] (-) TimerEvent: {}
+[23.953034] (-) TimerEvent: {}
+[24.055126] (-) TimerEvent: {}
+[24.157211] (-) TimerEvent: {}
+[24.259167] (-) TimerEvent: {}
+[24.361015] (-) TimerEvent: {}
+[24.463004] (-) TimerEvent: {}
+[24.563966] (-) TimerEvent: {}
+[24.665074] (-) TimerEvent: {}
+[24.766134] (-) TimerEvent: {}
+[24.867139] (-) TimerEvent: {}
+[24.968117] (-) TimerEvent: {}
+[25.069144] (-) TimerEvent: {}
+[25.170161] (-) TimerEvent: {}
+[25.271151] (-) TimerEvent: {}
+[25.372186] (-) TimerEvent: {}
+[25.473182] (-) TimerEvent: {}
+[25.574233] (-) TimerEvent: {}
+[25.675137] (-) TimerEvent: {}
+[25.775998] (-) TimerEvent: {}
+[25.876922] (-) TimerEvent: {}
+[25.977847] (-) TimerEvent: {}
+[26.078736] (-) TimerEvent: {}
+[26.179730] (-) TimerEvent: {}
+[26.280836] (-) TimerEvent: {}
+[26.382352] (-) TimerEvent: {}
+[26.484062] (-) TimerEvent: {}
+[26.585097] (-) TimerEvent: {}
+[26.686026] (-) TimerEvent: {}
+[26.787008] (-) TimerEvent: {}
+[26.887922] (-) TimerEvent: {}
+[26.988866] (-) TimerEvent: {}
+[27.089851] (-) TimerEvent: {}
+[27.190785] (-) TimerEvent: {}
+[27.291772] (-) TimerEvent: {}
+[27.392722] (-) TimerEvent: {}
+[27.493702] (-) TimerEvent: {}
+[27.594628] (-) TimerEvent: {}
+[27.695593] (-) TimerEvent: {}
+[27.796492] (-) TimerEvent: {}
+[27.897484] (-) TimerEvent: {}
+[27.998438] (-) TimerEvent: {}
+[28.099419] (-) TimerEvent: {}
+[28.201077] (-) TimerEvent: {}
+[28.303209] (-) TimerEvent: {}
+[28.405401] (-) TimerEvent: {}
+[28.508669] (-) TimerEvent: {}
+[28.609685] (-) TimerEvent: {}
+[28.711924] (-) TimerEvent: {}
+[28.814145] (-) TimerEvent: {}
+[28.916554] (-) TimerEvent: {}
+[29.018795] (-) TimerEvent: {}
+[29.120510] (-) TimerEvent: {}
+[29.222075] (-) TimerEvent: {}
+[29.323671] (-) TimerEvent: {}
+[29.425189] (-) TimerEvent: {}
+[29.526787] (-) TimerEvent: {}
+[29.628476] (-) TimerEvent: {}
+[29.730540] (-) TimerEvent: {}
+[29.832777] (-) TimerEvent: {}
+[29.935899] (-) TimerEvent: {}
+[30.036810] (-) TimerEvent: {}
+[30.138799] (-) TimerEvent: {}
+[30.240477] (-) TimerEvent: {}
+[30.342090] (-) TimerEvent: {}
+[30.443089] (-) TimerEvent: {}
+[30.544781] (-) TimerEvent: {}
+[30.646465] (-) TimerEvent: {}
+[30.748156] (-) TimerEvent: {}
+[30.849879] (-) TimerEvent: {}
+[30.951666] (-) TimerEvent: {}
+[31.053217] (-) TimerEvent: {}
+[31.155065] (-) TimerEvent: {}
+[31.256668] (-) TimerEvent: {}
+[31.358391] (-) TimerEvent: {}
+[31.459242] (-) TimerEvent: {}
+[31.560108] (-) TimerEvent: {}
+[31.661238] (-) TimerEvent: {}
+[31.762569] (-) TimerEvent: {}
+[31.869412] (-) TimerEvent: {}
+[31.975193] (-) TimerEvent: {}
+[32.083188] (-) TimerEvent: {}
+[32.191251] (-) TimerEvent: {}
+[32.299179] (-) TimerEvent: {}
+[32.407348] (-) TimerEvent: {}
+[32.510167] (-) TimerEvent: {}
+[32.612069] (-) TimerEvent: {}
+[32.680713] (camera_pack) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable cam_img\x1b[0m\n'}
+[32.704061] (camera_pack) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable cam_Nano\x1b[0m\n'}
+[32.712277] (-) TimerEvent: {}
+[32.814068] (-) TimerEvent: {}
+[32.915515] (-) TimerEvent: {}
+[33.017667] (-) TimerEvent: {}
+[33.120431] (-) TimerEvent: {}
+[33.222932] (-) TimerEvent: {}
+[33.324811] (-) TimerEvent: {}
+[33.426577] (-) TimerEvent: {}
+[33.529257] (-) TimerEvent: {}
+[33.631104] (-) TimerEvent: {}
+[33.731890] (-) TimerEvent: {}
+[33.832841] (-) TimerEvent: {}
+[33.933822] (-) TimerEvent: {}
+[33.995411] (camera_pack) StdoutLine: {'line': b'[ 83%] Built target cam_Nano\n'}
+[34.005689] (camera_pack) StdoutLine: {'line': b'[ 83%] Built target cam_img\n'}
+[34.034068] (-) TimerEvent: {}
+[34.134886] (-) TimerEvent: {}
+[34.235689] (-) TimerEvent: {}
+[34.336399] (-) TimerEvent: {}
+[34.437166] (-) TimerEvent: {}
+[34.537905] (-) TimerEvent: {}
+[34.638660] (-) TimerEvent: {}
+[34.739419] (-) TimerEvent: {}
+[34.840131] (-) TimerEvent: {}
+[34.940837] (-) TimerEvent: {}
+[35.041586] (-) TimerEvent: {}
+[35.142400] (-) TimerEvent: {}
+[35.243433] (-) TimerEvent: {}
+[35.344120] (-) TimerEvent: {}
+[35.444809] (-) TimerEvent: {}
+[35.545542] (-) TimerEvent: {}
+[35.646257] (-) TimerEvent: {}
+[35.746996] (-) TimerEvent: {}
+[35.847721] (-) TimerEvent: {}
+[35.948449] (-) TimerEvent: {}
+[36.049173] (-) TimerEvent: {}
+[36.149949] (-) TimerEvent: {}
+[36.250690] (-) TimerEvent: {}
+[36.351539] (-) TimerEvent: {}
+[36.452232] (-) TimerEvent: {}
+[36.552979] (-) TimerEvent: {}
+[36.653811] (-) TimerEvent: {}
+[36.754605] (-) TimerEvent: {}
+[36.855509] (-) TimerEvent: {}
+[36.956241] (-) TimerEvent: {}
+[37.056973] (-) TimerEvent: {}
+[37.157707] (-) TimerEvent: {}
+[37.258485] (-) TimerEvent: {}
+[37.359215] (-) TimerEvent: {}
+[37.459896] (-) TimerEvent: {}
+[37.560813] (-) TimerEvent: {}
+[37.662101] (-) TimerEvent: {}
+[37.763403] (-) TimerEvent: {}
+[37.864778] (-) TimerEvent: {}
+[37.965484] (-) TimerEvent: {}
+[38.066216] (-) TimerEvent: {}
+[38.166920] (-) TimerEvent: {}
+[38.267693] (-) TimerEvent: {}
+[38.368457] (-) TimerEvent: {}
+[38.469262] (-) TimerEvent: {}
+[38.570036] (-) TimerEvent: {}
+[38.670756] (-) TimerEvent: {}
+[38.771529] (-) TimerEvent: {}
+[38.872218] (-) TimerEvent: {}
+[38.972940] (-) TimerEvent: {}
+[39.073736] (-) TimerEvent: {}
+[39.174435] (-) TimerEvent: {}
+[39.275181] (-) TimerEvent: {}
+[39.375880] (-) TimerEvent: {}
+[39.476631] (-) TimerEvent: {}
+[39.577414] (-) TimerEvent: {}
+[39.678149] (-) TimerEvent: {}
+[39.778893] (-) TimerEvent: {}
+[39.879703] (-) TimerEvent: {}
+[39.980420] (-) TimerEvent: {}
+[40.081183] (-) TimerEvent: {}
+[40.181965] (-) TimerEvent: {}
+[40.282720] (-) TimerEvent: {}
+[40.383495] (-) TimerEvent: {}
+[40.484232] (-) TimerEvent: {}
+[40.584955] (-) TimerEvent: {}
+[40.685661] (-) TimerEvent: {}
+[40.786472] (-) TimerEvent: {}
+[40.887203] (-) TimerEvent: {}
+[40.987921] (-) TimerEvent: {}
+[41.088637] (-) TimerEvent: {}
+[41.189389] (-) TimerEvent: {}
+[41.290145] (-) TimerEvent: {}
+[41.390863] (-) TimerEvent: {}
+[41.491610] (-) TimerEvent: {}
+[41.592325] (-) TimerEvent: {}
+[41.693043] (-) TimerEvent: {}
+[41.793797] (-) TimerEvent: {}
+[41.894598] (-) TimerEvent: {}
+[41.995387] (-) TimerEvent: {}
+[42.096118] (-) TimerEvent: {}
+[42.196834] (-) TimerEvent: {}
+[42.297529] (-) TimerEvent: {}
+[42.398312] (-) TimerEvent: {}
+[42.499131] (-) TimerEvent: {}
+[42.599887] (-) TimerEvent: {}
+[42.700628] (-) TimerEvent: {}
+[42.801402] (-) TimerEvent: {}
+[42.902121] (-) TimerEvent: {}
+[43.002907] (-) TimerEvent: {}
+[43.103644] (-) TimerEvent: {}
+[43.204345] (-) TimerEvent: {}
+[43.305072] (-) TimerEvent: {}
+[43.405817] (-) TimerEvent: {}
+[43.506548] (-) TimerEvent: {}
+[43.607337] (-) TimerEvent: {}
+[43.708080] (-) TimerEvent: {}
+[43.808852] (-) TimerEvent: {}
+[43.909616] (-) TimerEvent: {}
+[44.010335] (-) TimerEvent: {}
+[44.111164] (-) TimerEvent: {}
+[44.211878] (-) TimerEvent: {}
+[44.312578] (-) TimerEvent: {}
+[44.413350] (-) TimerEvent: {}
+[44.514073] (-) TimerEvent: {}
+[44.614792] (-) TimerEvent: {}
+[44.715664] (-) TimerEvent: {}
+[44.816388] (-) TimerEvent: {}
+[44.917069] (-) TimerEvent: {}
+[45.017769] (-) TimerEvent: {}
+[45.118488] (-) TimerEvent: {}
+[45.219401] (-) TimerEvent: {}
+[45.320132] (-) TimerEvent: {}
+[45.420837] (-) TimerEvent: {}
+[45.521595] (-) TimerEvent: {}
+[45.622301] (-) TimerEvent: {}
+[45.723101] (-) TimerEvent: {}
+[45.823883] (-) TimerEvent: {}
+[45.924609] (-) TimerEvent: {}
+[46.025341] (-) TimerEvent: {}
+[46.126089] (-) TimerEvent: {}
+[46.226848] (-) TimerEvent: {}
+[46.327614] (-) TimerEvent: {}
+[46.428368] (-) TimerEvent: {}
+[46.529073] (-) TimerEvent: {}
+[46.629789] (-) TimerEvent: {}
+[46.730541] (-) TimerEvent: {}
+[46.831327] (-) TimerEvent: {}
+[46.932056] (-) TimerEvent: {}
+[47.032766] (-) TimerEvent: {}
+[47.133455] (-) TimerEvent: {}
+[47.234207] (-) TimerEvent: {}
+[47.334909] (-) TimerEvent: {}
+[47.435726] (-) TimerEvent: {}
+[47.536494] (-) TimerEvent: {}
+[47.637205] (-) TimerEvent: {}
+[47.737971] (-) TimerEvent: {}
+[47.838702] (-) TimerEvent: {}
+[47.939470] (-) TimerEvent: {}
+[48.040195] (-) TimerEvent: {}
+[48.140956] (-) TimerEvent: {}
+[48.241715] (-) TimerEvent: {}
+[48.342446] (-) TimerEvent: {}
+[48.443239] (-) TimerEvent: {}
+[48.543937] (-) TimerEvent: {}
+[48.644710] (-) TimerEvent: {}
+[48.745466] (-) TimerEvent: {}
+[48.846178] (-) TimerEvent: {}
+[48.946898] (-) TimerEvent: {}
+[49.047657] (-) TimerEvent: {}
+[49.148377] (-) TimerEvent: {}
+[49.249143] (-) TimerEvent: {}
+[49.349839] (-) TimerEvent: {}
+[49.450586] (-) TimerEvent: {}
+[49.551425] (-) TimerEvent: {}
+[49.652130] (-) TimerEvent: {}
+[49.752840] (-) TimerEvent: {}
+[49.853643] (-) TimerEvent: {}
+[49.954346] (-) TimerEvent: {}
+[50.055116] (-) TimerEvent: {}
+[50.155827] (-) TimerEvent: {}
+[50.256506] (-) TimerEvent: {}
+[50.357239] (-) TimerEvent: {}
+[50.457992] (-) TimerEvent: {}
+[50.558736] (-) TimerEvent: {}
+[50.659481] (-) TimerEvent: {}
+[50.760196] (-) TimerEvent: {}
+[50.860906] (-) TimerEvent: {}
+[50.961621] (-) TimerEvent: {}
+[51.062404] (-) TimerEvent: {}
+[51.163128] (-) TimerEvent: {}
+[51.263875] (-) TimerEvent: {}
+[51.364609] (-) TimerEvent: {}
+[51.465661] (-) TimerEvent: {}
+[51.566452] (-) TimerEvent: {}
+[51.667201] (-) TimerEvent: {}
+[51.768205] (-) TimerEvent: {}
+[51.869033] (-) TimerEvent: {}
+[51.969946] (-) TimerEvent: {}
+[52.070922] (-) TimerEvent: {}
+[52.171820] (-) TimerEvent: {}
+[52.272520] (-) TimerEvent: {}
+[52.373265] (-) TimerEvent: {}
+[52.473982] (-) TimerEvent: {}
+[52.574722] (-) TimerEvent: {}
+[52.675494] (-) TimerEvent: {}
+[52.776366] (-) TimerEvent: {}
+[52.877092] (-) TimerEvent: {}
+[52.977839] (-) TimerEvent: {}
+[53.078550] (-) TimerEvent: {}
+[53.179285] (-) TimerEvent: {}
+[53.279986] (-) TimerEvent: {}
+[53.380705] (-) TimerEvent: {}
+[53.481424] (-) TimerEvent: {}
+[53.582195] (-) TimerEvent: {}
+[53.682976] (-) TimerEvent: {}
+[53.783695] (-) TimerEvent: {}
+[53.884432] (-) TimerEvent: {}
+[53.985157] (-) TimerEvent: {}
+[54.085904] (-) TimerEvent: {}
+[54.186627] (-) TimerEvent: {}
+[54.287396] (-) TimerEvent: {}
+[54.388120] (-) TimerEvent: {}
+[54.488825] (-) TimerEvent: {}
+[54.589582] (-) TimerEvent: {}
+[54.690304] (-) TimerEvent: {}
+[54.791109] (-) TimerEvent: {}
+[54.891880] (-) TimerEvent: {}
+[54.992763] (-) TimerEvent: {}
+[55.093789] (-) TimerEvent: {}
+[55.194595] (-) TimerEvent: {}
+[55.295411] (-) TimerEvent: {}
+[55.396301] (-) TimerEvent: {}
+[55.497151] (-) TimerEvent: {}
+[55.598102] (-) TimerEvent: {}
+[55.699359] (-) TimerEvent: {}
+[55.800115] (-) TimerEvent: {}
+[55.850284] (camera_pack) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable cam_sub\x1b[0m\n'}
+[55.900294] (-) TimerEvent: {}
+[56.001046] (-) TimerEvent: {}
+[56.101915] (-) TimerEvent: {}
+[56.202714] (-) TimerEvent: {}
+[56.303648] (-) TimerEvent: {}
+[56.404465] (-) TimerEvent: {}
+[56.505411] (-) TimerEvent: {}
+[56.606604] (-) TimerEvent: {}
+[56.707593] (-) TimerEvent: {}
+[56.808764] (-) TimerEvent: {}
+[56.909864] (-) TimerEvent: {}
+[57.010717] (-) TimerEvent: {}
+[57.111767] (-) TimerEvent: {}
+[57.212495] (-) TimerEvent: {}
+[57.313676] (-) TimerEvent: {}
+[57.414785] (-) TimerEvent: {}
+[57.515547] (-) TimerEvent: {}
+[57.616474] (-) TimerEvent: {}
+[57.717553] (-) TimerEvent: {}
+[57.818291] (-) TimerEvent: {}
+[57.919088] (-) TimerEvent: {}
+[57.955800] (camera_pack) StdoutLine: {'line': b'[100%] Built target cam_sub\n'}
+[57.999419] (camera_pack) CommandEnded: {'returncode': 0}
+[58.019368] (-) TimerEvent: {}
+[58.120254] (-) TimerEvent: {}
+[58.188940] (camera_pack) JobProgress: {'identifier': 'camera_pack', 'progress': 'install'}
+[58.190149] (camera_pack) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack'], 'cwd': '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'hvalborg2'), ('SSH_CLIENT', '192.168.137.1 56760 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hvalborg2'), ('OLDPWD', '/home/hvalborg2'), ('SSH_TTY', '/dev/pts/2'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install:/home/hvalborg2/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hvalborg2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hvalborg2/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/hvalborg2/turtlebot3_ws/install/turtlebot3:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_bringup:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_node:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_description:/home/hvalborg2/turtlebot3_ws/install/ld08_driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/build/camera_pack'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.137.1 56760 192.168.137.14 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-01'), ('PYTHONPATH', '/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver/lib/python3.10/site-packages:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hvalborg2/turtlebot3_ws/install/turtlebot3:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_bringup:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_node:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_description:/home/hvalborg2/turtlebot3_ws/install/ld08_driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/pubsub:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/bones:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/Driver:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_teleop:/home/hvalborg2/turtlebot3_ws/install/turtlebot3_example:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/py_Driver:/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/lidar:/opt/ros/humble')]), 'shell': False}
+[58.220446] (-) TimerEvent: {}
+[58.227937] (camera_pack) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[58.232339] (camera_pack) StdoutLine: {'line': b'-- Installing: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/camera_pack/cam_sub\n'}
+[58.269584] (camera_pack) StdoutLine: {'line': b'-- Set runtime path of "/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/camera_pack/cam_sub" to ""\n'}
+[58.273543] (camera_pack) StdoutLine: {'line': b'-- Installing: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/camera_pack/cam_Nano\n'}
+[58.284654] (camera_pack) StdoutLine: {'line': b'-- Set runtime path of "/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/camera_pack/cam_Nano" to ""\n'}
+[58.289017] (camera_pack) StdoutLine: {'line': b'-- Installing: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/camera_pack/cam_img\n'}
+[58.300675] (camera_pack) StdoutLine: {'line': b'-- Set runtime path of "/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/camera_pack/cam_img" to ""\n'}
+[58.301384] (camera_pack) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/ament_index/resource_index/package_run_dependencies/camera_pack\n'}
+[58.301967] (camera_pack) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/ament_index/resource_index/parent_prefix_path/camera_pack\n'}
+[58.302483] (camera_pack) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/environment/ament_prefix_path.sh\n'}
+[58.303028] (camera_pack) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/environment/ament_prefix_path.dsv\n'}
+[58.303541] (camera_pack) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/environment/path.sh\n'}
+[58.303983] (camera_pack) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/environment/path.dsv\n'}
+[58.304381] (camera_pack) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/local_setup.bash\n'}
+[58.304866] (camera_pack) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/local_setup.sh\n'}
+[58.305302] (camera_pack) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/local_setup.zsh\n'}
+[58.305705] (camera_pack) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/local_setup.dsv\n'}
+[58.306151] (camera_pack) StdoutLine: {'line': b'-- Installing: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/package.dsv\n'}
+[58.309149] (camera_pack) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/ament_index/resource_index/packages/camera_pack\n'}
+[58.309698] (camera_pack) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/cmake/camera_packConfig.cmake\n'}
+[58.310149] (camera_pack) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/cmake/camera_packConfig-version.cmake\n'}
+[58.310589] (camera_pack) StdoutLine: {'line': b'-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/package.xml\n'}
+[58.316179] (camera_pack) CommandEnded: {'returncode': 0}
+[58.320561] (-) TimerEvent: {}
+[58.421193] (-) TimerEvent: {}
+[58.521996] (-) TimerEvent: {}
+[58.557942] (camera_pack) JobEnded: {'identifier': 'camera_pack', 'rc': 0}
+[58.561575] (-) EventReactorShutdown: {}

@@ -1,0 +1,55 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/cam_img.dir/src/rd_img_gen.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/cam_Nano.dir/src/rd_Nano_Ros.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/cam_sub.dir/src/cam_sub.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/camera_pack/src/cam_sub.cpp:3[m[K:
+[01m[K/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/camera_pack/src/cam_sub.cpp:[m[K In member function ‘[01m[Kvoid ObjectSubscriber::topic_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/camera_pack/src/cam_sub.cpp:46:46:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   46 |             RCLCPP_ERROR(this->get_logger(), [01;35m[K"Invalid message format: '%s'. Expected 5 values, received %d."[m[K, msg->data.c_str(), [32m[Kvalues.size()[m[K);
+      |                                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                     [32m[K~~~~~~~~~~~~~[m[K
+      |                                                                                                                                             [32m[K|[m[K
+      |                                                                                                                                             [32m[Kstd::vector<float>::size_type {aka long unsigned int}[m[K
+[01m[K/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/src/camera_pack/src/cam_sub.cpp:46:106:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   46 |             RCLCPP_ERROR(this->get_logger(), "Invalid message format: '%s'. Expected 5 values, received [01;36m[K%d[m[K.", msg->data.c_str(), values.size());
+      |                                                                                                         [01;36m[K~^[m[K
+      |                                                                                                          [01;36m[K|[m[K
+      |                                                                                                          [01;36m[Kint[m[K
+      |                                                                                                         [32m[K%ld[m[K
+[ 66%] [32m[1mLinking CXX executable cam_img[0m
+[ 83%] [32m[1mLinking CXX executable cam_Nano[0m
+[ 83%] Built target cam_Nano
+[ 83%] Built target cam_img
+[100%] [32m[1mLinking CXX executable cam_sub[0m
+[100%] Built target cam_sub
+-- Install configuration: ""
+-- Installing: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/camera_pack/cam_sub
+-- Set runtime path of "/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/camera_pack/cam_sub" to ""
+-- Installing: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/camera_pack/cam_Nano
+-- Set runtime path of "/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/camera_pack/cam_Nano" to ""
+-- Installing: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/camera_pack/cam_img
+-- Set runtime path of "/home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/lib/camera_pack/cam_img" to ""
+-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/ament_index/resource_index/package_run_dependencies/camera_pack
+-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/ament_index/resource_index/parent_prefix_path/camera_pack
+-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/environment/ament_prefix_path.sh
+-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/environment/path.sh
+-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/environment/path.dsv
+-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/local_setup.bash
+-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/local_setup.sh
+-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/local_setup.zsh
+-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/local_setup.dsv
+-- Installing: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/package.dsv
+-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/ament_index/resource_index/packages/camera_pack
+-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/cmake/camera_packConfig.cmake
+-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/cmake/camera_packConfig-version.cmake
+-- Up-to-date: /home/hvalborg2/Desktop/P6_Robot_Driver/ROS2_Packages/install/camera_pack/share/camera_pack/package.xml

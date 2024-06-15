@@ -21,7 +21,7 @@ class LaserPublisher(Node):
 		
 		if (0 <= angle < 30) or (329 <= angle < 360):
 			distance_chars = '#' * int(distance / 25)  # Adjust the scale as needed
-			print(f"Angle: {angle} Distance: {distance} {' ' * (30 - len(distance_chars))}[{distance_chars}]")
+			self.get_logger().info(f"Angle: {angle} Distance: {distance} {' ' * (30 - len(distance_chars))}[{distance_chars}]")
 		
 	def publish_distances(self):
 		while True:
