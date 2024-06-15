@@ -1,0 +1,5 @@
+source;share/Jelly/local_setup.bash
+source;share/Jelly/local_setup.dsv
+source;share/Jelly/local_setup.ps1
+source;share/Jelly/local_setup.sh
+source;share/Jelly/local_setup.zsh
