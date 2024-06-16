@@ -135,8 +135,12 @@ class Program(Node):
         # Remove brackets and split by comma
         elements = msg.data.strip("[]\n").split(", ")
         
-        # Convert elements to floats
-        float_array = [float(element) for element in elements]
+        try: 
+            # Convert elements to floats
+            float_array = [float(element) for element in elements]
+        except:
+            self.get_logger().warning('Could not convert element to float: %s', element)
+
 
         error = None
 
