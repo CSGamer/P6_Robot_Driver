@@ -10,6 +10,7 @@ setup.py
 ../../build/lidar/lidar.egg-info/top_level.txt
 ../../build/lidar/lidar.egg-info/zip-safe
 lidar/__init__.py
+lidar/center_pub-DESKTOP-VI79LAO.py
 lidar/center_pub.py
 lidar/focus_pub.py
 lidar/publisher.py
