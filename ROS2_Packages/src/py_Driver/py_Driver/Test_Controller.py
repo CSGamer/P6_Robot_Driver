@@ -139,7 +139,8 @@ class Program(Node):
 
         try: 
             # Convert elements to floats
-            cp = float_array
+            if float_array != None:
+                cp = float_array
             float_array = [float(element) for element in elements]
         except:
             float_array = cp
