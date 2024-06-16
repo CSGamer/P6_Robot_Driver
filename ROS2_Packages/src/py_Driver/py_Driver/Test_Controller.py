@@ -138,21 +138,22 @@ class Program(Node):
         elements = msg.data.strip("[]\n").split(", ")
         
         cp = None
-        if float_array != None:
-            cp = float_array
+        if self.float_array != None:
+            cp = self.float_array
         
         try: 
             # Convert elements to floats
             float_array = [float(element) for element in elements]
+            self.float_array = float_array
         except:
-            float_array = cp
+            self.float_array = cp
             self.get_logger().warning('Could not convert element to float:')
 
 
         error = None
 
-        if (float_array[0] == 1): 
-            error = ((float_array[1] + (float_array[3]/2)) - ANGLE_SET_POINT)/5.3
+        if (self.float_array[0] == 1): 
+            error = ((self.float_array[1] + (self.float_array[3]/2)) - ANGLE_SET_POINT)/5.3
             error = math.floor(error)
             self.get_logger().info('Error Angle: %s' %(-error))
             self.ang_reg(-error)
