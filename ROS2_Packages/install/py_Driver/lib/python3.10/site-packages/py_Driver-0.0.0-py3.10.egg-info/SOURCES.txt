@@ -12,6 +12,8 @@ launch/hvalborg.launch.py
 launch/terminal.launch.py
 launch/terminal2.launch.py
 launch/timed.launch.py
+py_Driver/PI_Reg.py
+py_Driver/PI_Reg_Aggro.py
 py_Driver/Test_Controller.py
 py_Driver/__init__.py
 py_Driver/extra_controller.py
