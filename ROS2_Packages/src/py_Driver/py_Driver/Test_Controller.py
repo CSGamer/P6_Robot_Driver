@@ -139,8 +139,10 @@ class Program(Node):
 
         try: 
             # Convert elements to floats
+            cp = float_array
             float_array = [float(element) for element in elements]
         except:
+            float_array = cp
             self.get_logger().warning('Could not convert element to float:')
 
 
