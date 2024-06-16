@@ -127,6 +127,8 @@ class Program(Node):
 
     def looper(self,msg):
         self.contr.drive()
+        
+    float_array = None
 
     def ang_sub(self, msg):
         #self.get_logger().info('I heard: "%s"' % msg.data)
@@ -134,7 +136,7 @@ class Program(Node):
         #Structure [ID, x, y, width, height, FPS] 
         # Remove brackets and split by comma
         elements = msg.data.strip("[]\n").split(", ")
-        
+
         try: 
             # Convert elements to floats
             float_array = [float(element) for element in elements]
