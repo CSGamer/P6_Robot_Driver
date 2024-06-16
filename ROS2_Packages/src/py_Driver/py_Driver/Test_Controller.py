@@ -184,7 +184,7 @@ class Program(Node):
         p = P_Dist
         i = I_Dist
         proportional_term = (error / 1000 * 86.67) * p
-        integral_term = (self.integral_error_dist / 1000 * 86.67) * i
+        integral_term = (self.int_err_dist / 1000 * 86.67) * i
 
         control_signal = proportional_term + integral_term
 
