@@ -24,8 +24,8 @@ ANGLE_SET_POINT = 320 #img x-coordinate
 DIST_SET_POINT = 1500 #mm
 
 P_Ang = 0.75
-P_Dist = 0.25
-I_Dist = 0.1
+P_Dist = 0.75
+I_Dist = 0.3
 
 
 class Controller(Node):
@@ -185,7 +185,7 @@ class Program(Node):
         i = I_Dist
         proportional_term = (error / 1000 * 86.67) * p
         integral_term = (self.int_err_dist / 1000 * 86.67) * i
-        self.integral_error_dist += error
+        self.int_err_dist += error
         control_signal = proportional_term + integral_term
 
         self.contr.set_velocity(control_signal)
