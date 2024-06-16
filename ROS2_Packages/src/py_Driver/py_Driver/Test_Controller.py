@@ -25,6 +25,7 @@ DIST_SET_POINT = 1500 #mm
 
 P_Ang = 0.75
 P_Dist = 0.25
+I_Dist = 0.1
 
 
 class Controller(Node):
@@ -100,6 +101,7 @@ class Controller(Node):
 
 class Program(Node):
     contr = None
+    int_err_dist = 0.0
     def __init__(self,publisher):
         super().__init__('program')
         self.get_logger().info('starting controller ')    
@@ -180,8 +182,13 @@ class Program(Node):
     def dist_reg(self, error):
         error = error / 1000 * 86.67
         p = P_Dist
-        out = error * p
-        self.contr.set_velocity(out)
+        i = I_Dist
+        proportional_term = (error / 1000 * 86.67) * p
+        integral_term = (self.integral_error_dist / 1000 * 86.67) * i
+
+        control_signal = proportional_term + integral_term
+
+        self.contr.set_velocity(control_signal)
         #self.contr.drive()
 
     
