@@ -12,6 +12,7 @@ setup(
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/launch', ['launch/hvalborg.launch.py']),
         ('share/' + package_name + '/launch', ['launch/terminal.launch.py']),
+        ('share/' + package_name + '/launch', ['launch/terminal2.launch.py']),
         ('share/' + package_name + '/launch', ['launch/timed.launch.py']),
     ],
     install_requires=['setuptools'],
