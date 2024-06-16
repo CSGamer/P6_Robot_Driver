@@ -136,11 +136,13 @@ class Program(Node):
         #Structure [ID, x, y, width, height, FPS] 
         # Remove brackets and split by comma
         elements = msg.data.strip("[]\n").split(", ")
-
+        
+        cp = None
+        if float_array != None:
+            cp = float_array
+        
         try: 
             # Convert elements to floats
-            if float_array != None:
-                cp = float_array
             float_array = [float(element) for element in elements]
         except:
             float_array = cp
