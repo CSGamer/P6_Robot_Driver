@@ -24,7 +24,7 @@ ANGLE_SET_POINT = 320 #img x-coordinate
 DIST_SET_POINT = 1500 #mm
 
 P_Ang = 0.75
-P_Dist = 1
+P_Dist = 0.9
 I_Dist = 0.3
 
 
