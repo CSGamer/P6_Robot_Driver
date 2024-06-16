@@ -139,7 +139,7 @@ class Program(Node):
             # Convert elements to floats
             float_array = [float(element) for element in elements]
         except:
-            self.get_logger().warning('Could not convert element to float: %s', element)
+            self.get_logger().warning('Could not convert element to float:')
 
 
         error = None
