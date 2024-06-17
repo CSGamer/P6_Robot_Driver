@@ -26,7 +26,7 @@ DIST_SET_POINT = 1500 #mm
 P_Ang = 1 #0.75
 D_Ang = 0 
 P_Dist = 10 #0.9
-I_Dist = 0 # 1 # 0.3
+I_Dist = 1 # 0.3
 
 
 class Controller(Node):
