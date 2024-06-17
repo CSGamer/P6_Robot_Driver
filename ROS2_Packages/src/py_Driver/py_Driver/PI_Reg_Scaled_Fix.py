@@ -76,13 +76,13 @@ class Controller(Node):
 
     def set_angle(self, val):
         #self.get_logger().warning('angle_val "%s"' % val)
-        val = val#/54
+        val = val/91
         #self.get_logger().error('motor_val "%s"' % val)
         self.target_angular_velocity = self.check_angular_limit_velocity(val)
 
     def set_velocity(self, val):
         #self.get_logger().warning('speed_val "%s"' % val)
-        val = val#/1204
+        val = val/1240
         #self.get_logger().error('motort_val "%s"' % val)
         self.target_linear_velocity = self.check_linear_limit_velocity(val)
 
@@ -166,7 +166,7 @@ class Program(Node):
     def ang_reg(self, error):
         p = P_Ang
         #          degree rad             control size 2.84/260
-        error = (error*(math.pi/180)) * 0.0109
+        error = (error*(math.pi/180))
         control_signal = error * p
         self.get_logger().info(f'The error in angle: {error} \t control_sig {control_signal}')
         self.contr.set_angle(error)
@@ -184,8 +184,8 @@ class Program(Node):
                 self.dist_reg(0)
 
     def dist_reg(self, error):
-        #             m         control size 0.21/260
-        error = (error / 1000) * 0.000807
+        #             m
+        error = (error / 1000)
         p = P_Dist
         i = I_Dist
         proportional_term = error * p
