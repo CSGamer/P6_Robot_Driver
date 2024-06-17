@@ -166,7 +166,9 @@ class Program(Node):
     def ang_reg(self, error):
         p = P_Ang
         #          degree rad             control size 2.84/260
-        error = (error*(math.pi/180)) * p * 0.0109
+        error = (error*(math.pi/180)) * 0.0109
+        control_signal = error * p
+        self.get_logger().info(f'The error in angle: {error} \t control_sig {control_signal}')
         self.contr.set_angle(error)
         #self.contr.drive()
 
