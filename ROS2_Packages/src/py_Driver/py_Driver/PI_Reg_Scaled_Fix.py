@@ -23,9 +23,9 @@ WAFFLE_MAX_ANG_VEL = 1.82
 ANGLE_SET_POINT = 320 #img x-coordinate
 DIST_SET_POINT = 1500 #mm
 
-P_Ang = 1 #0.75
+P_Ang = 10 #0.75
 D_Ang = 0 
-P_Dist = 10 #0.9
+P_Dist = 15 #0.9
 I_Dist = 1 # 0.3
 
 
