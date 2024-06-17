@@ -175,7 +175,7 @@ class Program(Node):
         #self.get_logger().info('I heard: "%s"' % msg.data)
         if (float(msg.data) != -100):
             error =float(msg.data) -  DIST_SET_POINT
-            self.get_logger().info(f'goal dist: {DIST_SET_POINT} \t meas_dist: {float(msg.data)}')
+            #self.get_logger().info(f'goal dist: {DIST_SET_POINT} \t meas_dist: {float(msg.data)}')
             if (error >= 0):
                 self.dist_reg(error)
             else:
@@ -193,6 +193,7 @@ class Program(Node):
         else: 
             self.int_err_dist += error
         control_signal = proportional_term + integral_term
+        self.get_logger().info(f'The error in distance: {error} \t control_sig {control_signal}')
 
         self.contr.set_velocity(control_signal)
         #self.contr.drive()
