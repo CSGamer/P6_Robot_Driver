@@ -32,6 +32,7 @@ setup(
             'test_contr = py_Driver.Test_Controller:main',
             'PI_Aggro = py_Driver.PI_Reg_Aggro:main',
             'PI_Std = py_Driver.PI_Reg:main',
+            'PI_Ex = py_Driver.PI_Reg_Exam_Test:main',
             'PI_Scaled = py_Driver.PI_Reg_Scaled_Fix:main',
         ],
     },
